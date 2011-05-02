@@ -1,0 +1,106 @@
+body,td{
+    color:          #020c0a;
+    background:     #ADD8E6;
+    font-family:    "ＭＳ 明朝","MingLiU","HAN NOM A","HAN NOM B" ;
+    font-size: 2em;
+    line-height:    1.7em;
+    margin:         0.6em 3%;
+    }
+
+#bikou{
+    color:          gray;
+    font-size:       80%;
+}
+#hosetu{
+    color:          black;
+    font-size:       120%;
+}
+#midasimoji{
+    color:          gray;
+    font-size:       100%;
+}
+
+#komoji{
+    font-size:       75%;
+}
+
+h4{
+    color:          navy;
+    font-size: 1.3em;
+    margin:         1em 0.3em;    /*   上1、下0.3   */
+    }
+
+
+h1  {
+    line-height:    1.1em;
+    margin-bottom:  1.0em;
+    }
+
+.divider {display: none;}
+
+
+table.red td {
+   color: #ff0000;
+}
+
+a { text-decoration: none; }
+
+#blue_tensen { border-bottom: 2px #0000ff dotted; }
+#blue_solid { border-bottom: 2px #0000ff solid; font-size: 0.5em;}
+#blue { border-bottom: 2px #0000ff solid; }
+#red_nijyu { border-bottom: 3px #ff0000 double; }
+#blue_hasen { border-bottom: 1px #0000ff dashed; }
+
+ruby {
+  display:inline-table;
+  text-align:center;
+  white-space:nowrap;
+  text-indent:0;
+  text-align:center;
+  margin: 0; 
+  vertical-align:-15%;
+}
+
+/* ルビベース */
+ruby>rb,ruby>rbc {
+  display:table-row-group;
+  text-align:center;
+  /* line-height:90%; */
+}
+
+/* 前側ルビテキスト */
+ruby>rt,ruby>rbc+rtc {
+  display:table-header-group;
+  font-size:70%;
+  line-height:30%;
+  letter-spacing:0;
+  text-align:center;
+}
+
+/* 後側ルビテキスト */
+ruby>rbc+rtc+rtc {
+  display:table-footer-group;
+  font-size:70%;
+  line-height:30%;
+  letter-spacing:0;
+  text-align:center;
+}
+
+/* 複雑ルビテキスト */
+rbc>rb,rtc>rt {
+  display:table-cell;
+  letter-spacing:0;
+  text-align:center;
+}
+
+rtc>rt[rbspan] {
+  display:table-caption;
+  text-align:center;
+}
+
+/* ルビ括弧 */
+rp {
+  display:none;
+}
+
+

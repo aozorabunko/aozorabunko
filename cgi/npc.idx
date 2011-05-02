@@ -1,0 +1,50 @@
+#!npc.cgi -- ファイル先頭行の「#!npc.cgi」で npc.cgi の設定ファイルか
+#            どうかを見分けています。
+
+; npc.cgi v0.82 以降は設定ファイルの制御構文が構造化され、
+; 条件分岐が視覚的にも分かりやすくかけるようになりましたので
+; なるべく構造化文(=IF)を使って書くようにした方が良いでしょう。
+
+; また、従来の記法では表現できなかった環境変数やオプションの値を
+; 使っての条件分岐も可能になっています。
+
+###
+# 最初の部分は sample1.idx と同じ条件を構造化文を使って書いています。
+#
+
+=WIDTH
+8
+=PROGRESS
+OFF
+=INCREMENT
+1
+=COLOR
+0000FF,FFFFFF
+=DI
+2
+
+# RESTRICTION -- アクセス制限レヴェル設定
+#
+# 設定ファイル中で使用します。アクセス制限レヴェルを設定します。省略時は 0 です。レヴェルによって以下の様に動作がかわります。
+#
+# 0 = 制限無し。すべての機能が使えます。
+# 1 = 設定ファイルでの指定のみ有効でオプション指定は無効になります。
+# 2 = カウンタが使用禁止になります。
+=RESTRICTION
+0
+
+# PROGRESS -- アニメーション機能の有効化
+# =PROGRESS
+# ON
+
+# Delay -- アニメーション動作速度設定
+#=DELAY
+#1000,50
+
+=COUNTER
+0027402869 http://www.aozora.gr.jp/
+0000000001 http://www.aozora-bunko.sakura.ne.jp/
+0000000405 http://www.aozora.gr.jp
+0000000017 http
+0000000032 http://www.aozora.gr.jp/>
+0000000001 http://www.aozora.gr.jp.offcampus.lib.washington.edu/

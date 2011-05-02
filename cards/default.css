@@ -1,0 +1,6 @@
+body { margin: 8% 10%; }
+div, h1, h2 { line-height: 150%; }
+ruby { line-height: 100%; }
+rt { line-height: 50%; }
+span.notes {font-size: smaller}
+img.gaiji { width: 1em; height: 1em; align: top; }

@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=SHIFT_JISX" >
+<TITLE>注記の重複</TITLE>
+<style type="text/css">
+<!--
+body { margin-left: 5%; margin-right: 5%; font-size: smaller;}
+.left { float:left; width:55%;}
+.right { float:right; width:45%;}
+.float-clear { clear:both;}
+-->
+</style>
+</HEAD>
+<BODY>
+
+<H2>注記の重複</H2>
+<HR>
+<A name="chofuku"></A>
+<H3>ルビや強調の注記などが重複してかかる場合</H3>
+
+共通する文字に、ルビや強調の注記などが重複してかかる場合には、次の原則に従って注記してください。<BR>
+<BR>
+１　対象範囲が狭いところを先に、広いところを後に注記します。<BR>
+<BR>
+<FONT color="Red" >※記入例の下に、テキスト版をスクリプトで変換して得た、XHTML 版のタグを示します。</FONT><BR>
+<BLOCKQUOTE>
+このプロジェクトを、青空<FONT color="Blue" >［＃「青空」に傍点］</FONT>文庫<FONT color="Blue" >［＃「青空文庫」に傍線］</FONT>と呼んでいます。<BR>
+<BR>
+<FONT color="Gray" >
+このプロジェクトを、&lt;em class="underline_solid"&gt;&lt;em class="sesame_dot"&gt;青空&lt;/em&gt;文庫&lt;/em&gt;と呼んでいます。</FONT>
+<BR>
+</BLOCKQUOTE>
+２　対象範囲が同じ場合は、注記の種類による優先順位は定めません。ただし、ルビだけは、先に付けます。
+
+<BLOCKQUOTE>
+このプロジェクトを、青空文庫《あおぞらぶんこ》<FONT color="Blue" >［＃「青空文庫」の左に傍線］</FONT>と呼んでいます。<BR>
+<BR>
+<FONT color="Gray" >このプロジェクトを、&lt;em class="overline_solid"&gt;&lt;ruby&gt;&lt;rb&gt;青空文庫&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;あおぞらぶんこ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;/em&gt;と呼んでいます。&lt;br /&gt;</FONT><BR>
+</BLOCKQUOTE>
+
+ルビの付いた文字に傍線や傍点、左側に付くルビなどの注記を行う際には、ルビ記号やルビ文字まで含んだ範囲（上の例では「青空文庫《あおぞらぶんこ》」）ではなく、ルビのかかる文字（上の例では「青空文庫」、下の例では「来た」と「皆身」）のみを、対象として指定します。
+
+<BLOCKQUOTE>
+東《ひがし》を差《さ》して来《き》た<FONT color="Blue" >［＃「来た」に白丸傍点］［＃「来た」の左に「北」の注記］</FONT>小僧《こぞう》皆身《みなみ》<FONT color="Blue" >［＃「皆身」に白丸傍点］［＃「皆身」の左に「南」の注記］</FONT>の為《ため》に…<BR>
+<BR>
+<FONT color="Gray" >
+&lt;ruby&gt;&lt;rb&gt;東&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;ひがし&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;を&lt;ruby&gt;&lt;rb&gt;差&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;さ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;して&lt;em class="white_circle"&gt;&lt;ruby&gt;&lt;rb&gt;来&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;き&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;た&lt;/em&gt;&lt;span class="notes"&gt;［＃「来た」の左に「北」の注記］&lt;/span&gt;&lt;ruby&gt;&lt;rb&gt;小僧&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;こぞう&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;em class="white_circle"&gt;&lt;ruby&gt;&lt;rb&gt;皆身&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;みなみ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;/em&gt;&lt;span class="notes"&gt;［＃「皆身」の左に「南」の注記］&lt;/span&gt;の&lt;ruby&gt;&lt;rb&gt;為&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;ため&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;に…
+</FONT><BR>
+</BLOCKQUOTE>
+
+ルビの付いた見出しを注記する際は、ルビのかかる文字のみを、対象として指定します。<BR>
+
+<BLOCKQUOTE>
+清水詣《きよみずもう》で<FONT color="Blue" >［＃「清水詣で」は大見出し］</FONT><BR>
+<BR>
+<FONT color="Gray" >
+&lt;a class="midashi_anchor" name="midashi1537"&gt;&lt;h3 class="o-midashi"&gt;&lt;ruby&gt;&lt;rb&gt;清水詣&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;きよみずもう&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;で&lt;/h3&gt;&lt;/a&gt;<BR>
+</BLOCKQUOTE>
+<FONT size="-1" ><A  href="index.html">目次にもどる。</A></FONT>
+<BR>
+</BODY>
+</HTML>

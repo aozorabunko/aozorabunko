@@ -1,0 +1,202 @@
+body { margin: 8% 10%; }
+div, h1, h2 { line-height: 160%; }
+ruby { line-height: 100%; }
+rt { line-height: 50%; }
+span.notes {font-size: smaller;}
+
+img.gaiji { width: 1em; height: 1em; align: top; }
+.gaiji_list {margin-left: 3em;}
+
+.keigakomi {border: solid 1px;}
+div.keigakomi{padding-top: 0.5em;
+              padding-bottom: 0.5em;
+              padding-right: 0.5em;
+              padding-left: 1em;}
+
+.futoji { font-weight: bold;}
+.shatai { font-style: italic;}
+
+.underline_solid  {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/sen/bosen.png") repeat-x;
+    }
+
+.underline_double {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/sen/nijyubosen.png") repeat-x;
+    }
+
+.underline_dotted {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/sen/sasen.png") repeat-x;
+    }
+
+.underline_dashed {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/sen/hasen.png") repeat-x;
+    }
+
+.underline_wave   {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/sen/namisen.png") repeat-x;
+    }
+
+.overline_solid  {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/sen/bosen.png") repeat-x;
+    }
+
+.overline_double {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/sen/nijyubosen.png") repeat-x;
+    }
+
+.overline_dotted {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/sen/sasen.png") repeat-x;
+    }
+
+.overline_dashed {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/sen/hasen.png") repeat-x;
+    }
+
+.overline_wave   {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/sen/namisen.png") repeat-x;
+    }
+
+.sesame_dot {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/boten.png") repeat-x;
+    }
+
+.white_sesame_dot {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/shirogoma.png") repeat-x;
+    }
+
+.black_circle {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/maru.png") repeat-x;
+    }
+
+.white_circle {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/shiromaru.png") repeat-x;
+    }
+
+.black_up-pointing_triangle {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/kurosankaku.png") repeat-x;
+    }
+
+.white_up-pointing_triangle {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/shirosankaku.png") repeat-x;
+    }
+
+.bullseye {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/nijyumaru.png") repeat-x;
+    }
+
+.fisheye {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/jyanome.png") repeat-x;
+    }
+
+
+.sesame_dot_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/boten.png") repeat-x;
+
+    }
+
+.white_sesame_dot_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/shirogoma.png") repeat-x;
+    }
+
+.black_circle_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/maru.png") repeat-x;
+    }
+
+.white_circle_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/shiromaru.png") repeat-x;
+    }
+
+.black_up-pointing_triangle_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/kurosankaku.png") repeat-x;
+    }
+
+.white_up-pointing_triangle_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/shirosankaku.png") repeat-x;
+    }
+
+.bullseye_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/nijyumaru.png") repeat-x;
+    }
+
+.fisheye_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/jyanome.png") repeat-x;
+    }
+
+.subscript { font-size: small; }
+.superscript { font-size: small; }
+.kaeriten { font-size: small; }
+.okurigana { font-size: small; }
+
+
+/* inline objects */
+.dogyo-o-midashi { display:inline;}
+.dogyo-naka-midashi { display:inline;}
+.dogyo-ko-midashi { display:inline;}
+.mado-o-midashi { display:inline;}
+.mado-naka-midashi { display:inline;}
+.mado-ko-midashi { display:inline;}
+
+/* headings */
+
+h3 { font-size: 125%; margin: 0%;}
+h4 { font-size: large; margin: 0%;}
+h5 { font-size: medium; margin: 0%;}
+
+.complex_ruby rt.real_ruby:before { content: "Åi" }
+.complex_ruby rt.real_ruby:after  { content: "Åj" }
+
+/* dynamic contents using javascript */
+.contents_invisible { display:none }
+.contents_visible   { display:block; margin-left:3em; text-indent: -1em }
