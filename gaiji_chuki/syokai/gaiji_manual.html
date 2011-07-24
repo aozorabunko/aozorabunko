@@ -19,7 +19,8 @@ img.gaiji { width: 1em; height: 1em; align: top; }
 <FONT size="-1" >
 2007年5月18日　作成開始<BR>
 2007年7月7日　公開<BR>
-2007年11月7日　最終修正<BR>
+2007年11月7日　修正<BR>
+2011年7月25日　最終修正<BR>
 青空文庫外字注記辞書編集グループ<BR>
 </FONT>
 <BR>
@@ -65,7 +66,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
          <li>底本の字がパソコンで入力可能な文字なのにパソコンの誤変換・・・入力ミス</li>
          <li>外字注記すべき</li>
          </ul>
-<br><br>
+<!-- <br><br>
 現在(2007年11月7日)青空文庫の外字注記に関するサイトには次のようなものがあります。<br><br>
          <ol>
          <li><a href="http://www28.atwiki.jp/poorbook99/" target="_blank">青空文庫・外字注記コレクション【第五αwiki版】</a></li>
@@ -73,7 +74,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
          </ol>
          <blockquote>(1.)はフォントをインストールしたり特別なことをしなくても文字化けしないのがとてもよいです。さらに、日々更新され新しいです。ただ一つ難点は点検前ということです。<br>
 (2.)はJIS X 0213用のフォントをインストールしなければならないのですが、日本語Windows NT/2000/XPに関してはパソコンの設定を変更しないといけないのが最大の難点です。また、公開から3年ほどたち、実際に青空文庫で使用されている外字注記と一致しないものも多々あり、漢字の収録数も少ないです。</blockquote>
-<font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
+ --><font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
     </dd><br>
     <dt><a name="housinn">外字注記辞書編纂プロジェクトの作業方針</a></dt>
     <dd>
@@ -84,6 +85,9 @@ img.gaiji { width: 1em; height: 1em; align: top; }
           <li>外字注記作成方針の確認</li>
           <li>字体説明部分の確認</li>
           <li>JIS第三水準・第四水準・補助漢字などを追加していく</li>
+        <li>「第3水準、第4水準の漢字（JIS X 0213）」は、面区点番号をそえ、外字注記中の字体表現は規格票の例示字体をなぞる形で行う。</li>
+        <li>青空文庫入力作業で出現した「JIS X 0213」に<!-- も「JIS X 0212」にも -->ない漢字を「<a href="http://www.unicode.org/" target="_blank">ユニコード・コンソーシアム</a>」が提供している「<a href="http://www.unicode.org/charts/unihan.html" target="_blank">Unihanデータベース</a>」の部首分類に従い追加する。また、外字注記部分にUnicodeを16進で追加する。ただし、外字注記中の字体表現は、底本に出現した形で行う。追加にあたって「Unihanデータベース」の例示字体と異なるときの手順の詳細は「第八版　改訂内容」に示す。</li>
+
           <li>修正・追加したものを随時アクセスできるようにする</li>
           <li>Windows XP以外のOSでの動作確認</li>
           </ul>
@@ -97,21 +101,21 @@ img.gaiji { width: 1em; height: 1em; align: top; }
     <dt><a name="howto">外字注記辞書の使い方</a></dt>
     <dd>
           <ul>
-          <li>次の方法で底本の漢字の情報を調べます。
+          <li>次の方法で底本の漢字の情報を調べます。<br><img src="GOKANJI.JPG" alt="29moji" align="right" height="480" width="220">
               <ul>
-                <li><a href="http://www.okazaki.sakuraweb.com/biboroku/jisichiran/alljis.pdf" target="_blank">JIS全漢字部首画一覧</a>で捜す
+<!--                 <li><a href="http://www.okazaki.sakuraweb.com/biboroku/jisichiran/alljis.pdf" target="_blank">JIS全漢字部首画一覧</a>で捜す
                     <ol>
                     <li>「第一水準」「第二水準」にあれば入力可能文字</li>
                     <li>「第一水準」「第二水準」以外のところにあるか、<a href="http://www.okazaki.sakuraweb.com/biboroku/jisichiran/alljis.pdf" target="_blank">JIS全漢字部首画一覧</a>に底本の字がない場合は「外字注記辞書」でさがす</li>
                     </ol>
                 </li>
-                <li><a href="http://mousai.kanji.zinbun.kyoto-u.ac.jp/ids-find" target="_blank">CHISE IDS 漢字検索</a>で捜す</li>
+ -->                <li><a href="http://mousai.kanji.zinbun.kyoto-u.ac.jp/ids-find" target="_blank">CHISE IDS 漢字検索</a>で捜す</li>
                    <ol>
                    <li>漢字の部品を入力（複数可）</li>
-                   <li>該当漢字の「(link map) 」クリックして「jsx-0208」のコードの漢字が底本と同じならば入力可能文字。</li>
-                   <li>「jsx-0208」のコード以外が表示されているときは「外字注記辞書」でさがす</li>
+                   <li>該当漢字の「(link map) 」クリックして「jis-x0208」のコードの漢字が底本と同じならば入力可能文字。</li>
+                   <li>「jis-x0208」のコード以外しか表示されていないときは「外字注記辞書」でさがす</li>
                    </ol>
-                <li>微妙な字体差と包摂規準（できるだけ「外字注記辞書」にものせるようにしています）<br><img src="GOKANJI.JPG" alt="29moji" align="right" height="480" width="220">
+                <li>微妙な字体差と包摂規準（できるだけ「外字注記辞書」にものせるようにしています）
                    <ol>
                    <li>底本で使われている漢字と入力したものとで、細部の形が微妙に異なっていることがあります。「果たしてこの字を使ってよいのか？」と、迷う場合もあるでしょう。その際、「よいか悪いか」の判断は、用いている漢字コードが「字体の揺れ幅」について定めた、「包摂規準」(１～185番）にのっとって下します。青空文庫はJIS X 0208を使っていますから、その規準に従って、判断します。（加えて、JIS X0213で新たに定義された186～199番にも従います。）</li>
                    <li>包摂規準とは、「この差ではコードを区別しない」という約束事の集まりです。ルールのすべては、JIS漢字コードの規格書（『7ビット及び8ビットの2バイト情報交換用符号化漢字集合』日本規格協会）の、「漢字の字体の包摂規準」（11～23ページ）に定められています。（<a href="http://www.aozora.gr.jp/hosetsu_kijyun/index.html" target="_blank">「JISX 0208と0213規格票の包摂関連項目」</a>の「JIS X 0208」の項、参照。）</li>
@@ -127,20 +131,22 @@ img.gaiji { width: 1em; height: 1em; align: top; }
               <ul>
               <li>「外字注記辞書」で「※［＃「・・・」、第・水準・・・］」となっていたら※から］の間をすべて入力</li>
               <li>「外字注記辞書」で「→［包摂適用　■］」となっていたら、「■」で入れる</li>
-              <li>「外字注記辞書」で「→［78互換包摂　●］」となっていたら「●」で入れる</li>
+              <li>「外字注記辞書」で「→［統合適用　■］」となっていたら、「■」で入れる</li>
+              <li>「外字注記辞書」で「→［デザイン差　■］」となっていたら、「■」で入れる</li>
+              <li>「外字注記辞書」で「→［78互換包摂　■］」となっていたら「■」で入れる</li>
               </ul>
           </li>
-          <li>「外字注記辞書」に無い場合は「<a href="#tyuuki">外字に関する注記</a>」を参考に字体を表現してみてその旨を入力ファイルを送付するときにメールにメモしてくださるとうれしいです。</li>
+          <li>「外字注記辞書」に無い場合は「<a href="#tyuuki">外字に関する注記</a>」を参考に字体を表現してみてその旨を入力ファイルを送付するときにメールにメモしてくださると幸甚です。</li>
           <li>点検部屋担当者は校正前点検でメモされた漢字が新出外字かどうか、また新出外字ならその字体表現が適切か検討し該当ファイルの訂正および「外字に関する注記」に追加する</li>
           </ul>
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
     </dd><br>
-    <dt><a name="tenbou">外字注記辞書の展望</a></dt>
+<!--     <dt><a name="tenbou">外字注記辞書の展望</a></dt>
     <dd>
 外字を注記するにあたって、基本キーとしてJIS X 0213の面区点番号を使用するが、JIS X 0213に含まれない漢字も多く、また包摂基準も理解しにくいものなので、入力・校正ともに「外字に関する注記」に掲載されていない漢字は送付時にメモすることにして面区点番号を調べたりしなくてもよいようにしたいです。そうすることで、点検部屋の負担は増えるが<font color="#FF0000">表現の標準化</font>も図れ、デジタル化の付加価値として最重要テーマである<font color="#FF0000">検索の効率化</font>にもつながると思われます。
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
     </dd><br>
-    <dt><a name="koukai">公開テキスト版(ウェブ上)での外字表示</a><br></dt>
+ -->    <dt><a name="koukai">公開テキスト版(ウェブ上)での外字表示</a><br></dt>
     <dd>
       <a href="http://www.aozora.gr.jp/cards/000291/card45649.html" target="_blank">林 芙美子の「放浪記（初出）」</a>から表示例をあげてみる
 <br>
@@ -158,12 +164,12 @@ img.gaiji { width: 1em; height: 1em; align: top; }
          <li><b><font>テキスト版の外字注記中、JIS X 0213にないもの</font></b><br>
                   テキスト版の外字注記<br>
                   <blockquote>
-                  　二日も飯を食えないジンジンする体を、三畳の部屋に横たえている事は、まるで古風なラッパのように埃っぽく悲しくなる。<span style="text-decoration:underline;">生※［＃「さんずい＋垂」、235-7］</span>が煙になって、みんな胃のふ［＃「胃のふ」に傍点］へ逆もどりだ。
+                  　二日も飯を食えないジンジンする体を、三畳の部屋に横たえている事は、まるで古風なラッパのように埃っぽく悲しくなる。<span style="text-decoration:underline;">生※［＃「さんずい＋垂」、U+6DB6、235-7］</span>が煙になって、みんな胃のふ［＃「胃のふ」に傍点］へ逆もどりだ。
                   </blockquote>
                   ウェブ上での表示<br>
                   <blockquote>
-                  　二日も飯を食えないジンジンする体を、三畳の部屋に横たえている事は、まるで古風なラッパのように埃っぽく悲しくなる。<span style="text-decoration:underline;">生※<span class="notes">［＃「さんずい＋垂」、235-7］</span></span>が煙になって、みんな<strong class="SESAME_DOT">胃のふ</strong>へ逆もどりだ。<br>
-                  </blockquote>
+                  　二日も飯を食えないジンジンする体を、三畳の部屋に横たえている事は、まるで古風なラッパのように埃っぽく悲しくなる。<span style="text-decoration:underline;">生※<span class="notes">［＃「さんずい＋垂」、U+6DB6、235-7］</span></span>が煙になって、みんな<strong class="SESAME_DOT">胃のふ</strong>へ逆もどりだ。<br>
+                  </blockquote>］
          </li>
          </ul>
          <table align="center" width="95%" bgcolor="#CCFFFF" border="1" bordercolor="#99FFFF">
@@ -235,7 +241,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
          <li>Windowsの機種依存文字・・・<a href="http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdc_img.html" target="_blank">このページ</a>を参照</li>
          <li>Macintoshの機種依存文字・・・<a href="http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdcmc_img.html" target="_blank">このページ</a>を参照</li>
          </ul>
-入力時に使えない文字のチェックは目で見て確認するのは大変なので、<a href="http://www.hyuki.com/aozora/checker.cgi" target="_blank">ここの文字チェッカー 3.60</a>を使うようにしてください。入力が終了したときと入力ファイルを送付するときにチェックするとよいです。機種依存文字が見つかったら、<a href="#howto">外字注記辞書の使い方</a>に戻ってください。
+入力時に使えない文字のチェックは目で見て確認するのは大変なので、<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君 3.60b</a>を使うようにしてください。入力が終了したときと入力ファイルを送付するときにチェックするとよいです。機種依存文字が見つかったら、<a href="#howto">外字注記辞書の使い方</a>に戻ってください。
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
 
 <H2><a name="tyuuki">外字に関する注記</a></H2>
@@ -249,9 +255,9 @@ img.gaiji { width: 1em; height: 1em; align: top; }
          <font size="-1" color="green">《例》※［＃「てへん＋劣」、第3水準1-84-77］</font>
          </li>
          <li>第３第４水準にない漢字の注記<br><FONT color="Blue" >◎</FONT>の所には次項「【字体説明部分には何を示すのか】」を参考に字体の説明を入力<br>
-         <FONT color="Blue" >▲</FONT>の所に問題の字が使われている底本上の箇所を「<FONT color="Blue" >ページ数-行数</FONT>」の形で示し、<FONT color="Blue" >35-7</FONT>のように書いてください。<BR>
+         <FONT color="Blue" >▲</FONT>の所にユニコードと問題の字が使われている底本上の箇所を「<FONT color="Blue" >ページ数-行数</FONT>」の形で示し、<FONT color="Blue" >35-7</FONT>のように書いてください。<BR>
          「ページ数-行数」は、半角記号の「<FONT color="Blue" >-</FONT>」の前後を挟んで、半角のアラビア数字で表記します。<br>
-         <font size="-1" color="green">《例》※［＃「口＋世」、35-7］</font></li>
+         <font size="-1" color="green">《例》※［＃「口＋世」、U+546D、35-7］</font></li>
          </ul><br>
          <FONT color="Red" >＃マニュアルの確定方針を変更し、原則として、「「読み」の記載は行わない。第3第4水準にあるものは、「ページ数-行数」の記載を行わない。」ことを提案しています。</FONT><BR>
          <font size="-1"><p align="right"><a href="http://attic.neophilia.co.jp/aozora/task/annotation/" target="_blank">テキスト版の注記をどう書くか</a>の<a href="http://attic.neophilia.co.jp/aozora/task/annotation/external_character.html" target="_blank">外字に関する注記</a>からの抜粋</p></font><br>
@@ -260,8 +266,8 @@ img.gaiji { width: 1em; height: 1em; align: top; }
     <dt><a name="what">【字体説明部分には何を示すのか】</a><br><br></dt>
     <dd>
          <ol>
-         <li>JIS X 0213にあるものに関しては、底本の文字の形（Windows外字の字体）ではなく、該当する規格票の面区点位置の字体を示す。（これによって、くさかんむりの複数パターン問題が回避できる。118-21（2-89-78）をどう書くかも決まる。）</li>
-         <li>JIS X 0213にないものに関しては、底本の文字の形（Windows外字の字体）を示す。</li>
+         <li>JIS X 0213にあるものに関しては、底本の文字の形<!-- （Windows外字の字体） -->ではなく、該当する規格票の面区点位置の字体を示す。（これによって、くさかんむりの複数パターン問題が回避できる。<!-- 118-21（2-89-78）をどう書くかも決まる。 -->）</li>
+         <li>JIS X 0213にないものに関しては、底本の文字の形<!-- （Windows外字の字体） -->を示す。</li>
          </ol>
     </dd>
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
@@ -306,7 +312,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
                <li>「鬼にょう」とし、「鬼」とはしない。（にょうとして用いられる場合。）</li>
                <li>「麦にょう」「麥にょう」とし、「麦」「麥」とはしない。（にょうとして用いられる場合。）</li>
                <li>「風にょう」とし、「風」とはしない。（にょうとして用いられる場合。）</li>
-               <li>「瓜にょう」とし、「瓜」とはしない。（にょうとして用いられる場合。）</li>
+               <li>「瓜のにょうの形」とし、「瓜」とはしない。（にょうとして用いられる場合。）</li>
              </ul>
              <font color="Blue">※検討課題。<br>
             「火／火へん」「立／立へん」「王／王へん」「金／金へん」「牛／牛へん」「馬／馬へん」などに関しては、「へん」なしとする</font>
@@ -315,25 +321,25 @@ img.gaiji { width: 1em; height: 1em; align: top; }
          <li>以下に掲げたものに限っては、部分字体を名称のみで示す。
               <blockquote>   例）
              <ul>
-               <li>「ぼう」（2）</li>
-               <li>「にんべん」（9）</li>
-               <li>「りっとう」（18）</li>
-               <li>「りっしんべん」（61）</li>
-               <li>「てへん」（64）</li>
-               <li>「さんずい」（85）</li>
-               <li>「れんが」（86）　規格票2-79-56を参照して「れんが」を採用。</li>
-               <li>「けものへん」（94）</li>
-               <li>「やまいだれ」（104）</li>
-               <li>「しめすへん」（113）（旧字体の場合は、「示」とする。）</li>
-               <li>「ぐうのあし」（114）</li>
-               <li>「くさかんむり」（140）</li>
-               <li>「ころもへん」（145）</li>
-               <li>「一点しんにょう／二点しんにょう」（162）　規格票2-89-72、2-89-73を参照して、「しんにょう」を採用。</li>
-               <li>「おおざと」（163）</li>
-               <li>「こざと」（170）</li>
+               <li>「ぼう」<!-- （2） --></li>
+               <li>「にんべん」<!-- （9） --></li>
+               <li>「りっとう」<!-- （18） --></li>
+               <li>「りっしんべん」<!-- （61） --></li>
+               <li>「てへん」<!-- （64） --></li>
+               <li>「さんずい」<!-- （85） --></li>
+               <li>「れんが」<!-- （86） 　規格票2-79-56を参照して「れんが」を採用。--></li>
+               <li>「けものへん」<!-- （94） --></li>
+               <li>「やまいだれ」<!-- （104） --></li>
+               <!-- <li>「しめすへん」（113）（旧字体の場合は、「示」とする。）</li> -->
+               <li>「ぐうのあし」<!-- （114） --></li>
+               <li>「くさかんむり」<!-- （140） --></li>
+               <li>「ころもへん」<!-- （145） --></li>
+               <li>「一点しんにょう／二点しんにょう」<!-- （162）　規格票2-89-72、2-89-73を参照して、「しんにょう」を採用。 --></li>
+               <li>「おおざと」<!-- （163） --></li>
+               <li>「こざと」<!-- （170） --></li>
              </ul>
              <font color="Blue">※検討課題<br>
-             「つりばり（5）」は不採用でいきたい。形を想像できない人が多いと思われるので。<br>
+             「つりばり<!-- （5） -->」は不採用でいきたい。形を想像できない人が多いと思われるので。<br>
              「しんにょう」は、次項9.に関連して、「一点しんにょう」「二点しんにょう」と書き分ける。</font> 
              </blockquote>   
          </li>
@@ -348,10 +354,10 @@ img.gaiji { width: 1em; height: 1em; align: top; }
              </ul>
            </blockquote> 
          </li>
-         <li>1）～4）と字体説明用の記号（＋、－、／、＜）を用いても書けるが、5）を用いた方が分かりやすいと思われる際にも、5）を用いて良い。
+         <li>1）～4）と字体説明用の記号（＋、－、／、＜）を用いても書けるが、5）を用いた方が規格票を忠実に表現できる場合は、5）を用いる。
               <blockquote>   例）
              <ul>
-                <li>「馬＋（米／（夕＋ヰ））」の代わりに、「馬＋隣のつくり」と書いても良い。  </li>     
+                <li>「馬＋（米／（夕＋ヰ））」の代わりに、「「馬＋鄰のへん」と書く。  </li>     
              </ul>
            </blockquote> 
          </li>
@@ -363,11 +369,11 @@ img.gaiji { width: 1em; height: 1em; align: top; }
              </ul>
            </blockquote> 
          </li>
-         <li>1）～4）と字体説明用の記号（＋、－、／、＜）を用いても書けるが、7）を用いた方が分かりやすいと思われる際にも、7）を用いて良い。
+         <li>1）～4）と字体説明用の記号（＋、－、／、＜）を用いても書けるが、7）を用いた方が分かりやすいと思われるなら、7）を用いると良い。
               <blockquote>   例）
              <ul>
-               <li>「（臣＋又）／金」の代わりに、「堅］の「土」に代えて「金」、と書いても良い。</li>
-               <li>「穴かんむり／ム／用」の代わりに、「窓」の「心」に代えて「用」、と書いても良い。</li>
+               <li>「（臣＋又）／金」の代わりに、「「堅」の「土」に代えて「金」」のほうがわかりやすい。</li>
+               <!-- <li>「穴かんむり／ム／用」の代わりに、「窓」の「心」に代えて「用」、と書いても良い。</li> -->
              </ul>
            </blockquote> 
          </li>
@@ -384,7 +390,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
                <li>「网がしら／（厂＋（炎＋りっとう））」ではなく、「罘」の「不」に代えて「厂＋（炎＋りっとう）」、と書く。</li>
                <li>「木＋習」ではなく、「木＋褶のつくり」と書く。</li>
                <li>「さんずい＋畔」ではなく、「さんずい＋田＋絆のつくり」と書く。</li>
-               <li>「王＋連」ではなく、「王＋嗹のつくり」と書く。</li>
+               <li>「王＋連」ではなく、「王＋二点しんにょうの連」と書く。</li>
                <li>「缶＋尊」ではなく、「缶＋墫のつくり」と書く。</li>
                <li>「金＋尚」ではなく、「金＋淌のつくり」と書く。</li>
                <li>「正＋青」ではなく、「政のへん＋睛のつくり」と書く。</li>
@@ -398,7 +404,9 @@ img.gaiji { width: 1em; height: 1em; align: top; }
              <ul>
                <li>「魚＋戸の旧字」</li>
                <li>「木＋勝の旧字」</li>
-               <li>「姉の正字」</li>
+               <li>「「姉」の正字」</li>
+               <li>「「柿」の正字」</li>
+               <li>「「怱」の正字」</li>
              </ul>
             </blockquote> 
          </li>
@@ -425,7 +433,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
 <BLOCKQUOTE>
 記入例<BR>
 <HR>
-<IMG  src="fig/1_88_85.png" width="32" height="32">　「<FONT color="Blue" >※［＃「目＋争」、ページ数-行数］</FONT>」<BR>
+<IMG  src="fig/1_88_85.png" width="32" height="32">　「<FONT color="Blue" >※［＃「目＋争」」、U+7741、ページ数-行数］</FONT>」<BR>
 <IMG  src="fig/1_92_80.png" width="32" height="32">　「<FONT color="Blue" >※［＃「登＋おおざと」、第3水準1-92-80］</FONT>」<BR>
 <IMG  src="fig/1_14_84.png" width="32" height="32">　「<FONT color="Blue" >※［＃「厂＋萬」、第3水準1-14-84］</FONT>」<BR>
 <IMG  src="fig/1_92_56.png" width="32" height="32">　「<FONT color="Blue" >※［＃「二点しんにょう＋官」、第3水準1-92-56］</FONT>」<BR>
@@ -439,8 +447,8 @@ img.gaiji { width: 1em; height: 1em; align: top; }
 <HR>
 <IMG  src="fig/1_90_92.png" width="32" height="32">　「<FONT color="Blue" >※［＃「くさかんむり／宛」、第3水準1-90-92］</FONT>」<BR>
 <IMG  src="fig/1_88_64.png" width="32" height="32">　「<FONT color="Blue" >※［＃「白／十」、第3水準1-88-64］</FONT>」<BR>
-<IMG  src="fig/1_47_81.png" width="32" height="32">　「<FONT color="Blue" >※［＃「山／松」、第3水準1-47-81］</FONT>」<BR>
-<HR>
+<!-- <IMG  src="fig/1_47_81.png" width="32" height="32">　「<FONT color="Blue" >※［＃「山／（鬆－髟）」、第3水準1-47-81］</FONT>」<BR>
+ --><HR>
 </BLOCKQUOTE>
          <li>ある字体から別の部分字体をのぞく場合は、「<FONT color="Blue" >－</FONT>」を用いてください。<BR>
          <font size="-1">《例》「辛」を表現する際には、「<FONT color="Blue" >梓－木</FONT>」と書きます。<BR></font>
@@ -479,7 +487,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
 </BLOCKQUOTE>
          <li>「<FONT color="Blue" >＋</FONT>」や「<FONT color="Blue" >／</FONT>」や「<FONT color="Blue" >＜</FONT>」で表しにくい場合には、つぎのように説明してもかまいません。<BR>
 
-         <font size="-1">《例》「<FONT color="Blue" >「糾」の「糸」に代えて「虫」</FONT>」</font>
+         <font size="-1">《例》「<FONT color="Blue" >「阜」の「十」に代えて「虫」</FONT>」</font>
          </li>
          </ol>
 <br><br>
@@ -490,14 +498,14 @@ img.gaiji { width: 1em; height: 1em; align: top; }
 <BLOCKQUOTE>
 記入例<BR>
 <HR>
-<IMG  src="fig/1_85_57.png" width="32" height="32">「<FONT color="Blue" >※［＃「木＋（「第－竹」の「コ」に代えて「ノ」）、「柿」の正字、第3水準1-85-57］</FONT>」<BR>
-<IMG  src="fig/0212_2529.png" width="32" height="32">「<FONT color="Blue" >※［＃「女＋（「第－竹」の「コ」に代えて「ノ」）、「姉」の正字」、ページ数-行数］</FONT>」<BR>
+<IMG  src="fig/1_85_57.png" width="32" height="32">「<FONT color="Blue" >※［＃「木＋（「第－竹」の「コ」に代えて「丿」）、「柿」の正字」、第3水準1-85-57］</FONT>」<BR>
+<IMG  src="fig/0212_2529.png" width="32" height="32">「<FONT color="Blue" >※［＃「女＋（「第－竹」の「コ」に代えて「丿」）、「姉」の正字」、U+59CA、ページ数-行数］</FONT>」<BR>
 <HR>
 </BLOCKQUOTE>
          </li>
-         <li>字体の説明に用いるへんやつくりは、「木」、「門」のように、できるだけ簡潔に書いてください。<BR><BR></li>
+<!--          <li>字体の説明に用いるへんやつくりは、「木」、「門」のように、できるだけ簡潔に書いてください。<BR><BR></li>
          <li>詳しくは<a href="#tyuuki">外字に関する注記</a>を参考にしてください</li>
-         </ol>
+ -->         </ol>
          <font size="-1"><p align="right"><a href="http://attic.neophilia.co.jp/aozora/task/annotation/" target="_blank">テキスト版の注記をどう書くか</a>の<a href="http://attic.neophilia.co.jp/aozora/task/annotation/external_character.html" target="_blank">外字に関する注記</a>からの抜粋</p></font>
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
    </dd>
@@ -539,7 +547,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
 
 </li>
          <li>今まで青空文庫に出現した特殊な仮名や記号は、外字注記辞書に載せていますので<a href="#howto">外字注記辞書の使い方</a>を参照して下さい。<BR><BR></li>
-         <li>「外字注記辞書」に無い場合は、鈴木厚司さんによる<A  href="http://www.sky.sannet.ne.jp/at-sushi/aozora/not_kanji/"TARGET="_BLANK">「非漢字一覧（JIS X 0213）」</A>を参考に字体を表現してみてその旨を入力ファイルを送付するときにメールにメモしてくださるとうれしいです。</li>
+         <!-- <li>「外字注記辞書」に無い場合は、鈴木厚司さんによる<A  href="http://www.sky.sannet.ne.jp/at-sushi/aozora/not_kanji/"TARGET="_BLANK">「非漢字一覧（JIS X 0213）」</A>を参考に字体を表現してみてその旨を入力ファイルを送付するときにメールにメモしてくださるとうれしいです。</li> -->
          </ol>
          <font size="-1"><p align="right"><a href="http://attic.neophilia.co.jp/aozora/task/annotation/" target="_blank">テキスト版の注記をどう書くか</a>の<a href="http://attic.neophilia.co.jp/aozora/task/annotation/external_character.html" target="_blank">外字に関する注記</a>からの抜粋</p></font>
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
@@ -561,7 +569,7 @@ img.gaiji { width: 1em; height: 1em; align: top; }
 
          <ol>
          <li>今まで青空文庫に出現したアクセント符号付きのラテン・アルファベットは、外字注記辞書に載せていますので<a href="#howto">外字注記辞書の使い方</a>を参照して下さい。<BR><BR></li>
-         <li>「外字注記辞書」に無い場合は、考案者である山本有二さんの「<a href="http://purl.com/cosmos/tools/acc-conv-j.htm" target="_blank">アクセント付き文字の変換表</a>」を参考に字体を表現してみてその旨を入力ファイルを送付するときにメールにメモしてくださるとうれしいです。<BR><BR></li>
+         <li>「外字注記辞書」に無い場合は、考案者である山本有二さんの「<a href="http://purl.com/cosmos/tools/acc-conv-j.htm" target="_blank">アクセント付き文字の変換表</a>」を参考に字体を表現してみてその旨を入力ファイルを送付するときにメールにメモしてください。<BR><BR></li>
          <li>「raffine」という語の「e」にアクサンテギュ（´）が付いている場合は、「変換表」で e の小文字をあたります。<BR><BR></li>
          <li>「233」の「アキュートアクセント付きE小文字」の欄に、表記法「<FONT color="Blue" >e'</FONT>」が示してあります。<BR><BR></li>
          <li>これを用いて、問題の語は「<FONT color="Blue" >raffine'</FONT>」と書きます。</li>
@@ -610,7 +618,7 @@ presqu'〔i^〕le<BR>
 	</tr>
 </table>
 </BLOCKQUOTE></li>
-         <li>鈴木厚司さんによる<A  href="http://www.sky.sannet.ne.jp/at-sushi/aozora/accent.html" TARGET="_TOP">「アクセント分解の表記例」</A>に具体的な例があります。</li>
+         <!-- <li>鈴木厚司さんによる<A  href="http://www.sky.sannet.ne.jp/at-sushi/aozora/accent.html" TARGET="_TOP">「アクセント分解の表記例」</A>に具体的な例があります。</li> -->
          </ul>
          <font size="-1"><p align="right"><a href="http://attic.neophilia.co.jp/aozora/task/annotation/" target="_blank">テキスト版の注記をどう書くか</a>の<a href="http://attic.neophilia.co.jp/aozora/task/annotation/external_character.html" target="_blank">外字に関する注記</a>からの抜粋</p></font>
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
@@ -630,23 +638,38 @@ presqu'〔i^〕le<BR>
 （例）<br>
 <br>
 ｜：ルビの付く文字列の始まりを特定する記号<br>
-
 （例）<br>
 <br>
 ［＃］：入力者注　主に外字の説明や、傍点の位置の指定<br>
-　　　（数字は、JIS X 0213の面区点番号、または底本のページと行数）<br>
+　　　（数字は、JIS X 0213の面区点番号またはUnicode、底本のページと行数）<br>
 （例）<br>
 <br>
 ／＼：二倍の踊り字（「く」を縦に長くしたような形の繰り返し記号）<br>
 （例）<br>
 ＊濁点付きの二倍の踊り字は「／″＼」<br>
 <br>
-
 〔〕：アクセント分解された欧文をかこむ<br>
 （例）<br>
 アクセント分解についての詳細は下記URLを参照してください<br>
-http://aozora.gr.jp/accent_separation.html<br>
--------------------------------------------------------
+http://www.aozora.gr.jp/accent_separation.html<br>
+-------------------------------------------------------<br>
+    </dd><br><br>
+    <dt><a name="topmemo">【青空文庫収録ファイルへの記載事項】の基本パターン</a><br><br></dt>
+    <dd>
+以下のブロックを、コピー＆ペーストして、テキストの末尾に置いてください。<br>
+<br>
+底本：「書名」出版社名<br>
+　　　YYYY（ＧＧYY）年MM月DD日初版発行<br>
+　　　YYYY（ＧＧYY）年MM月DD日NN刷<br>
+底本の親本：「書名」出版社名<br>
+　　　YYYY（ＧＧYY）年MM月DD日初版発行<br>
+初出：「雑誌名、新聞紙名」発行所名<br>
+　　　YYYY（ＧＧYY）年MM月DD日<br>
+入力：<br>
+校正：<br>
+YYYY年MM月DD日作成<br>
+青空文庫作成ファイル：<br>
+このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<br>
 <font size="-1"><p align="right"><a href="#mokuji">目次に戻る</a></p></font>
     </dd>
 </dl>

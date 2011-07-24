@@ -4,24 +4,32 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 	<title>青空文庫・外字注記辞書</title>
 </head>
-<body bgcolor="lightgreen">
+<body bgcolor="#F0FFFF">
 <basefont size="3">
-<p align="center"><b><font size="+3">青空文庫・外字注記辞書</font><font color="#006600" size="+1">【第七版】</font></b></p>
+<p align="center"><b><font size="+3">青空文庫・外字注記辞書</font><font color="#006600" size="+1">【第八版】</font></b></p>
 <p align="right">
 2003年10月10日：作成<br>
 2007年7月7日：改訂第五版発行<br>
 2007年11月7日：改訂第六版発行<br>
 2008年2月4日：改訂第七版発行<br>
+2011年7月25日：改訂第八版発行<br>
 青空文庫外字注記辞書編集グループ：作成<br>
 </p>
 
 <table align="center">
-<tr align="center"><td><a name="mokuji">目次</a><td><tr>
+<tr><td><a name="mokuji">目次</a><td><tr>
 <tr>
 <td>
 <a href="#howto">外字注記辞書の使い方</a><br>
-<a href="#kaitei">改訂内容</a><br>
-<a href="#download">ダウンロード</a><br>
+<dl><a href="#kaitei">改訂内容</a>
+	<dt></dt>
+	<dd><a href="#kaitei8">第八版　改訂内容</dd>
+	<dd><a href="#kaitei7">第七版　改訂内容</dd>
+	<dd><a href="#kaitei6">第六版　改訂内容</dd>
+	<dd><a href="#kaitei5">第五版　改訂内容</dd>
+	<dd><a href="#kaitei4">第四版　改訂内容</dd>
+</dl>
+<a href="#download">ダウンロード</a><br><br>
 <a href="syokai/gaiji_manual.html" target="_blank">外字注記辞書編纂プロジェクトの紹介</a><br>
 </td>
 </tr>
@@ -31,16 +39,23 @@
     <dt><a name="howto"><h3>外字注記辞書の使い方</h3></a></dt>
     <dd>
           <ul>
-          	<li>第3水準、第4水準の漢字に加えてJIS X 0212 (補助漢字)の漢字の外字注記を一覧にしてあります。部首索引で調べることができます。</li>
           	<li><b><font size="+1">黒字の所</font></b>をコピーして貼付けてください。
               <ul>
               <li>「外字注記辞書」で「※［＃「・・・」、第・水準・・・］」となっていたら※から］の間をすべて入力</li>
               <li>「外字注記辞書」で「→［包摂適用　■］」となっていたら、「■」で入れる</li>
-              <li>「外字注記辞書」で「→［78互換包摂　●］」となっていたら「●」で入れる</li>
+              <li>「外字注記辞書」で「→［統合適用　■］」となっていたら、「■」で入れる</li>
+              <li>「外字注記辞書」で「→［デザイン差　■］」となっていたら、「■」で入れる</li>
+              <li>「外字注記辞書」で「→［78互換包摂　■］」となっていたら「■」で入れる</li>
               </ul>
           	</li>
-	        <li><a href="http://www.aozora.gr.jp/hosetsu_kijyun/0213-6.6.3.2.-hyou.html" target="_blank">JIS X 0213 の包摂規準</a>に従って、包摂される文字は赤でしめし、包摂する文字（入力のさいに代用していい字）を黒色で添えました。</li>
-	        <li>JIS X 0208と0213の規格票の部首分類にはそわないけれど、部首の見当を付ける際、思い浮かべる可能性が高いと思われるものに灰色の<font color="#888888">★</font>をつけました。</li>
+<li>JIS X 0213 の包摂規準に従って、包摂される文字は<span style="color: #FF0000;">赤</span>でしめし、包摂する文字（入力のさいに代用していい字）を黒色で添えました。<br>
+ただし、<span style="color: #00CC00;">緑の字</span>はJIS X 0213:2004で例示字形が変更されたものです。そのため「→［包摂適用　……］」の「……」にあたる文字をコピーして貼り付けたとき「緑の字体」になる場合があります。<br>
+<span style="color: #66CCFF;">水色の字</span>はJIS X 0213:2004で新たに追加されたものです。<br>
+さらに、「JIS X 0213規格票、包摂関連項目（6.6.3.2-本文）」の包摂規準の番号を付加しています。</li>
+<li>青空文庫入力作業で出現した「JIS X 0208」にも「JIS X 0213」<!-- にも「JIS X 0212」 -->にもない漢字を「<a href="http://www.unicode.org/" target="_blank">ユニコード・コンソーシアム</a>」が提供している「<a href="http://www.unicode.org/charts/unihan.html" target="_blank">Unihanデータベース</a>」の部首分類に従い追加し、外字注記部分にUnicodeを16進で追加しました。ただし、外字注記中の字体表現は、底本に出現した形で行いました。</li>
+<li>「<a href="http://appsrv.cse.cuhk.edu.hk/~irg/irgwds.html" target="_blank">Series 1:List of UCV (Unifiable Component Variations) of Ideograhs</a>」の統合規準に従って、統合される文字は<span style="color: #FF0000;">赤</span>でしめし、統合する文字（入力のさいに代用していい字）を黒色で添えました。<br>
+さらに、「Series 1:List of UCV (Unifiable Component Variations) of Ideograhs」の統合規準の番号を「UCV番号」の形式で付加しています。</li>
+<li>「JIS X 0208」「0213の規格票」「Unihanデータベース」の部首分類にそわないけれど、部首の見当を付ける際、思い浮かべる可能性が高いと思われるものに灰色の<font color="#888888">★</font>をつけ本来部首以外の所にも追加しました。</li>
           </ul><br>
     </dd> 
     <dt><h3>外字注記辞書編纂プロジェクトでつかうソフト</h3></dt>
@@ -49,13 +64,20 @@
     <dt><h3>参照資料</h3></dt>
     <dd>
         <ul>
-		<li>2004年5月24日現在までの作品を対象に、宮地一郎さんが検索してリストアップした外字注記抽出データ</li>
-		<li><a href="http://sumomo.sakura.ne.jp/~aozora/gaiji/gaiji0208/mokuji.html" target="_blank">「0208 外字の出現状況」</a><font size="-1">http://sumomo.sakura.ne.jp/~aozora/gaiji/gaiji0208/mokuji.html</font></li>
-		<li><a href="http://www.sumomo.sakura.ne.jp/~aozora/jisx0213/0213tools/" target="_blank">青空文庫「新 JIS 漢字総合索引　面区点番号付き（2004年5月5日版）」</a><font size="-1">http://www.sumomo.sakura.ne.jp/~aozora/jisx0213/0213tools/</font></li>
-		<li><a href="http://www.aozora.gr.jp/gaiji0213/kigou.html" target="_blank">「外字記号」</A><font size="-1">http://www.aozora.gr.jp/gaiji0213/kigou.html</font></li>
-		<li><a href="http://www28.atwiki.jp/poorbook99/pages/1.html" target="_blank">「第五αwiki版プロジェクト・ヒナちゃん」</a><font size="-1">http://www28.atwiki.jp/poorbook99/pages/1.html</font></li>
-		<li><a href="http://unicode.org/Public/MAPPINGS/OBSOLETE/EASTASIA/JIS/JIS0212.TXT" target="_blank">JIS0212.TXT</a></li>
-        </ul>を用いました。
+        <li>2004年5月24日現在までの作品を対象に、宮地一郎さんが検索してリストアップした外字注記抽出データ</li>
+        <li><a href="http://sumomo.sakura.ne.jp/~aozora/gaiji/gaiji0208/mokuji.html" target="_blank">「0208 外字の出現状況」</a></li>
+        <li><a href="http://www.sumomo.sakura.ne.jp/~aozora/jisx0213/0213tools/" target="_blank">青空文庫「新 JIS 漢字総合索引　面区点番号付き（2004年5月5日版）」</a></li>
+        <li><a href="http://www.aozora.gr.jp/gaiji0213/kigou.html" target="_blank">「外字記号」</a></li>
+        <li><a href="http://www28.atwiki.jp/poorbook99/pages/1.html" target="_blank">「第五αwiki版プロジェクト・ヒナちゃん」</a></li>
+        <li><a href="http://unicode.org/Public/MAPPINGS/OBSOLETE/EASTASIA/JIS/JIS0212.TXT" target="_blank">JIS0212.TXT</a></li>
+        <li><a href="http://www.aozora.gr.jp/hosetsu_kijyun/index.html" target="_blank">（JIS X 0208と0213規格票の包摂関連項目）</a>の下のほうにある<a href="http://www.aozora.gr.jp/hosetsu_kijyun/hosetsu_kijyun.zip" target="_blank">ここ</a>（「JIS X 0213規格表」と略記）</li>
+        <li><a href="http://appsrv.cse.cuhk.edu.hk/~irg/irgwds.html" target="_blank">Series 1:List of UCV (Unifiable Component Variations) of Ideograhs</a>」（「UCV」と略記）</li>
+        <li><a href="http://www.unicode.org/charts/" target="_blank">Unicode 6.0 Character Code Charts</a></li>
+        <li><a href="http://www.sakamura-lab.org/FONT/" target="_blank">T-Font (C) Sakamura-Koshizuka Laboratory, The University of Tokyo </a>をつかわせていただきました。</li>
+        <li><a href="http://www.ipa.go.jp/" target="_blank">IPAフォント Information-technology Promotion Agency, Japan.</a>をつかわせていただきました。</li>
+        <li><a href="http://wqy.sourceforge.net/en/" target="_blank">WenQuanYi outline fonts Wen Quan Yi Wiki-OpenSource Chinese: Home</a>をつかわせていただきました。</li>
+        <li><a href="http://www.freedesktop.org/wiki/Software/CJKUnifonts" target="_blank">CJK-Unifonts freedesktop.org-Software/CJKUnifonts</a>をつかわせていただきました。</li>
+        </ul>
      </dd>
 </dl>
 <p align="right"><a href="#mokuji">目次に戻る</a></p>
@@ -63,7 +85,195 @@
 
 <a name="kaitei">
 <dl>
-    <dt><h4>第七版　改訂内容</h4></dt>
+    <dt><h4><a name="kaitei8">第八版　改訂内容</h4></dt>
+    <dd>
+         <ul>
+        <li>「第3水準、第4水準の漢字（JIS X 0213）」は、これまで通り、面区点番号をそえ、外字注記中の字体表現は規格票の例示字体をなぞる形で行います。</li>
+        <li>「第3水準、第4水準以外の<!-- JIS -->漢字<!-- （JIS X 0212の一部）（補助のみとメモされている漢字） -->」は、注記部分にUnicodeを下記のように16進で追加し、外字注記中の字体表現は<!-- これまで通り規格票の例示字体をなぞる形 -->底本に出現した形で行います。
+          <dl>
+               <dt></dt>
+               <dd>変更前：※［＃「口＋世」、ページ数-行数］</dd>
+               <dd>変更後：※［＃「口＋世」、U+546D、ページ数-行数］</dd>
+          </dl></li>
+        <li>青空文庫入力作業で出現した「JIS X 0213」に<!-- も「JIS X 0212」にも -->ない漢字を「<a href="http://www.unicode.org/" target="_blank">ユニコード・コンソーシアム</a>」が提供している「<a href="http://www.unicode.org/charts/unihan.html" target="_blank">Unihanデータベース</a>」の部首分類に従い追加しました。また、外字注記部分にUnicodeを16進で追加しました。ただし、外字注記中の字体表現は、底本に出現した形で行いました。追加にあたって「Unihanデータベース」の例示字体と異なるときは次の手順でUnicodeを確認しました。</li>
+             <ol>
+             <li>「<a href="http://www.aozora.gr.jp/hosetsu_kijyun/index.html" target="_blank">JIS X 0208と0213規格票の包摂関連項目</a>」（以下「JIS X 0213規格表」と略記）で「JIS X 0208」や「JIS X 0213」に包摂適用されるか確認
+             <li>「<a href="http://appsrv.cse.cuhk.edu.hk/~irg/irgwds.html" target="_blank">Series 1:List of UCV (Unifiable Component Variations) of Ideograhs</a>」（以下「UCV」と略記）で「JIS X 0208」や「JIS X 0213」に統合適用されるか確認
+             <li>「JIS X 0213規格表」、「UCV」で「JIS X 0208」や「JIS X 0213」に包摂あるいは統合されないとき、「<a href="http://www.unicode.org/charts/" target="_blank">Unicode 6.0 Character Code Charts</a>から取得できる下記の例示字体一覧（以下「unicode例示字体」と略記）」に底本に出現した字体があれば、そのUnicodeを16進で外字注記部分に追加
+                   <table>
+                     <tr><td>CJK統合漢字（CJK Unified Ideographs ）</td><td>（4E00～9FBF）</td><td>（U4E00.pdf）</td></tr>
+                     <tr><td>CJK統合漢字拡張A（CJK Unified Ideographs Extension A）</td><td>（3400～4DBF）</td><td>（U3400.pdf）</td></tr>
+                     <tr><td>CJK統合漢字拡張B（CJK Unified Ideographs Extension B）</td><td>（20000～2A6DF）</td><td>（U20000.pdf）</td></tr>
+                     <tr><td>CJK統合漢字拡張C（CJK Unified Ideographs Extension C）</td><td>（2A700～2B73F）</td><td>（U2A700.pdf）</td></tr>
+                     <tr><td>CJK統合漢字拡張D（CJK Unified Ideographs Extension D）</td><td>（2B740～2B81F）</td><td>（U2B740.pdf）</td></tr>
+                     <tr><td>CJK互換漢字（CJK Compatibility Ideographs ）</td><td>（F900～FAFF）</td><td>（UF900.pdf）</td></tr>
+                     <tr><td>CJK互換漢字補助（CJK Compatibility Ideographs Supplement）</td><td>（2F800～2FA1D）</td><td>（U2F800.pdf）</td></tr>
+                   </table>
+             <li>
+                   <ul>
+                   <li>「JIS X 0213規格表」、「UCV」で「JIS X 0208」や「JIS X 0213」に包摂あるいは統合されず、「unicode例示字体」の一覧にも一致しないとき、「UCV」の統合適用で「unicode例示字体」の一覧にあれば、そのUnicodeを16進で外字注記部分に追加、判断基準に用いた「UCV」の番号をメモする。
+                   <li>「CJK互換漢字補助（CJK Compatibility Ideographs Supplement）（2F800～2FA1D）（U2F800.pdf）」にあった場合、統合元のコードをもつ漢字も列記する。
+                   <li>「3.」の「CJK互換漢字補助（CJK Compatibility Ideographs Supplement）（2F800～2FA1D）（U2F800.pdf）」に底本の字体があるが、「1.」の包摂適用で「JIS X 0208」に包摂されたものは下記の１つです。
+          <dl>
+               <dt></dt>
+               <dd>※［＃「日／俛のつくり」］→［包摂適用　冕］（U+2F8D3）</dd>
+          </dl></li>
+                   <li>「3.」の「CJK互換漢字補助（CJK Compatibility Ideographs Supplement）（2F800～2FA1D）（U2F800.pdf）」に底本の字体があったため、「4.」の統合適用で統合元のコードを外字注記部分に追加せず「CJK互換漢字補助（CJK Compatibility Ideographs Supplement）（2F800～2FA1D）（U2F800.pdf）」のコードを外字注記部分に追加したものは下記の４つです。
+          <dl>
+               <dt></dt>
+               <dd>
+               <table>
+                         <tr><td>※［＃「りっしんべん＋僭のつくり」、U+2F8AE］</td><td>※［＃「りっしんべん＋（簪－竹かんむり）」、U+61AF］</td><td>UCV213</td></tr>
+                         <tr><td>※［＃「禾＋皀＋旡」、U+2F95A］</td><td>※［＃「禾＋既」、U+7A4A］</td><td>UCV355</td></tr>
+                         <tr><td>※［＃「走にょう＋兪」、U+2F9D8］</td><td>※［＃「走にょう＋愉のつくり」、U+27F2F］</td><td>UCV384</td></tr>
+                         <tr><td>※［＃「餠のつくり＋おおざと」、U+2F9E3］</td><td>※［＃「并＋おおざと」、U+90F1］</td><td>UCV181</td></tr>
+               </table>
+               </dd>
+          </dl></li>
+                   </ul>
+             <li>以上の作業で見つからなかった場合はUnicodeは追加しない。
+             </ol>
+        <li>「JIS X 0208」と「JIS X 0213」の例示字体とは異なるけれど、「JIS X 0213 規格表」の包摂規準を適用したものは、次のとおりです。
+          <dl>
+               <dt></dt>
+               <dd>※［＃「匕／（匕＋匕）」］→［包摂適用　※［＃「七／（七＋七）」、第3水準1-14-3］］　78</dd>
+               <dd><img src="000057.gif" width="16" height="16">→［包摂適用　※［＃「七／（七＋七）」、第3水準1-14-3］］　78</dd>
+               <dd>※［＃「日／咎」の「人」に代えて「占－口」］→［包摂適用　※［＃「日／咎」、第3水準1-85-32］］　187</dd>
+               <dd>※［＃「將」の「爿」に代えて「将のへん」］→［包摂適用　将］　192</dd>
+               <dd>※［＃「浮のつくり」］→［包摂適用　孚］　21</dd>
+               <dd>※［＃「茲／子」］→［包摂適用　孳］　83</dd>
+               <dd>※［＃「广＋黄」］→［包摂適用　廣］　141</dd>
+               <dd>※［＃「録のつくり」］→［包摂適用　※［＃「碌のつくり」、第3水準1-84-27］］　167</dd>
+               <dd>※［＃「りっしんべん＋温のつくり」］→［包摂適用　慍］　147</dd>
+               <dd>※［＃「月＋温のつくり」］→［包摂適用　膃］　147</dd>
+               <dd>※［＃「さんずい＋并」］→［包摂適用　※［＃「さんずい＋餠のつくり」、第4水準2-78-69］］　97</dd>
+               <dd>※［＃「さんずい＋墨」］→［包摂適用　※［＃「さんずい＋（壥－土へん－厂）」、第3水準1-87-25］］　99</dd>
+               <dd>※［＃「日／免」］→［包摂適用　冕］　68、102</dd>
+          </dl></li>
+        <li>「JIS X 0208」と「JIS X 0213」の例示字体とは異なるけれど、「UCV」で統合適用となった漢字は次のとおりです。
+          <dl>
+               <dt></dt>
+               <dd>※［＃「さんずい＋賣」］→［統合適用　※［＃「さんずい＋續のつくり」、第3水準1-87-29］］　UCV227</dd>
+               <dd>※［＃「目＋丐」］→［統合適用　眄］　UCV326</dd>
+               <dd>※［＃「諛のつくり」］→［統合適用　臾］　UCV168</dd>
+               <dd>※［＃「荒」の「亡」に代えて「曷－日－勹」］→［統合適用　荒］　UCV350</dd>
+               <dd>※［＃「言＋臾」］→［統合適用　諛］　UCV173</dd>
+               <dd>※［＃「言＋荒」の「亡」に代えて「曷－日－勹」］→［統合適用　※［＃「言＋荒」の「亡」に代えて「氓のへん」、第4水準2-88-68］］　UCV350</dd>
+               <dd>※［＃「赤＋報のつくり」］→［統合適用　赧］　UCV125</dd>
+               <dd>※［＃「過」の「咼」に代えて「咼の左右対称」］→［統合適用　過］　UCV338</dd>
+               <dd>※［＃「鰐」の「夸－大」に代えて「汚のつくり」］→［統合適用　鰐］　UCV93</dd>
+               <dd>※［＃「渓のつくり＋鳥」の「夫」に代えて「缶」］→［統合適用　鷂］　UCV375</dd>
+               <dd>※［＃「寉＋鳥」］→［統合適用　鶴］　UCV304</dd>
+               <dd>※［＃「广＋黄」の「由」に代えて「田」］→［統合適用　廣］　UCV299</dd>
+               <dd>※［＃「廣」の「由」に代えて「田」］→［統合適用　廣］　UCV299</dd>
+               <dd>※［＃「髟／丐」、U+29B06、ページ数-行数］→［統合適用　※［＃「髟／眄のつくり」、第4水準2-93-21］］　UCV326</dd>
+<!--
+               <dd>\CID{14251} 　→［統合適用　邉］　UCV273、UCV236</dd>
+               <dd>\CID{14245} 　→［統合適用　邉］　UCV273、UCV236</dd>
+               <dd>\CID{14252} 　→［統合適用　邉］　UCV273、UCV236</dd>
+               <dd>\CID{14250} 　→［統合適用　邉］　UCV273、UCV236</dd>
+               <dd>\CID{14246} 　→［統合適用　邉］　UCV273、UCV236</dd>
+               <dd>\CID{14240} 　→［統合適用　邊］　UCV273、UCV222</dd>
+               <dd>\CID{14086} 　→［統合適用　龍］　UCV65</dd>
+               <dd>\CID{13911} 　→［統合適用　瀧］　UCV65</dd>
+ -->          </dl></li>
+        <li>「UCV」によって、「JIS X 0213」に差し戻された漢字が、「78互換包摂」の対象となる場合には、「78互換包摂は本来、過去の規格改正時の誤りを収束させるために、やむを得ず設けられたもの。」との理解に基づいて、「JIS X 0213」の面区点を外字注記するにとどめ、「78互換包摂」を適用して「JIS X 0208」の面区点位置にまで戻ることはしません。
+          <dl>
+               <dt></dt>
+               <dd>
+               たとえば「※［＃「さんずい＋賣」］」は、「UCV227」を適用して、「※［＃「さんずい＋續のつくり」、第3水準1-87-29］」と外字注記で入力します。さらに「78互換包摂」を適用して「涜」で入力はしません。
+               </dd>
+          </dl></li>
+        <li>「第六版　改訂」でデザイン差に付加した番号を「UCV」の番号に変更しました。「JIS X 0213規格表」の包摂規準の番号と混同しないように頭に「UCV」をつけました。また、「包摂適用」の部分を「デザイン差」に変更しました。<br>
+        <img src="tuika_no2.gif" width="382" height="120">
+<!--          <dl>
+               <dt></dt>
+               <dd>
+                   <table>
+                     <tr><td>UCV62</td><td>200</td><td>\CID{13812}と主</td></tr>
+                     <tr><td>UCV235</td><td>201</td><td>\CID{13439}と交のちがいに代表されるちがい</td></tr>
+                     <tr><td>UCV236</td><td>202</td><td>八と{\gtfamily\CID{20079}}</td></tr>
+                     <tr><td>UCV62</td><td>203</td><td>「餮－殄」と食</td></tr>
+                     <tr><td>UCV62</td><td>204</td><td>「立の一画目が一」と立</td></tr>
+                   </table>
+               </dd>
+          </dl> --></li>
+        <li>今後の運用にあたって、底本の文字が、外字注記辞書に記載されたものと異なる場合は、青空文庫外字注記辞書編集グループで、当該作品における字体表現を協議し、辞書へ追記していきます。
+        <li>「<a href="http://www.unicode.org/charts/unihan.html" target="_blank">Unihanデータベース</a>」の部首分類にそわないけれど、部首の見当を付ける際、思い浮かべる可能性が高いと思われるものに灰色の<font color="#888888">★</font>をつけ本来部首以外の所にも追加しました。
+        <li>目次の文言を変更しました。
+          <dl>
+               <dt></dt>
+               <dd>「アルファベット・発音記号」→「アクセント付きラテン文字（アクセント分解）」</dd>
+               <dd>「音声記号付きアルファベット（半角ラテン文字）」→「アクセント付きラテン文字（アクセント分解以外）」</dd>
+               <dd>「ギリシア文字」→そのまま</dd>
+               <dd>「音声記号付きギリシア文字（全角文字）」→「ダイアクリティカルマーク付きギリシア文字」</dd>
+          </dl></li>
+        <li>下記の項目に文字別のインデックスを追加し、ユニコードも付加しました。
+          <dl>
+               <dt></dt>
+               <dd>「アクセント付きラテン文字（アクセント分解）」</dd>
+               <dd>「アクセント付きラテン文字（アクセント分解以外）」</dd>
+               <dd>「ダイアクリティカルマーク付きギリシア文字」</dd>
+          </dl></li>
+        <li>つぎの部首については、第五版で独立させてましたが、まとめました。
+          <dl>
+               <dt></dt>
+               <dd>
+                   <table>
+                     <tr><td>て【手】</td><td>てへん【&#x2E98;】</td></tr>
+                     <tr><td>こころ【心 &#x2E97;】</td><td>りっしんべん【&#x2E96;】</td></tr>
+                     <tr><td>いぬ【犬】</td><td>けもの【&#x2EA8;】</td></tr>
+                     <tr><td>ころも【衣】</td><td>ころもへん【&#x2EC2;】</td></tr>
+                     <tr><td>かたな【刀】</td><td>りっとう【&#x2E89;】</td></tr>
+                     <tr><td>さんずい【&#x2EA1;】</td><td>みず【水】</td></tr>
+                   </table>
+               </dd>
+          </dl></li>
+        <li>つぎの部首については、今まで独立させてましたが、まとめました。
+          <dl>
+               <dt></dt>
+               <dd>
+                   <table>
+                     <tr><td>れんが【 &#x2EA3;】</td><td>ひ【火】</td></tr>
+                     <tr><td>にく【肉】</td><td>つき・にくづき【月】</td></tr>
+                   </table>
+               </dd>
+          </dl></li>
+        <li>「準仮名・漢字」に変体仮名を追加しました。
+        <li>「&#139800;」を部首「广」以外に部首「鹿」にも追加し、注記部分の文言を変更しました。
+          <dl>
+               <dt></dt>
+               <dd>※［＃「（鹿－比）の、縦画二本を下に延ばし、左右にはらいを添える」、第4水準2-94-51］</dd>
+               <dd>↓</dd>
+               <dd>※［＃「廉－（朔のへん－屮）」の「帚－冖－巾」に代えて「コ」、第4水準2-94-51］</dd>
+          </dl></li>
+        <li>「巨」と「<img src="010998.gif" width="16" height="16">」を同一視していましたが、「JIS X 0213」<!-- 及び「JIS X 0212」 -->の外字注記中の字体表現は規格票の例示字体をなぞる形で行いますので、区別して注記しました。あわせて、これを部分字体とする「JIS X 0213」以外の漢字を底本であたり直し、一部の字体表現を改めました。該当する漢字は下記の13個です。なお、「秬」はフォントによっては「禾＋巨」になりますが、他に表現方法がないため、規格票の例示字体は「<img src="032211.gif" width="16" height="16">」ですので使うことにしました。
+          <dl>
+               <dt></dt>
+               <dd><img src="000621.gif" width="16" height="16"> ※［＃「にんべん＋秬のつくり」、U+4F62、ページ数-行数］</dd>
+               <dd>&#x5946; ※［＃「大／秬のつくり」、第4水準2-5-34］</dd>
+               <dd>&#x5CA0; ※［＃「山＋秬のつくり」、第4水準2-8-33］</dd>
+               <dd>&#x5F21; ※［＃「弓＋秬のつくり」、U+5F21、ページ数-行数］</dd>
+               <dd>&#x6007; ※［＃「りっしんべん＋秬のつくり」、U+6007、ページ数-行数］</dd>
+               <dd>&#x67DC; ※［＃「木＋秬のつくり」、U+67DC、ページ数-行数］</dd>
+               <dd>&#x6B6B; ※［＃「此のへん＋秬のつくり」、U+6B6B、ページ数-行数］</dd>
+               <dd>&#x715A; ※［＃「（日＋秬のつくり）／火」、U+715A、ページ数-行数］</dd>
+               <dd>&#x7C94; ※［＃「米＋秬のつくり」、第3水準1-89-83］</dd>
+               <dd>&#x801F; ※［＃「耒＋秬のつくり」、U+801F、ページ数-行数］</dd>
+               <dd>&#x86B7; ※［＃「虫＋秬のつくり」、U+86B7、ページ数-行数］</dd>
+               <dd>&#x8A4E; ※［＃「言＋秬のつくり」、第3水準1-92-4］</dd>
+               <dd>&#x9B94; ※［＃「魚＋秬のつくり」、U+9B94、ページ数-行数］</dd>
+          </dl></li>
+        <li>「均」がフォントによって「土へん＋勹＜冫」になったり「土へん＋鈞のつくり」になったりするため、外字注記に用いることをやめました。規格票の例示字体をなぞる形で注記するにあたり該当するものは下記の一つです。
+          <dl>
+               <dt></dt>
+               <dd>&#x92C6; ※［＃「均／金」の「鈞のつくり」に代えて「勹＜二」、第4水準2-90-86］</dd>
+               <dd>↓</dd>
+               <dd>&#x92C6; ※［＃「（土へん＋勹＜二）／金」、第4水準2-90-86］</dd>
+          </dl></li>
+        </ul>
+    </dd> 
+    <dt><h4><a name="kaitei7">第七版　改訂内容</h4></dt>
     <dd>
           <ul>
           	<li>音声記号付きアルファベット（半角ラテン文字）のチルダ付きの入力文字の「~」が消えていたので修正</li>
@@ -73,6 +283,9 @@
           	<li>※［＃「獵のつくり」、ページ数-行数］u908B 補助のみ----->※［＃「二点しんにょう＋鑞のつくり」、ページ数-行数］u908B 補助のみ</li>
           	<li>※［＃「こざとへん＋瑣のつくり」］→［包摂適用　隙］　137----->※［＃「隙」の「小」に代えて「少」］→［包摂適用　隙］　137</li>
           	<li>JISにない漢字表現を新しく２９個追加
+          <dl>
+               <dt></dt>
+               <dd>
          <table>
 	         <tr><td>おおがい7． </td><td>※［＃「りっしんべん＋頼」、ページ数-行数］</td></tr>
 	         <tr><td>さかな7． </td><td>※［＃「魚＋豕」、ページ数-行数］</td></tr>
@@ -104,10 +317,11 @@
 	         <tr><td>缶11． </td><td>※［＃「缶＋権のつくり」、ページ数-行数］</td></tr>
 	         <tr><td>肉13． </td><td>※［＃「月＋（「亶」の「回」に代えて「面から一、二画目をとったもの」）」、ページ数-行数］</td></tr>
          </table>
-         </li>
+               </dd>
+          </dl></li>
          </ul>
     </dd> 
-    <dt><h4>第六版　改訂内容</h4></dt>
+    <dt><h4><a name="kaitei6">第六版　改訂内容</h4></dt>
     <dd>
           <ul>
           	<li>フォントがないための文字化けを回避するためにPDF版にしました。</li>
@@ -116,7 +330,7 @@
           	<li>JIS X 0213:2004 で新たに追加されたものを水色の字で追加しました。</li>
           	<li>JIS X 0208の範囲だが、誤入力しやすい文字も気づいたもののみ追加しました。</li>
           	<li>「JIS X 0213 規格票、包摂関連項目（6.6.3.2-本文）」の包摂規準の番号を付加しました。<br>
-          	<img src="tuika_no.gif" border="0" alt="tuika_no.gif(7992 byte)" width="281" height="119">
+          	<img src="tuika_no.gif" width="281" height="119">
 <!--          ただし、200 から205 は以下のデザイン差である。
          <table>
 	         <tr><td></td><td></td></tr>
@@ -130,7 +344,7 @@
  -->     </li>
          </ul>
     </dd> 
-    <dt><h4>第五版　改訂内容</h4></dt>
+    <dt><h4><a name="kaitei5">第五版　改訂内容</h4></dt>
     <dd>
           <ul>
           	<li>小林さんによる追加が504項目。しださんによる追加が265項目。合計769項目を前版（1601項目）に追加して、のべ2370項目を収録しました。しださんによる追加は『青空文庫』付属DVDからの収録です。</li>
@@ -138,7 +352,9 @@
               <li>注記冒頭の「※は、」という断り書きを削除しました。</li>
           	<li>「替えて」「かえて」「変えて」は「代えて」にかえました。</li>
           	<li>つぎの部首については、それぞれ項目を独立させました。
-                  <blockquote>
+          <dl>
+               <dt></dt>
+               <dd>
                   <table>
                   	<tr><td><em>て</em>【手】</td><td>てへん【&#x2E98;】</td></tr>
                   	<tr><td>こころ【心 &#x2E97;】 </td><td>りっしんべん【&#x2E96;】</td></tr>
@@ -148,7 +364,8 @@
                   	<tr><td>かたな【刀】</td><td>りっとう【&#x2E89;】</td></tr>
                   	<tr><td>さんずい【&#x2EA1;】</td><td>みず【水】</td></tr>
                   </table>
-                  </blockquote></li>
+               </dd>
+          </dl></li>
           	<li>Unicode ナンバーと漢字の読みは、注記カッコ外に移動させました。</li>
           	<li>行頭の数字は、部首以外の総画数です。</li>
           	<li>部首・画数索引を用意しました。
@@ -158,12 +375,18 @@
           	</ul></li>
           </ul>
     </dd> 
-    <dt><h4>第四版　改訂内容</h4></dt>
+    <dt><h4><a name="kaitei4">第四版　改訂内容</h4></dt>
     <dd>
           <ul>
               <li>注記冒頭の「※は、」という断り書きを削除しました。</li>
               <li>「へん＋つくり」「かんむり／あし」「かまえ＜つくり」のルールに従って、一部簡略しました。</li>
-              <li>視線の流れのさまたげや、部首判断の誤認になりやすい表記のばあい、表記を若干変更したものもあります。<br><p style="text-indent: 1em;">例、「施」の「方」に代えて「ころもへん」　→　「ころもへん＋施のつくり」</li>
+              <li>視線の流れのさまたげや、部首判断の誤認になりやすい表記のばあい、表記を若干変更したものもあります。
+               <dl>
+               <dt></dt>
+               <dd>
+               例、「施」の「方」に代えて「ころもへん」　→　「ころもへん＋施のつくり」
+               </dd>
+               </dl></li>
               <li>JIS面区点番号 や Unicode 番号を追記しました。JIS X 0213 にない漢字は Unicode ナンバーであらわしています。「u」は、Unicode・UCS のコードナンバーの意味です。</li>
               <li>いずれにも含まれない漢字のみ、注記の「読み」をそのまま付けています。</li>
               <li>「包摂適用・78互換包摂」「ひらがな・カタカナ」「丸数字・ローマ数字」「アルファベット・発音記号」「各種記号」「屋号・地図記号」「篆書体・草書体・変体仮名」「その他の記号」の項目を追加しました。</li>
@@ -175,8 +398,8 @@
 <a name="download">
 <p align="center">
 <ul>
-	<li><a href="gaiji_chuki.pdf" target="_blank"><img src="pdficon_large.gif" align="middle" alt="pdficon_large.gif" width="32" height="32">青空文庫・外字注記辞書【第七版】</a>を左クリックするとそのまま開きます。</li>
-	<li>ファイルが大きい(4MB)のでご自分のハードディスクに保存してお使いになることを推奨します。
+	<li><a href="gaiji_chuki.pdf" target="_blank"><img src="pdficon_large.gif" align="middle" alt="pdficon_large.gif" width="32" height="32">青空文庫・外字注記辞書【第八版】</a>を左クリックするとそのまま開きます。</li>
+	<li>ファイルが大きい(1.214MB)のでご自分のハードディスクに保存してお使いになることを推奨します。
 	<ul>
 		<li>Windows・IEの環境では、上記アイコンを右クリックして表示されるメニューから「対象をファイルに保存」を左クリック</li>
 		<li>Macintoshでは、controlを押しながらのクリックで出るメニューから、「リンク先のファイルをダウンロード」を選ぶ</li>
