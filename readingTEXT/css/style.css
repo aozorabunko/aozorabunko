@@ -1,0 +1,106 @@
+* {
+	background:transparent;
+	text-decoration:none;
+	font-style:normal;
+	font-weight:normal;
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+body {
+	color: #60301c;
+	padding:0;
+	margin:0;
+	background-color:#e1dabe;
+}
+
+
+h1 {
+	margin: 0 0 0 0.75em;
+	padding: 1em 0 0 0;
+	font-size: 1.7em;
+	clear: both;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin:2.5em 0 0 0;
+	padding: 0 0 0.2em 0.5em;
+	border-bottom: 4px solid #bda990;
+	clear: both;
+}
+
+h2 span {
+	display: block;
+	padding-left: 50px;
+	line-height: 33px;
+	background: url(../img/yubisashi.jpg) no-repeat left center;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:link {
+	color:#3399ff;
+}
+
+a:hover {
+	color:#36f;
+}
+
+a:visited {
+	color:#3399ff;
+
+}
+
+
+
+.shadow {
+	background: url(../img/shadow_001.gif) right bottom;
+	float: left;
+	margin:0 0 15px 15px;
+}
+ 
+.shadow img {
+	position: relative;
+	left: -5px;
+	top: 1px;
+	border: 1px solid #999999;
+}
+
+
+
+div#main {
+	width: 75%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 0 3em 0;
+}
+
+div#main p {
+	padding-right:3%;
+	line-height:1.6;
+	font-size:1em;
+	margin: 1em 3% 1.5em 0.75em;
+	clear:both;
+}
+
+div#footer {
+	width: 75%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 0 2em 0;
+	border-top: 4px solid #bda990;
+	clear: both;
+}
+
+div#footer p {
+	padding-right:3%;
+	line-height:0.8;
+	font-size:1em;
+	margin: 0.8em 3% 1em 0.75em;
+	clear:both;
+}
