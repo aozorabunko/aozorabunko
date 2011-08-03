@@ -36,7 +36,7 @@ h2 span {
 	display: block;
 	padding-left: 50px;
 	line-height: 33px;
-	background: url(../img/yubisashi.jpg) no-repeat left center;
+	background: url(http://www.aozora.gr.jp/readingTEXT/images/yubisashi.jpg) no-repeat left center;
 }
 
 a {
@@ -59,7 +59,7 @@ a:visited {
 
 
 .shadow {
-	background: url(../img/shadow_001.gif) right bottom;
+	background: url(http://www.aozora.gr.jp/readingTEXT/images/shadow_001.gif) right bottom;
 	float: left;
 	margin:0 0 15px 15px;
 }
