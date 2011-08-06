@@ -45,6 +45,28 @@ a[name]:hover { color: black; background: white }
 <!-- main area -->
 <br><table summary="main" width="75%" cellpadding="4" cellspacing="3">
 <tr>
+<td bgcolor="#d3d3d3" width="25%" nowrap align="left" valign="top"><a name="000394"><b>2011年08月07日</b></td>
+<td bgcolor="#ffffcc" width="75%" align="left"><b>アクセスランキングに生じた問題への対処</b></td>
+</tr>
+<tr><td colspan="2" align="left">
+最新の<a href="../access_ranking/2011_07_xhtml.html" target="_blank">XHTML版アクセスランキング</a>（2011年7月）には、宮沢賢治「やまなし」が三箇所に現れ、そのうち二つからは同じ図書カードにリンクしている。確認してみると、同じような症状が、過去には他の作品でもあった。<br />
+文字遣いの違うものが、別個に集計されるのは想定通り。ただ、同じ図書カードへのリンクは、予想していなかった。<br />
+集計プログラムに問題があったのではと確認してみると、原因は、いらなくなったファイルの消し忘れだった。<br />
+<br />
+誤りがあるなどしてファイルを差し替えると、通常は上書きされる。<br />
+ところが、データベースのファイルの管理方式を初期に変更したため、旧形式で登録したものが残ることがある。こうしたものは、手作業で公開サーバーから削除してきたが、消し忘れがあった。<br />
+確認できたもので、宮沢賢治「オツベルと象」の新字旧仮名版、「やまなし」「よだかの星」の新字新仮名版で、古いファイルが残っていた。<br />
+<br />
+青空文庫の索引からたどれば、古いファイルが開かれることはない。ところがGoogleの検索結果が、古いファイルを指していたために、消し忘れ側にえんえんと、直接のアクセスが生じていた。<br />
+それが集計結果に現れて、最新と消し忘れの二種類が、ランクインしていた。<br />
+本来の「やまなし」新字旧仮名版のアクセス数は、両者を合わせたもので、順位はもっと上にくる。<br />
+<br />
+消し忘れを削除したので、来月の集計結果からは、ダブリの問題はなくなるはずだ。（倫）
+</td></tr>
+</table>
+<br>
+<div align="right"><a href="#top" title="このページの先頭へ">▲</a></div><table summary="main" width="75%" cellpadding="4" cellspacing="3">
+<tr>
 <td bgcolor="#d3d3d3" width="25%" nowrap align="left" valign="top"><a name="000393"><b>2011年08月06日</b></td>
 <td bgcolor="#ffffcc" width="75%" align="left"><b>「青空文庫・外字注記辞書【第八版】」を「2011年8月6日：改訂第八版訂正版」として訂正公開</b></td>
 </tr>
