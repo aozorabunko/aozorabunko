@@ -1,0 +1,485 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=UTF-8" >
+<TITLE>入力ファイルを「テキスト版」に仕上げるために</TITLE>
+<style type="text/css">
+<!--
+body { margin-left: 10%; margin-right: 10%; line-height: 130%; }
+-->
+</style>
+</HEAD>
+<BODY>
+<H2>入力ファイルを「テキスト版」に仕上げるために</H2>
+<BR>
+<FONT size="-1" >
+2002年2月25日　作成<BR>
+2011年9月10日　修正<BR>
+青空文庫点検グループ<BR>
+<BR>
+</FONT>
+<HR SIZE="5">
+<BR>
+この文書は当初、作品ファイルのチェック時に求められる情報を共有するための覚えとして、点検グループで書かれた。<BR>
+後に、入力、校正作業の手引きとしても利用できるのではと見直され、構成をあらためた上で、公開することにした。<BR>
+<BR>
+作業時の主要な参考資料には、<A  href="../MANU_MOKU.html"TARGET="_BLANK">「青空工作員マニュアル」</A>と、<A  href="../../annotation/"TARGET="_BLANK">「注記一覧」</A>がある。<BR>
+前者には一部、古くなった記述が残っており、この文書は、「最新の作業方針を示す」という役割もになっている。<BR>
+<BR>
+「青空工作員マニュアル」、「注記一覧」とともに、作業時の友としてほしい。<BR>
+<BR>
+<HR SIZE="5">
+<BLOCKQUOTE>
+入力ファイルはしばしば、ファイル冒頭の記号の説明や、ファイル末の書誌情報など、テキスト版に求められる体裁を欠いたり、マニュアルの規定を満たさないまま、reception に送られてくる。<BR>
+足りない要素は、公開に至るどこかのステップで補い、ルールから外れた要素は、規定にそってあらためる必要がある。<BR>
+<BR>
+一般的に、ファイルの整備はできるだけ早いステップで行った方が、全行程を通じた作業総量の削減に繋がると期待できる。<BR>
+校正時よりは校正用ファイルの準備段階、準備段階よりは入力段階で、要件の整備と、問題点のチェック、修正を行うことが望ましい。<BR>
+</BLOCKQUOTE>
+<P align="center">
+<B>目次</B><BR>
+<BR>
+<A  href="#chap1">■テキスト版に求められる形式１　ファイル名</A><BR>
+　<A  href="#tsuzurikata_table">表：「青空文庫におけるローマ字のつづり方」</A><BR>
+<A  href="#chap2">■テキスト版に求められる形式２　Windows ファイル形式</A><br>
+（Windows 利用者は、読む必要がありません。）<BR>
+<A  href="#chap3">■テキスト版に求められる形式３　体裁</A><BR>
+<A  href="#chap4">■テキスト版に求められる形式４　本文</A><BR>
+<A  href="#chap5">■テキスト版に対して行うべき文字種のチェック</A><BR>
+<br>
+</P>
+<H3><A name="chap1">テキスト版に求められる形式１　ファイル名</A></H3>
+<BR>
+「青空工作員マニュアル」「3.入力-2」<A  href="../MANUAL_3M.html#HOZON"TARGET="_BLANK">「文書の保存」</A>は、作品名のローマ字表記に拡張子「.txt」をつけたものを、ファイル名とするよう、求めていると読める。<br>
+<br>
+作品名のローマ字表記は、「ローマ字のつづり方」（昭和29年12月9日　内閣告示）第1表をもととして、一部に第2表を採用した、「青空文庫におけるローマ字のつづり方」による。<BR>
+<br>
+<BLOCKQUOTE>
+<B><A name="tsuzurikata_table">「青空文庫におけるローマ字のつづり方」</A></B><BR>
+<BR>
+<FONT color="Red" >赤字</FONT>は、第2表の表記を採用した箇所。<BR>
+<BR>
+<TABLE border="2" cellspacing="1" width="300" >
+<TR align="center" valign="top" ><TD>a</TD><TD>i</TD><TD>u</TD><TD>e</TD><TD>o</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ア</TD><TD>イ</TD><TD>ウ</TD><TD>エ</TD><TD>オ</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ka</TD><TD>ki</TD><TD>ku</TD><TD>ke</TD><TD>ko</TD><TD>kya</TD><TD>kyu</TD><TD>kyo</TD></TR>
+<TR align="center" valign="top" ><TD>カ</TD><TD>キ</TD><TD>ク</TD><TD>ケ</TD><TD>コ</TD><TD>キャ</TD><TD>キュ</TD><TD>キョ</TD></TR>
+<TR align="center" valign="top" ><TD>sa</TD><TD><FONT color="Red" >shi</FONT></TD><TD>su</TD><TD>se</TD><TD>so</TD><TD><FONT color="Red" >sha</FONT></TD><TD><FONT color="Red" >shu</FONT></TD><TD><FONT color="Red" >sho</FONT></TD></TR>
+<TR align="center" valign="top" ><TD>サ</TD><TD>シ</TD><TD>ス</TD><TD>セ</TD><TD>ソ</TD><TD>シャ</TD><TD>シュ</TD><TD>ショ</TD></TR>
+<TR align="center" valign="top" ><TD>ta</TD><TD><FONT color="Red" >chi</FONT></TD><TD><FONT color="Red" >tsu</FONT></TD><TD>te</TD><TD>to</TD><TD><FONT color="Red" >cha</FONT></TD><TD><FONT color="Red" >chu</FONT></TD><TD><FONT color="Red" >cho</FONT></TD></TR>
+<TR align="center" valign="top" ><TD>タ</TD><TD>チ</TD><TD>ツ</TD><TD>テ</TD><TD>ト</TD><TD>チャ</TD><TD>チュ</TD><TD>チョ</TD></TR>
+<TR align="center" valign="top" ><TD>na</TD><TD>ni</TD><TD>nu</TD><TD>ne</TD><TD>no</TD><TD>nya</TD><TD>nyu</TD><TD>nyo</TD></TR>
+<TR align="center" valign="top" ><TD>ナ</TD><TD>ニ</TD><TD>ヌ</TD><TD>ネ</TD><TD>ノ</TD><TD>ニャ</TD><TD>ニュ</TD><TD>ニョ</TD></TR>
+<TR align="center" valign="top" ><TD>ha</TD><TD>hi</TD><TD><FONT color="Red" >fu</FONT></TD><TD>he</TD><TD>ho</TD><TD>hya</TD><TD>hyu</TD><TD>hyo</TD></TR>
+<TR align="center" valign="top" ><TD>ハ</TD><TD>ヒ</TD><TD>フ</TD><TD>ヘ</TD><TD>ホ</TD><TD>ヒャ</TD><TD>ヒュ</TD><TD>ヒョ</TD></TR>
+<TR align="center" valign="top" ><TD>ma</TD><TD>mi</TD><TD>mu</TD><TD>me</TD><TD>mo</TD><TD>mya</TD><TD>myu</TD><TD>myo</TD></TR>
+<TR align="center" valign="top" ><TD>マ</TD><TD>ミ</TD><TD>ム</TD><TD>メ</TD><TD>モ</TD><TD>ミャ</TD><TD>ミュ</TD><TD>ミョ</TD></TR>
+<TR align="center" valign="top" ><TD>ya</TD><TD>(i)</TD><TD>yu</TD><TD>(e)</TD><TD>yo</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ヤ</TD><TD>イ</TD><TD>ユ</TD><TD>エ</TD><TD>ヨ</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ra</TD><TD>ri</TD><TD>ru</TD><TD>re</TD><TD>ro</TD><TD>rya</TD><TD>ryu</TD><TD>ryo</TD></TR>
+<TR align="center" valign="top" ><TD>ラ</TD><TD>リ</TD><TD>ル</TD><TD>レ</TD><TD>ロ</TD><TD>リャ</TD><TD>リュ</TD><TD>リョ</TD></TR>
+<TR align="center" valign="top" ><TD>wa</TD><TD>(i)</TD><TD>(u)</TD><TD>(e)</TD><TD>(o)</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ワ</TD><TD>イ</TD><TD>ウ</TD><TD>エ</TD><TD>オ</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ga</TD><TD>gi</TD><TD>gu</TD><TD>ge</TD><TD>go</TD><TD>gya</TD><TD>gyu</TD><TD>gyo</TD></TR>
+<TR align="center" valign="top" ><TD>ガ</TD><TD>ギ</TD><TD>グ</TD><TD>ゲ</TD><TD>ゴ</TD><TD>ギャ</TD><TD>ギュ</TD><TD>ギョ</TD></TR>
+<TR align="center" valign="top" ><TD>za</TD><TD><FONT color="Red" >ji</FONT></TD><TD>zu</TD><TD>ze</TD><TD>zo</TD><TD><FONT color="Red" >ja</FONT></TD><TD><FONT color="Red" >ju</FONT></TD><TD><FONT color="Red" >jo</FONT></TD></TR>
+<TR align="center" valign="top" ><TD>ザ</TD><TD>ジ</TD><TD>ズ</TD><TD>ゼ</TD><TD>ゾ</TD><TD>ジャ</TD><TD>ジュ</TD><TD>ジョ</TD></TR>
+<TR align="center" valign="top" ><TD>da</TD><TD><FONT color="Red" >ji</FONT></TD><TD>(zu)</TD><TD>de</TD><TD>do</TD><TD><FONT color="Red" >ja</FONT></TD><TD><FONT color="Red" >ju</FONT></TD><TD><FONT color="Red" >jo</FONT></TD></TR>
+<TR align="center" valign="top" ><TD>ダ</TD><TD>ヂ</TD><TD>ヅ</TD><TD>デ</TD><TD>ド</TD><TD>ヂャ</TD><TD>ヂュ</TD><TD>ヂョ</TD></TR>
+<TR align="center" valign="top" ><TD>ba</TD><TD>bi</TD><TD>bu</TD><TD>be</TD><TD>bo</TD><TD>bya</TD><TD>byu</TD><TD>byo</TD></TR>
+<TR align="center" valign="top" ><TD>バ</TD><TD>ビ</TD><TD>ブ</TD><TD>ベ</TD><TD>ボ</TD><TD>ビャ</TD><TD>ビュ</TD><TD>ビョ</TD></TR>
+<TR align="center" valign="top" ><TD>pa</TD><TD>pi</TD><TD>pu</TD><TD>pe</TD><TD>po</TD><TD>pya</TD><TD>pyu</TD><TD>pyo</TD></TR>
+<TR align="center" valign="top" ><TD>パ</TD><TD>ピ</TD><TD>プ</TD><TD>ペ</TD><TD>ポ</TD><TD>ピャ</TD><TD>ピュ</TD><TD>ピョ</TD></TR>
+<TR align="center" valign="top" ><TD><FONT color="Red" >kwa</FONT></TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>クヮ</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD><FONT color="Red" >gwa</FONT></TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>グヮ</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD><FONT color="Red" >wo</FONT></TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>　</TD><TD>　</TD><TD>　</TD><TD>　</TD><TD>ヲ</TD><TD>　</TD><TD>　</TD><TD>　</TD></TR>
+</TABLE>
+<BR>
+<BR>
+1　はねる音「ん」はすべて n と書く。<BR>
+2　はねる音を表す n と次にくる母音字または y とを切り離す必要がある場合には、n の次に ' を入れる。（<FONT color="Red" >例：jun'ichiro</FONT>）<BR>
+3　つまる音は、最初の子音字を重ねて表わす。<BR>
+4　長音を表すために母音字の上に付ける「＾」は、用いない。<BR>
+5　助詞の「〜は」「〜へ」「〜を」は、発音に従って「〜wa」「〜e」「〜o」と書く。<BR>
+　例）「吾輩は猫である」　wagahai<FONT color="Red" >wa</FONT>_nekodearu.txt<BR>
+　　　「川端康成へ」　kawabata_yasunari<FONT color="Red" >e</FONT>.txt<BR>
+　　　「機関車を見ながら」　kikansha<FONT color="Red" >o</FONT>_minagara.txt<BR>
+</BLOCKQUOTE>
+<BR>
+長音の扱いに関しては、以下を参考にする。<BR>
+<BLOCKQUOTE>
+<B>「現代仮名遣い」（昭和61年7月1日、内閣告示第1号）「付表」において長音符号「ー」付きで「現代語の音韻」が示されているもの</B><BR>
+<BR>
+※「オー」に対する「おお」は、「付表」には見られないが、<FONT color="Blue" >青</FONT>で示した形で入れるのが妥当と考えて、加えた。<BR>
+<BR>
+<TABLE border="2" cellspacing="1" width="500">
+<TR align="center" valign="top" ><TD>現代語<BR>の音韻</TD><TD>現代仮名遣いで<BR>用いる仮名</TD><TD>長音記号を省いた<BR>ローマ字表記</TD><TD>例</TD></TR>
+<TR align="center" valign="top" ><TD rowspan="2">ユー</TD><TD>ゆう</TD><TD rowspan="2">yu</TD><TD>yuzo（雄三）</TD></TR>
+<TR align="center" valign="top" ><TD>いう</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>オー</TD><TD>おう</TD><TD>o</TD><TD>ogai（鴎外）</TD></TR>
+<TR align="center" valign="top" ><TD><FONT color="Blue" >オー</FONT></TD><TD><FONT color="Blue" >おお</FONT></TD><TD><FONT color="Blue" >o</FONT></TD><TD><FONT color="Blue" >osaka（大阪）</FONT></TD></TR>
+<TR align="center" valign="top" ><TD>コー</TD><TD>こう</TD><TD>ko</TD><TD>koson（篁村）<BR>kotaro（光太郎）</TD></TR>
+<TR align="center" valign="top" ><TD>ゴー</TD><TD>ごう</TD><TD>go</TD><TD>go（郷）</TD></TR>
+<TR align="center" valign="top" ><TD>ソー</TD><TD>そう</TD><TD>so</TD><TD>so（宋）</TD></TR>
+<TR align="center" valign="top" ><TD>ゾー</TD><TD>ぞう</TD><TD>zo</TD><TD>zo（日出造）</TD></TR>
+<TR align="center" valign="top" ><TD>トー</TD><TD>とう</TD><TD>to</TD><TD>toson（藤村）</TD></TR>
+<TR align="center" valign="top" ><TD>ドー</TD><TD>どう</TD><TD>do</TD><TD>todo（藤堂）</TD></TR>
+<TR align="center" valign="top" ><TD>ノー</TD><TD>のう</TD><TD>no</TD><TD>nomi（能美）</TD></TR>
+<TR align="center" valign="top" ><TD>ホー</TD><TD>ほう</TD><TD>ho</TD><TD>hodaiji（宝代地）</TD></TR>
+<TR align="center" valign="top" ><TD>ボー</TD><TD>ぼう</TD><TD>bo</TD><TD>boya（坊屋）</TD></TR>
+<TR align="center" valign="top" ><TD>ポー</TD><TD>ぽう</TD><TD>po</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>モー</TD><TD>もう</TD><TD>mo</TD><TD>mori（毛利）</TD></TR>
+<TR align="center" valign="top" ><TD>ヨー</TD><TD>よう</TD><TD>yo</TD><TD>yoichiro（陽一郎）</TD></TR>
+<TR align="center" valign="top" ><TD>ロー</TD><TD>ろう</TD><TD>ro</TD><TD>royama（蝋山）</TD></TR>
+<TR align="center" valign="top" ><TD>キュー</TD><TD>きゅう</TD><TD>kyu</TD><TD>kyu（邱）</TD></TR>
+<TR align="center" valign="top" ><TD>ギュー</TD><TD>ぎゅう</TD><TD>gyu</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>シュー</TD><TD>しゅう</TD><TD>shu</TD><TD>shuzo（周三）</TD></TR>
+<TR align="center" valign="top" ><TD>ジュー</TD><TD>じゅう</TD><TD>ju</TD><TD>juro（十郎）</TD></TR>
+<TR align="center" valign="top" ><TD>チュー</TD><TD>ちゅう</TD><TD>chu</TD><TD>chuya（中也）</TD></TR>
+<TR align="center" valign="top" ><TD>ニュー</TD><TD>にゅう</TD><TD>nyu</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ヒュー</TD><TD>ひゅう</TD><TD>hyu</TD><TD>hyuga（日向）</TD></TR>
+<TR align="center" valign="top" ><TD>ビュー</TD><TD>びゅう</TD><TD>byu</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>リュー</TD><TD>りゅう</TD><TD>ryu</TD><TD>ryunosuke（竜之介）</TD></TR>
+<TR align="center" valign="top" ><TD>キョー</TD><TD>きょう</TD><TD>kyo</TD><TD>kyoka（鏡花）</TD></TR>
+<TR align="center" valign="top" ><TD>ギョー</TD><TD>ぎょう</TD><TD>gyo</TD><TD>gyobu（刑部）</TD></TR>
+<TR align="center" valign="top" ><TD>ショー</TD><TD>しょう</TD><TD>sho</TD><TD>sho（荘）</TD></TR>
+<TR align="center" valign="top" ><TD rowspan="2">ジョー</TD><TD>じょう</TD><TD rowspan="2">jo</TD><TD>jo（城）</TD></TR>
+<TR align="center" valign="top" ><TD>ぢょう</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>チョー</TD><TD>ちょう</TD><TD>cho</TD><TD>cho（長）</TD></TR>
+<TR align="center" valign="top" ><TD>ニョー</TD><TD>にょう</TD><TD>nyo</TD><TD>nyomura（饒村）</TD></TR>
+<TR align="center" valign="top" ><TD>ヒョー</TD><TD>ひょう</TD><TD>hyo</TD><TD>hyotani（俵谷）</TD></TR>
+<TR align="center" valign="top" ><TD>ビョー</TD><TD>びょう</TD><TD>byo</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ピョー</TD><TD>ぴょう</TD><TD>pyo</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ミョー</TD><TD>みょう</TD><TD>myo</TD><TD>myojin（明神）</TD></TR>
+<TR align="center" valign="top" ><TD>リョー</TD><TD>りょう</TD><TD>ryo</TD><TD>ryoto（両頭）</TD></TR>
+</TABLE><BR>
+<BR>
+<B>「付表」において、長音符号「ー」付で「現代語の音韻」が示されていないもの</B><BR>
+<BR>
+<TABLE border="2" cellspacing="1" width="500">
+<TR align="center" valign="top" ><TD>現代語<BR>の音韻</TD><TD>現代仮名遣いで<BR>用いる仮名</TD><TD>長音記号を省いた<BR>ローマ字表記</TD><TD>例</TD></TR>
+<TR align="center" valign="top" ><TD>イイ</TD><TD>いい</TD><TD>ii</TD><TD>iimura（飯村）</TD></TR>
+<TR align="center" valign="top" ><TD>キイ</TD><TD>きい</TD><TD>kii</TD><TD>kii（紀伊）</TD></TR>
+<TR align="center" valign="top" ><TD>シイ</TD><TD>しい</TD><TD>shii</TD><TD>shii（志位 ）</TD></TR>
+<TR align="center" valign="top" ><TD>チイ</TD><TD>ちい</TD><TD>chii</TD><TD>chii（地井）</TD></TR>
+<TR align="center" valign="top" ><TD>ニイ</TD><TD>にい</TD><TD>nii</TD><TD>nii（新居）</TD></TR>
+<TR align="center" valign="top" ><TD>ヒイ</TD><TD>ひい</TD><TD>hii</TD><TD>hiiro（日色）</TD></TR>
+<TR align="center" valign="top" ><TD>ミイ</TD><TD>みい</TD><TD>mii</TD><TD>miida（三井田）</TD></TR>
+<TR align="center" valign="top" ><TD>リイ</TD><TD>りい</TD><TD>rii</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ギイ</TD><TD>ぎい</TD><TD>gii</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ジイ</TD><TD>じい</TD><TD>jii</TD><TD>jiisan（じいさん）</TD></TR>
+<TR align="center" valign="top" ><TD>ビイ</TD><TD>びい</TD><TD>bii</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>ピイ</TD><TD>ぴい</TD><TD>pii</TD><TD>　</TD></TR>
+<TR align="center" valign="top" ><TD>エイ</TD><TD>えい</TD><TD>ei</TD><TD>ei（永）<BR>eiichiro（栄一郎）</TD></TR>
+<TR align="center" valign="top" ><TD>ケイ</TD><TD>けい</TD><TD>kei</TD><TD>kyukei（球渓）</TD></TR>
+<TR align="center" valign="top" ><TD>セイ</TD><TD>せい</TD><TD>sei</TD><TD>seike（清家）</TD></TR>
+<TR align="center" valign="top" ><TD>テイ</TD><TD>てい</TD><TD>tei</TD><TD>teika（貞家）</TD></TR>
+<TR align="center" valign="top" ><TD>ネイ</TD><TD>ねい</TD><TD>nei</TD><TD>nei（根井）</TD></TR>
+<TR align="center" valign="top" ><TD>ヘイ</TD><TD>へい</TD><TD>hei</TD><TD>heiwa（平和）</TD></TR>
+<TR align="center" valign="top" ><TD>メイ</TD><TD>めい</TD><TD>mei</TD><TD>meiwa（名和）</TD></TR>
+<TR align="center" valign="top" ><TD>レイ</TD><TD>れい</TD><TD>rei</TD><TD>reiun（嶺雲）</TD></TR>
+<TR align="center" valign="top" ><TD>ゲイ</TD><TD>げい</TD><TD>gei</TD><TD>geiami（芸阿弥）</TD></TR>
+<TR align="center" valign="top" ><TD>ゼイ</TD><TD>ぜい</TD><TD>zei</TD><TD>reizei（冷泉）</TD></TR>
+<TR align="center" valign="top" ><TD>デイ</TD><TD>でい</TD><TD>dei</TD><TD>dei（出井）</TD></TR>
+<TR align="center" valign="top" ><TD>ベイ</TD><TD>べい</TD><TD>bei</TD><TD>beichu（米仲）</TD></TR>
+<TR align="center" valign="top" ><TD>ペイ</TD><TD>ぺい</TD><TD>pei</TD><TD>teppei（鉄平）</TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+<br>
+作品名のどこまでをローマ字表記するかについては、マニュアルに規定がないが、同一名称を回避する上では、長めにとった方が有利と思われる。（ただし、ファイル名の総文字数は、XHTML への変換後の拡張子「.html」の5文字分を含めて、Macintosh クラシック OS（OS X 以前の、バージョン9までのもの） の制限である31文字におさまるよう、調整している。）<br>
+<br>
+ファイル名が長くなると、視認性が悪くなる。<br>
+アンダースコアー「_」を用いて、以下のように分かち書きすることが望ましい。<br>
+<BLOCKQUOTE>
+鏡の中の月　kagamino_nakano_tsuki.txt<br>
+</BLOCKQUOTE>
+パソコン入力時の作法に従って、「学校」を「gakkou」、「鴎外」を「ougai」などとしたファイルがしばしばみられる。<br>
+これらは、上記作業方針に従い、「gakko」、「ogai」とあらためる。<br>
+<br>
+<H3><A name="chap2">テキスト版に求められる形式２　Windows ファイル形式</A><BR>
+</H3>
+青空文庫のテキスト版は、第1第2水準の漢字などを定めた、<a href="http://ja.wikipedia.org/wiki/JIS_X_0208" target="_blank">JIS X 0208</a>にある文字を用い、<a href="http://ja.wikipedia.org/wiki/Shift_JIS" target="_blank">Shift_JIS</a>でエンコーディングした、Windowsで広く使われてきた形式で作っている。<BR>
+Macintosh を利用してファイルを作ったり、チェックしたりする際は、改行コードを Windows のものに合わせることと、リソースフォークと呼ばれる、Macintosh 固有の特殊なデータを削除してやることが求められる。<BR>
+<BR>
+<FONT color="Red" >※この項目は、Windows 利用者は、読む必要がない。</FONT>→<A  href="#chap3">「テキスト版に求められる形式３　体裁」にジャンプする。</A><BR>
+<BR>
+【改行コード】<BR>
+<BR>
+「青空工作員マニュアル」「3.入力-2」<A  href="../MANUAL_3M.html#HOZON" TARGET="_BLANK">「文書の保存」</A>は、ファイルの改行コードを Windows 標準の「CR＋LF」とするよう求めている。<BR>
+<BR>
+Macintosh の クラシック OS では改行コードとして一般的に「CR」が、OS X では「LF」が用いられるため、入力者は意図的にこれを、「CR＋LF」に設定、もしくは変更する必要がある。<BR>
+クラシック OS に付いてきた SimpleText や、OS X に付いてくるテキストエディットでは、改行コードを「CR＋LF」に設定することができない。<BR>
+ただし、多くのエディターでは、「編集」＞「別名で保存」といった項目を選んで改行コードを「CR＋LF」に設定し、保存することができる。<BR>
+<BR>
+なお、点検グループでも、改行コードの確認と調整を励行している。<BR>
+<BR>
+【リソースフォークの削除】<BR>
+<BR>
+Macintosh で作成されたファイルにはすべて、リソースフォークと呼ばれる、表からは見えないデータが付け加えられる。<BR>
+この「おまけデータ」を活かして、Macintosh は操作性の向上を図っているが、Windows でリソースフォーク付きのファイルを開こうとすると、文字化けなどの問題が生じることがある。<BR>
+<BR>
+こうした事態を避けるために、テキスト版はすべて、リソースフォークなしの形で登録している。<BR>
+<BR>
+Macintosh を用いてテキストを作成する人には、入力ファイルや、チェック済みのファイルを送る際、圧縮ソフトの機能を利用して、リソースフォークを取り除いておくことが期待される。<BR>
+<BR>
+なお、点検グループでも、リソースフォークの排除を、作業手順に組み込んでいる。<BR>
+<BR>
+<H3><A name="chap3">テキスト版に求められる形式３　体裁</A></H3>
+テキスト版に求められる体裁の整備は、「青空工作員マニュアル」「2.入力-1」の<A  href="../MANUAL_2.html#shoshiki" TARGET="_BLANK">「■基本となる書式」</A>にのっとっておこなう。<BR>
+<BR>
+【ファイル冒頭の「記号について」】<BR>
+<BR>
+テキストファイルの冒頭には、「■基本となる書式」にのっとって、<A  href="../txt_chu_kigo.html" TARGET="_BLANK">「テキスト中に現れる記号について」</A>を入れる。<BR>
+<BR>
+「記号について」の（例）には、原則として、当該作品の中で一番最初に現れたものを入れる。<BR>
+<BR>
+「ルビ」の例は、ファイルの冒頭から「《」で検索をかけて、最初にヒットしたものを入れる。<BR>
+<BR>
+「ルビの付く文字列の始まりを特定する記号」の例は、ファイルの冒頭から「｜」で検索をかけて、最初にヒットしたものを入れる。<BR>
+<BR>
+「入力者注」の例は、<BR>
+1　外字に関するものがあれば、その中で初出のもの、<BR>
+2　外字に関するものがなければ、それ以外で初出のもの、<BR>
+を入れる。<BR>
+<BR>
+2に該当するものとしては、以下のような、傍点注記や字下げ注記などがあるが、それらの中では、どれかを優先することは行っていない。<BR>
+<BLOCKQUOTE>
+（例）うね［＃「うね」に傍点］<BR>
+（例）［＃ここから２字下げ］<BR>
+</BLOCKQUOTE>
+2を例として掲げる場合、「（数字は、JIS X 0213の面区点番号またはUnicode、底本のページと行数）」の行は、削除する。<BR>
+<BR>
+「返り点」、「訓点送り仮名」の例も、それぞれ初出のものを入れる。<BR>
+<BR>
+「二倍の踊り字」の例は、ファイルの冒頭から「／」で検索をかけて、最初にヒットしたものを入れる。<BR>
+<BR>
+「／＼」のみが使われていて、「／″＼」はみられない場合には、「＊濁点付きの二倍の踊り字は「／″＼」」の部分のみを、削除する。<BR>
+<BR>
+アクセント分解の例は、ファイルの冒頭から「〔」で検索をかけて、最初にヒットしたものを入れる。<BR>
+<BR>
+該当する記号が使われていない場合には、その項目は削除する。<BR>
+<BR>
+【ファイル末尾の注記】<BR>
+<BR>
+テキストファイルの末尾には、「■基本となる書式」にのっとって、<A  href="../../guide/kisai.html" TARGET="_BLANK">「青空文庫収録ファイルへの記載事項」</A>を入れる。<BR>
+<BR>
+新規公開されたテキスト版を開くと、記載事項の最終行、「このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。」の後ろで、改行されているのがわかる。<BR>
+記載事項の最後で、このように改行しておく。<BR>
+<BR>
+調べのついていない項目（「底本の親本」や「初出」など）、必要のない「※〜」形式の注記は、それぞれ削除する。<BR>
+<BR>
+あらかじめ書き込まれていた注記に、不適切と思われる表現に対する旧形式のもの（1）が入っていた場合は、ファイル末からは削除して、図書カードの備考欄に新形式の注記（2）を入れる。（あなた自身が図書カードの備考欄に（2）を書き入れることができなければ、<IMG  src="fig/address.png" width="186" height="22" alt="メールアドレス">に連絡して、記載を求める。）<BR>
+<BLOCKQUOTE>
+（1）旧形式注記：<BR>
+※本作品中には、身体的・精神的資質、職業、地域、階層、民族などに関する不適切な表現が見られます。しかし、作品の時代背景と価値、加えて、作者の抱えた限界を読者自身が認識することの意義を考慮し、底本のままとしました。（青空文庫）<BR>
+<BR>
+（2）新形式注記：<BR>
+この作品には、今日からみれば、不適切と受け取られる可能性のある表現がみられます。その旨をここに記載した上で、そのままの形で作品を公開します。（青空文庫）<BR>
+</BLOCKQUOTE>
+<BR>
+入力時、校正時に、不適切と思われる表現に対する注記が必要と感じた際は、対象として想定した表現を書き添えて、<IMG  src="fig/address.png" width="186" height="22" alt="メールアドレス">に、図書カードへの書き込みを求めてほしい。<BR>
+<BR>
+<H3><A name="chap4">テキスト版に求められる形式４　本文</A></H3>
+<BR>
+青空文庫のテキスト版本文に関しては、「ルビを「《》」におさめて示す」、「被ルビ文字の区切りを示す記号として「｜」を用いる」などの約束事がある。<BR>
+JIS X 0208 にない文字や、底本のレイアウト情報をどう取り扱うかに関しても、定めがある。<BR>
+<BR>
+求めに応じていないファイルは、方針に従って修正する。<BR>
+<BR>
+【ルビ記号】<BR>
+<BR>
+「青《あお》空《ぞら》文《ぶん》庫《こ》」のように、分割しすぎたものが見られる。<BR>
+<BR>
+過分割されたものは、「青空工作員マニュアル」「2.入力-1」の「（５）特殊な表記」<A  href="../MANUAL_2.html#ruby" TARGET="_BLANK">【ルビ】</A>の規定に従って、適当な形にまとめる。<BR>
+<BR>
+姓と名のルビは「夏目漱石《なつめそうせき》」のように、分割しない。<BR>
+<BR>
+名前と肩書、敬称なども、「千田実画伯《せんだみのるがはく》」、「内海紀伊様《うつみきいさま》」のように原則としてまとめる。<BR>
+<BR>
+ただし、複数の肩書が続くなどして、ルビのまとまりがあまりに長くなりすぎると思われる場合には、以下のように、区切れ目を設けても良い。<BR>
+<BLOCKQUOTE>
+従四位下《じゅよんいのげ》左近衛少将《さこんえのしょうしょう》兼《けん》越中守《えっちゅうのかみ》細川忠利《ほそかわただとし》<BR>
+</BLOCKQUOTE>
+漢文に付けられたルビも、「三十七年如一瞬《さんじゅうしちねんいっしゅんのごとし》」のように、原則として分割しない。<BR>
+<BR>
+一方、助詞などを省いて接する異なった言葉に付いたルビが、「日暮《ひく》れて道遠《みちとお》し」のようにまとめられることがある。<BR>
+<BR>
+こうしたケースでは、語の異なりを意識して、「日《ひ》暮《く》れて道《みち》遠《とお》し」のように分割する。<BR>
+<BR>
+まとめるべき複合語や、姓名などのルビの一部が省かれていることで、以下のような、不自然な単位へのルビ付けが生じる場合がある。<BR>
+<BLOCKQUOTE>
+　田｜巻安里《まきあんり》　（人名）<BR>
+　火《ひ》の見階子《みばしご》<BR>
+　一｜代分限《でえぶんげん》<BR>
+</BLOCKQUOTE>
+こうした際は、以下のように、違和感が生じないまとまりに分割する。<BR>
+<BLOCKQUOTE>
+　田｜巻《まき》安里《あんり》　（人名）<BR>
+　火《ひ》の見《み》階子《ばしご》<BR>
+　一｜代《でえ》分限《ぶんげん》<BR>
+</BLOCKQUOTE>
+【被ルビ文字の区切り記号】<BR>
+<BR>
+入力されていないものが、かなりある。<BR>
+<BR>
+「テキスト中に現れる記号について」の例を求めるために、「｜」で検索してヒットしない場合は、ただちに「使われていない」と判断するのではなく、「必要なものが入力されていない」可能性があると受けとめ、ファイルの冒頭から「《」で検索をかけてみる方がよい。<BR>
+<BR>
+「｜」が入力されていない場合は、「青空工作員マニュアル」「2.入力-1」の「（５）特殊な表記」<A  href="../MANUAL_2.html#ruby" TARGET="_BLANK">【ルビ】</A>の規定に従って、必要な箇所に「｜」を入力する。<BR>
+<BR>
+1バイト（半角）の「|」で入力されたものは、2バイト（全角）の「｜」に置き換える。<BR>
+<BR>
+【外字注記】<BR>
+<BR>
+青空文庫の入力は、現時点では、JIS X 0208 と呼ばれる文字コードによって行っている。<BR>
+0208 にない文字は、青空文庫のファイル中では用いない。<BR>
+<BR>
+底本に、0208 にない文字がある際は、「<A  href="../../annotation/"TARGET="_BLANK">注記一覧</A>」の「<a href="../../annotation/external_character.html" target="_blank">外字</a>」の規定に従って、「外字注記」と呼んでいる形で入力する。<BR>
+<BR>
+外字注記する文字のうち、<a href="http://ja.wikipedia.org/wiki/JIS_X_0213" target="_blank">JIS X 0213</a>にあるものは、字体の説明に加えて0213の面区点番号を添える。<BR>
+JIS X 0213にはないけれど、<a href="http://ja.wikipedia.org/wiki/Unicode" target="_blank">Unicode</a>にあるものには、そのコードを添える。<BR>
+<BR>
+外字注記の書き方は、「<A  href="../../gaiji_chuki/"TARGET="_BLANK">青空文庫・外字注記辞書</A>」にまとめられているので、その最新版の記載内容を、コピー＆ペーストしてほしい。<BR>
+<BR>
+外字注記用の括弧、［　］にはしばしば、誤って１バイト（半角）のものが使われる。<BR>
+１バイト（半角）のものは、２バイト（全角）のものに置き換える。<BR>
+<BR>
+JIS X 0213 には、漢字以外の文字も規定されている。<BR>
+底本に次のような記号、文字が現れた場合は、面区点番号のみを付して、以下のように外字注記する。<BR>
+<BLOCKQUOTE>
+<IMG  src="fig/1-2-22.png" alt="二の字点、1-2-22" width="28" height="28">　※［＃二の字点、1-2-22］<BR>
+<BR>
+<IMG  src="fig/1-3-28.png" alt="歌記号、1-3-28" width="28" height="28">　※［＃歌記号、1-3-28］<BR>
+<BR>
+<IMG  src="fig/1-4-84.png" alt="二の字点、1-4-84" width="28" height="28">　※［＃濁点付き平仮名う、1-4-84］<BR>
+<BR>
+<IMG  src="fig/1-7-83.png" alt="濁点付き片仮名ヰ、1-7-83" width="28" height="28">　※［＃濁点付き片仮名ヰ、1-7-83］<BR>
+<BR>
+<IMG  src="fig/1-7-84.png" alt="濁点付き片仮名ヱ、1-7-84" width="28" height="28">　※［＃濁点付き片仮名ヱ、1-7-84］<BR>
+<BR>
+<IMG  src="fig/1-7-85.png" alt="濁点付き片仮名ヲ、1-7-85" width="28" height="28">　※［＃濁点付き片仮名ヲ、1-7-85］<BR>
+<BR>
+<IMG  src="fig/1-8-75.png" alt="感嘆符二つ、1-8-75" width="28" height="28">　※［＃感嘆符二つ、1-8-75］<BR>
+<BR>
+<IMG  src="fig/1-8-76.png" alt="疑問符二つ、1-8-76" width="28" height="28">　※［＃疑問符二つ、1-8-76］<BR>
+<BR>
+<IMG  src="fig/1-8-77.png" alt="疑問符感嘆符、1-8-77" width="28" height="28">　※［＃疑問符感嘆符、1-8-77］<BR>
+<BR>
+<IMG  src="fig/1-8-78.png" alt="感嘆符疑問符、1-8-78" width="28" height="28">　※［＃感嘆符疑問符、1-8-78］<BR>
+<BR>
+<IMG  src="fig/1-12-21.png" alt="ローマ数字1小文字、1-8-78" width="30" height="30">　※［＃ローマ数字1小文字、1-12-21］<BR>
+<BR>
+<IMG  src="fig/1-13-21.png" alt="ローマ数字1小文字、1-13-78" width="30" height="30">　※［＃ローマ数字1、1-13-21］<BR>
+<BR>
+<IMG  src="fig/1-13-1.png" alt="丸1、1-13-1" width="30" height="30">　※［＃丸1、1-13-1］<BR>
+</BLOCKQUOTE>
+これら非漢字の外字注記の書き方も、「<A  href="../../gaiji_chuki/"TARGET="_BLANK">青空文庫・外字注記辞書</A>」に従う。<br>
+<br>
+なお、「〜水準」という呼び名は漢字に限られるので、非漢字に関しては用いない。<BR>
+<BR>
+【二倍の踊り字（くの字点）】<BR>
+<BR>
+くの字点はJIS X 0208にはないが、例外として、斜線「／」と逆斜線「＼」を組み合わせて、「／＼」のように入力する。<BR>
+<BR>
+「／＼」に関しては、誤入力される可能性は低い。<BR>
+<BR>
+濁点付きくの字点は、「″」（秒、1-77）をはさんで「／″＼」のように入力する。<BR>
+<BR>
+「／″＼」に関しては、誤って「／〃＼」「／“＼」「／”＼」などと入力したものがある。<BR>
+<BR>
+「／〃＼」「／“＼」「／”＼」があれば、「／″＼」にあらためる。<BR>
+<BR>
+（濁点付きくの字点は、濁点「゛」を用いて「／゛＼」とする方が、適切かもしれない。けれど、過去に「／″＼」が選ばれ、これに従ってファイルがつくりためられた経緯を踏まえて、この方針が維持されている。）<BR>
+<BR>
+【レイアウト注記】<BR>
+<BR>
+書籍ではしばしば、あるまとまった内容の切れ目で、ページや段を改めたり、本文の一部を字下げするなどのレイアウト処理が行われている。<BR>
+<BR>
+「青空工作員マニュアル」はこうした箇所の入力にあたって、処理の内容を注記するよう求めている。（「2.入力-1」■入力の実際（<A  href="../MANUAL_2.html#GYOUTOU"TARGET="_BLANK">２）レイアウト関連</A>）<BR>
+<BR>
+テキスト版から xhtml 版を自動作成するよう切り替えるに際して、レイアウトに関する注記の規定を、より広い範囲にわたって、厳密に定めることになった。<BR>
+<BR>
+レイアウト注記に関する約束事は、<A  href="../../annotation/"TARGET="_BLANK">「注記一覧」</A>にまとめている。<BR>
+<BR>
+<H3><A name="chap5">テキスト版に対して行うべき文字種のチェック</A></H3>
+<BR>
+【片仮名の「ケ」のように見える文字】<BR>
+<BR>
+片仮名の「ケ」のように見える文字の内、文章の流れから、「こ」「か」「が」と読むと思われるものは、青空文庫では、区点番号5-86の「ヶ」で入力する。<BR>
+<BR>
+片仮名の「ケ」でファイルを検索して、「こ」「か」「が」と読むところに使われていれば、「ヶ」にあらためる。<BR>
+<BR>
+底本がこれを小書きせず、他の文字と同じ大きさにつくっている場合は、ファイル末に以下のように注記する。<BR>
+<BLOCKQUOTE>
+※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。<BR> 
+</BLOCKQUOTE>
+この作業方針の根拠と詳細は、<A  href="../small_or_large/guide_line.html" TARGET="_BLANK">「区点番号5-17と5-86の使い分け指針」</A>を参照してほしい。<BR>
+<BR>
+【チェッカー君】<BR>
+<BR>
+<A  href="http://www.aozora.jp/tools/checker.cgi" TARGET="_BLANK">チェッカー君</A>を利用することで、青空文庫では使わない機種依存文字や、不適当に用いられた半角スペース、半角記号などを見つけ出すことができる。<BR>
+<BR>
+チェッカー君は、「文字チェッカー」として長く利用されてきたツールの、最新版である。半角記号類の、チェック対象文字が拡充されている。<A  href="http://www.hyuki.com/aozora/checker.cgi" TARGET="_BLANK">旧版</A>をブックマークしている人は、こちらに切り替えてほしい。<BR>
+<BR>
+・機種依存文字<BR>
+<BR>
+入力ファイルには、WindowsやMacintoshといった固有の機種でしか表示されない、<A  href="http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdc.html" TARGET="_BLANK">「Windows の機種依存文字」</A>、<A  href="http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdcmc.html" TARGET="_BLANK">「Macintosh の機種依存文字」</A>に掲げられた類の特殊な文字が使われていることがある。<BR>
+<BR>
+Windows では、JIS X 0208 の規格にない、89区以降に見る漢字が、数多く独自に拡張されている。<BR>
+入力ファイルにしばしば紛れ込んでくるこれらは、他の環境では文字化けする。<BR>
+<BR>
+機種依存文字が見つかったら、１、２いずれかの方法で対処する。<BR>
+<BR>
+１　JIS X 0208 の区点位置に包摂されるものは、0208 の区点位置で入力する。（これに該当する、出現頻度の高いものを、以下にいくつか掲げる。）<BR>
+<BLOCKQUOTE>
+「&#64016;」（つくりに、一点が多い）は、「塚」で入力する。<BR>
+「&#22686;」（つくりの上が、異なる）は、「増」で入力する。<BR>
+「&#32160;」（つくりの上が、異なる）は、「緑」で入力する。<BR>
+「&#38737;」（下が、「月」ではなく、「円」）は、「青」で入力する。<BR>
+「&#64018;」（「青」の下が、「月」ではなく、「円」）は、「晴」で入力する。<BR>
+「&#28152;」（「青」の下が、「月」ではなく、「円」）は、「清」で入力する。<BR>
+「&#64024;」「&#64025;」「&#64026;」「&#64027;」は、それぞれ「礼」「神」「祥」「福」で入力する。<BR>
+「&#25934;」（へんの上が、異なる）は、「教」で入力する。<BR>
+「&#38290;」は、「間」で入力する。<BR>
+「&#40657;」は、「黒」で入力する。<BR>
+</BLOCKQUOTE>
+２　１に当てはまらない文字は、外字として注記する。<BR>
+<BR>
+見つかった機種依存文字が１、２のどちらにあたるかも、「<A  href="../../gaiji_chuki/"TARGET="_BLANK">青空文庫・外字注記辞書</A>」で簡単に見分けられ、どう対処するべきかがわかる。<BR>
+<BR>
+上記<A  href="http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdc.html" TARGET="_BLANK">「Windowsの機種依存文字」</A>「NECのIBM拡張文字」の89区7961に配置された、旧字の「&#64016;」（つくりに、一点が多い）を「青空文庫・外字注記辞書」で引くと、「包摂適用」とあり、１に該当し、「塚」で入力するべきものとわかる。<BR>
+<BR>
+　<IMG  src="fig/tsuka.png" width="623" height="30" alt="塚"><BR>
+<BR>
+同じく「NECのIBM拡張文字」の89区7921に配置された「&#32394;」を参照すると、２に該当し、※［＃「糸＋廣」、第3水準1-90-23］と外字注記するべきものとわかる。<BR>
+<BR>
+　<IMG  src="fig/ko.png" width="510" height="28" alt="纊"><BR>
+<BR>
+・不適当に用いられた、半角スペース、半角記号<BR>
+<BR>
+Windows で入力されたファイルにはしばしば、不適当に用いられた半角スペースや、半角記号が紛れ込む。<BR>
+<BR>
+全角の鍵括弧（「）の代わりに、半角のスペースと半角の鍵括弧を組み合わせて（ ｢）などと入力されたものは、人の目によるチェックがきわめて困難である。<BR>
+全角のスペース（　）の代わりに、半角のスペース二つを組み合わせたものも、判別しがたい。<BR>
+行末などに、半角のスペースが多数、眼に見えない形で入力されている例もある。<BR>
+<BR>
+チェッカー君によって、こうした不適当な半角スペース、半角記号が見つかった際は、全角スペース、全角の記号などに置き換え、行末などに不要に挿入された半角のスペースは、削除する。<BR>
+<BR>
+【校閲君】<BR>
+<BR>
+旧字作品のファイルには、しばしば底本に使われていない新字や俗字が紛れ込む。<BR>
+<BR>
+これらを見逃さないために、旧字作品は、最新版の<A  href="http://www.aozora.jp/kouetsukun/replace.cgi" TARGET="_BLANK">校閲君</A>でチェックする。（リンク先にあるものは、最新版。<A  href="http://www.hyuki.com/aozora/replace.cgi" TARGET="_BLANK">旧版</A>をブックマークしている人は、最新版に切り替えてほしい。）<BR>
+<BR>
+校閲君は、置き換えが必要かもしれない文字の右に、「▼雑雜▲」のように、想定される候補をそえて示す。<BR>
+こうした指摘があった文字は、底本の当該箇所を当たり、右の代替候補が使われていないか確認する。<BR>
+<BR>
+もし右が使われていれば、現在入っている左に代えて、右を入力する。<BR>
+校閲君の指摘にもかかわらず、底本に左が使われていれば、代替候補にあらためることはしない。<BR>
+<BR>
+<HR>
+<BR>
+</BODY>
+</HTML>
