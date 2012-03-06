@@ -124,6 +124,12 @@ div.keigakomi{padding-top: 0.5em;
     background: url("css/kentenbosen/before/ten/jyanome.png") repeat-x;
     }
 
+.saltire {
+    font-style: normal;
+    padding: 7px 0 0;
+    background: url("css/kentenbosen/before/ten/batsu.png") repeat-x;
+    }
+
 
 .sesame_dot_after {
     font-style: normal;
@@ -174,6 +180,12 @@ div.keigakomi{padding-top: 0.5em;
     background: url("css/kentenbosen/after/ten/jyanome.png") repeat-x;
     }
 
+.saltire_after {
+    font-style: normal;
+    padding: 0 0 7px 0;
+    background: url("css/kentenbosen/after/ten/batsu.png") repeat-x;
+    }
+
 .subscript { font-size: small; }
 .superscript { font-size: small; }
 .kaeriten { font-size: small; }
@@ -193,6 +205,8 @@ div.keigakomi{padding-top: 0.5em;
 h3 { font-size: 125%; margin: 0%;}
 h4 { font-size: large; margin: 0%;}
 h5 { font-size: medium; margin: 0%;}
+
+.caption { font-size: small; font-weight: bold;}
 
 .complex_ruby rt.real_ruby:before { content: "Åi" }
 .complex_ruby rt.real_ruby:after  { content: "Åj" }
