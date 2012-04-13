@@ -1,1 +1,205 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=SHIFT_JIS" ><TITLE>画像</TITLE><style type="text/css"><!--body { margin-left: 5%; margin-right: 5%; font-size: smaller;}--></style></HEAD><BODY><H2>画像</H2><HR><BR>底本中の写真や図版、挿絵などは、原則として、入力しません。<BR>入力しなかった画像要素については、省いた旨を、テキスト版中に注記する必要はありません。<BR><A name="gazo_chuki"></A><H3>写真や図版、挿絵などの画像</H3>ただし、本文の理解を図る上で不可欠で、かつ著作権上の問題がないことを確認できる画像は、ファイルにおさめます。<BR><BR>画像を組み入れる際は、次のように注記してください。<BR><BR><FONT color="Red" >※記入例の下に、テキスト版をスクリプトで変換して得た、XHTML 版のタグを示します。</FONT><BR><BLOCKQUOTE><FONT color="Blue" >［＃石鏃二つの図（fig42154_01.png、横321×縦123）入る］</FONT>　<FONT color="Red" >←　※従来の書式に、サイズ（「横…×縦…」）を加えた、拡張した記法です。</FONT><BR><BR><FONT color="Gray" >&lt;img class="illustration" width="321" height="123" src="fig42154_01.png" alt="石鏃二つの図" /&gt;</FONT><BR></BLOCKQUOTE>「石鏃二つの図」にあたる画像の説明を、工夫してください。<BR><BR>画像の種類を示す語は、「図」「地図」「絵」「挿絵」「表」「写真」などを用いてください。<BR><BR>説明を思いつかないときは、単に「挿絵１」「挿絵２」、「写真１」「写真２」などとしてもかまいません。<BR>「１」「２」「３」などの数字は、２バイト（全角）のものを用いてください。<BR>「10」以降は、１バイト（半角）のものを用いてください。<BR><BR>底本が画像に説明文（キャプション）を付けている場合は、鍵括弧内に引用した上で、次のように書いてください。<BR><BLOCKQUOTE><FONT color="Blue" >［＃「第一七圖　國頭郡今歸仁村今泊阿應理惠按司勾玉」のキャプション付きの図（fig4990_07.png、横321×縦123）入る］</FONT><BR><BR><FONT color="Gray" >&lt;img class="illustration" width="321" height="123" src="fig4990_07.png" alt="「第一七圖　國頭郡今歸仁村今泊阿應理惠按司勾玉」のキャプション付きの図" /&gt;</FONT></BLOCKQUOTE>丸括弧内には、画像のファイル名と画像のサイズを記入してください。<BR><BR>画像のファイル名は、「fig作品ID_通し番号.png」の形式で書いてください。<BR>「作品ID」は、<A  href="http://www.aozora.gr.jp/index_pages/index_top.html">総合インデックス</A>で確認できます。<BR><BR>「通し番号」は、１バイト数字２ケタの「01」から始まる連番とします。<BR>「100」以上が必要になる際は、「001」から始まる１バイト数字３ケタの連番としてください。<BR><BR>画像注記はかつて、「横…×縦…」のサイズ指定抜きで、次のように書いていました。<BR><BLOCKQUOTE><FONT color="Blue" >［＃石鏃二つの図（fig42154_01.png）入る］</FONT><BR></BLOCKQUOTE>ただし、XHTML 版では手書きでサイズを補い、以下のようにしていました。<BR><BLOCKQUOTE><FONT color="Gray" >&lt;img class="illustration" width="321" height="123" src="fig42154_01.png" alt="石鏃二つの図" /&gt;</FONT><BR></BLOCKQUOTE><FONT size="-1" ><A  href="index.html">目次にもどる。</A></FONT><BR></BODY></HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=SHIFT_JIS" >
+<TITLE>画像とキャプション</TITLE>
+<style type="text/css">
+<!--
+body { margin-left: 5%; margin-right: 5%; font-size: smaller;}
+.left { float:left; width:50%;}
+.right { float:right; width:50%;}
+.float-clear { clear:both;}
+-->
+</style>
+</HEAD>
+<BODY>
+
+<H2>画像とキャプション</H2>
+
+<HR>
+<BR>
+<A name="gazo_chuki"></A>
+<H3>写真や図版、挿絵などの画像</H3>
+
+本文の理解を図る上で不可欠で、かつ著作権上の問題がないことを確認できる画像は、ファイルにおさめます。<BR>
+<BR>
+画像を組み入れる際は、次のように注記してください。<BR>
+<BR>
+<div class="left">
+<IMG  src="fig/gazo_1.png" width="300" height="485"><BR>
+<BR CLEAR="LEFT">
+<BR>
+<FONT size="-2" >▲説明なしで組み込まれた、画像です。</FONT>
+</div>
+<div class="right">
+記入例：<BR>
+<HR>
+…官庁のイレモノは立派にと、当時の伊藤政府が心をくだいて打建てた記念物で、これがコンドル博士の設計に成るものである。<BR>
+<FONT color="Blue" >［＃コンドル博士の図（fig47728_06.png、横320×縦322）入る］</FONT><BR>
+　――その後はどうなつたらうか。東京のかう壊れない前は、浜町公園に行くと、園内に誰しも何だらう？と思ふ、西洋のお宮のやうな、一基の建てものがあつた。これが、さゝやかながらコンドル博士を記念した「堂宇」といへばいへたやうなもので、諸方のコンドルさんが手がけた建築物の遺品をあつめて作つたものだつた。ああその遺品さへも、今は現にこの東京で、手に入り難い。<BR>
+<BR>
+<FONT color="Gray"> 
+<code>
+…官庁のイレモノは立派にと、当時の伊藤政府が心をくだいて打建てた記念物で、これがコンドル博士の設計に成るものである。&lt;br /&gt;<br />
+&lt;img class="illustration" width="320" height="322" src="fig47728_06.png" alt="コンドル博士の図" /&gt;&lt;br /&gt;<br />
+　――その後はどうなつたらうか。東京のかう壊れない前は、浜町公園に行くと、園内に誰しも何だらう？と思ふ、西洋のお宮のやうな、一基の建てものがあつた。これが、さゝやかながらコンドル博士を記念した「堂宇」といへばいへたやうなもので、諸方のコンドルさんが手がけた建築物の遺品をあつめて作つたものだつた。ああその遺品さへも、今は現にこの東京で、手に入り難い。&lt;br /&gt;
+</code>
+</FONT>
+<HR>
+<FONT size="-2" >●画像の例。木村荘八「東京の風俗」冨山房百科文庫、冨山房、1989（平成元）年8月12日第2刷、88ページ</FONT><BR>
+</div>
+<BR class="float-clear">
+<BR>
+「コンドル博士の図」にあたる画像の説明を、工夫してください。<BR>
+<BR>
+画像の種類を示す語は、「図」「地図」「絵」「挿絵」「表」「写真」などを用いてください。<BR>
+<BR>
+説明を思いつかないときは、単に「挿絵１」「挿絵２」、「写真１」「写真２」などとしてもかまいません。<BR>
+「１」「２」「３」などの数字は、２バイト（全角）のものを用いてください。<BR>
+「10」以降は、１バイト（半角）のものを用いてください。<BR>
+<BR>
+底本が画像に説明文（キャプション）を付けている場合は、鍵括弧内に引用した上で、次のように書いてください。<BR>
+<BR>
+<div class="left">
+<IMG  src="fig/gazo_2.png" width="300" height="443"><BR>
+<BR CLEAR="LEFT">
+<BR>
+<FONT size="-2" >▲キャプション付きで組み込まれた、画像です。</FONT>
+</div>
+<div class="right">
+記入例：<BR>
+<HR>
+…何分にも時間がなく、前から頼んで置いた恩納村の人々は、定めし踊りを見せようと待つてゐられることゝ氣がせかれるので、詳しい調査は、一度島田君にでも來てもらつてすることにして、二時頃名護に引きかへす。<BR>
+<FONT color="Blue" >［＃「第一七圖　國頭郡今歸仁村今泊阿應理惠按司勾玉」のキャプション付きの図（fig4990_07.png、横564×縦424）入る］</FONT><BR>
+第一七圖　國頭郡今歸仁村今泊阿應理惠按司勾玉［＃「第一七圖　國頭郡今歸仁村今泊阿應理惠按司勾玉」はキャプション］<BR>
+<BR>
+<FONT color="Gray"> 
+<code>
+…何分にも時間がなく、前から頼んで置いた恩納村の人々は、定めし踊りを見せようと待つてゐられることゝ氣がせかれるので、詳しい調査は、一度島田君にでも來てもらつてすることにして、二時頃名護に引きかへす。&lt;br /&gt;<br />
+&lt;img class="illustration" width="564" height="424" src="fig4990_07.png" alt="「第一七圖　國頭郡今歸仁村今泊阿應理惠按司勾玉」のキャプション付きの図" /&gt;&lt;br /&gt;<br />
+&lt;span class="caption"&gt;第一七圖　國頭郡今歸仁村今泊阿應理惠按司勾玉&lt;/span&gt;&lt;br /&gt;
+</code>
+</FONT>
+<HR>
+<FONT size="-2" >●キャプション付きの画像の例。濱田耕作「青陵隨筆」座右寶刊行會、1947（昭和22）年11月20日、165ページ</FONT><BR>
+</div>
+<BR class="float-clear">
+<BR>
+丸括弧内には、画像のファイル名と画像のサイズを記入してください。<BR>
+<BR>
+画像のファイル名は、「fig作品ID_通し番号.png」の形式で書いてください。<BR>
+「作品ID」は、<A  href="http://www.aozora.gr.jp/index_pages/index_top.html">総合インデックス</A>で確認できます。<BR>
+<BR>
+「通し番号」は、１バイト数字２ケタの「01」から始まる連番とします。<BR>「100」以上が必要になる際は、「001」から始まる１バイト数字３ケタの連番としてください。<BR>
+<BR>
+画像注記はかつて、「横…×縦…」のサイズ指定抜きで、次のように書いていました。<BR>
+<BLOCKQUOTE>
+<FONT color="Blue" >［＃石鏃二つの図（fig42154_01.png）入る］</FONT><BR>
+</BLOCKQUOTE>
+ただし、XHTML 版では手書きでサイズを補い、以下のようにしていました。<BR>
+<BLOCKQUOTE>
+<FONT color="Gray" >&lt;img class="illustration" width="321" height="123" src="fig42154_01.png" alt="石鏃二つの図" /&gt;</FONT><BR>
+</BLOCKQUOTE>
+<A name="caption"></A>
+<H3>キャプション</H3>
+
+写真や図版に、しばしば横組みで添えられている説明（キャプション）は、次のように注記してください。<BR>
+<blockquote>
+神戸港頭の袂別<FONT color="Blue" >［＃「神戸港頭の袂別」はキャプション］</FONT>
+<BR>
+<BR>
+<FONT color="Gray" >
+<code>
+&lt;span class="caption"&gt;神戸港頭の袂別&lt;/span&gt;
+</code>
+</FONT>
+</blockquote>
+キャプションは、図版注記の次行に書き入れ、１行あけてから、本文を再開してください。<BR>
+<BR>
+<div class="left">
+<A  href="fig/caption_1.png" width="560" height="402" TARGET="_TOP"><IMG  src="fig/caption_1.png" width="280" height="201"></A><BR>
+<BR CLEAR="LEFT">
+<BR>
+<FONT size="-2" >▲左上のイラストには、「阿耨達池とカイラス雪峰」のキャプションが付いています。（画像をクリックすると、拡大します。）</FONT>
+</div>
+<div class="right">
+記入例：<BR>
+<HR>
+…私も彼らが涙を溢《こぼ》すと共に喜びの涙を溢しました。その翌日余り高くない波動状の山脈を五里ばかり進んで参りますと遙かの向うのマンリーという雪峰が聳《そび》えて居る。これは海面を抜くこと<BR>
+［＃「阿耨達池とカイラス雪峰」のキャプション付きの図（fig49966_15.png、横453×縦350）入る］<BR>
+阿耨達池とカイラス雪峰<FONT color="Blue" >［＃「阿耨達池とカイラス雪峰」はキャプション］</FONT><BR>
+<BR>
+［＃窓小見出し］二万五千六百尺［＃「尺」に「〔呎〕」の注記］の雪峰［＃窓小見出し終わり］　であって巍然《ぎぜん》として波動状の山々の上に聳えて居る様はいかにも素晴らしい。その辺へ着きますと閃々《せんせん》と電光が輝き渡り迅雷《じんらい》轟々《ごうごう》と耳を劈《つんざ》くばかり。…<BR>
+<BR>
+<FONT color="Gray"> 
+<code>
+…私も彼らが涙を&lt;ruby&gt;&lt;rb&gt;溢&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;こぼ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;すと共に喜びの涙を溢しました。その翌日余り高くない波動状の山脈を五里ばかり進んで参りますと遙かの向うのマンリーという雪峰が&lt;ruby&gt;&lt;rb&gt;聳&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;そび&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;えて居る。これは海面を抜くこと&lt;br /&gt;<br />
+&lt;img class="illustration" width="453" height="350" src="fig49966_15.png" alt="「阿耨達池とカイラス雪峰」のキャプション付きの図" /&gt;&lt;br /&gt;<br />
+&lt;span class="caption"&gt;阿耨達池とカイラス雪峰&lt;/span&gt;&lt;br /&gt;<br />
+&lt;br /&gt;<br />
+&lt;h5 class="mado-ko-midashi"&gt;&lt;a class="midashi_anchor" id="midashi1307"&gt;二万五千六百&lt;ruby&gt;&lt;rb&gt;尺&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;〔呎〕&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;の雪峰&lt;/a&gt;&lt;/h5&gt;　であって&lt;ruby&gt;&lt;rb&gt;巍然&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;ぎぜん&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;として波動状の山々の上に聳えて居る様はいかにも素晴らしい。その辺へ着きますと&lt;ruby&gt;&lt;rb&gt;閃々&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;せんせん&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;と電光が輝き渡り&lt;ruby&gt;&lt;rb&gt;迅雷&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;じんらい&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;ruby&gt;&lt;rb&gt;轟々&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;ごうごう&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;と耳を&lt;ruby&gt;&lt;rb&gt;劈&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;つんざ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;くばかり。…&lt;br /&gt;
+</code>
+</FONT>
+<HR>
+<FONT size="-2" >●キャプションの例。河口慧海「チベット旅行記（二）」講談社学術文庫、講談社、2008（平成20）年4月18日第41刷、16～17ページ</FONT><BR>
+</div>
+<BR class="float-clear">
+<BR>
+キャプション注記の対象文字が長めの場合や、外字注記が用いられているとき、前方参照型では期待通りに変換されない場合は、始まりと終わりを特定する、次のような開始／終了型で注記してください。
+<blockquote>
+<FONT color="Blue" >［＃キャプション］</FONT>アケビ（Akebia quinata Decne［＃「Decne」は斜体］.）の果実<FONT color="Blue" >［＃キャプション終わり］</FONT>
+<BR>
+<BR>
+<FONT color="Gray" >
+<code>
+&lt;span class="caption"&gt;アケビ（Akebia quinata &lt;span class="shatai"&gt;Decne&lt;/span&gt;.）の果実&lt;/span&gt;
+</code>
+</FONT>
+</blockquote>
+ほとんどの場合、キャプションは横組みで添えられていますが、その際も、横組み注記を併用する必要はありません。<BR>
+<BR>
+キャプション中に改行がある場合は、次のように注記してください。<BR>
+<BR>
+<div class="left">
+<IMG  src="fig/caption_2.png" width="300" height="447"><BR>
+<BR CLEAR="LEFT">
+<BR>
+<FONT size="-2" >▲キャプション１行めの行末で改行されています。</FONT>
+</div>
+<div class="right">
+記入例：<BR>
+<HR>
+…引用することは必ずしも無駄ではなかろう。<BR>
+［＃「第３図『雪華図説』図版第十面」のキャプション付きの図（fig52468_15.png、横360×縦507）入る］<BR>
+<FONT color="Blue" >［＃ここからキャプション］</FONT><BR>
+第３図『雪華図説』図版第十面<BR>
+　本図は加納一郎氏所蔵原本より複写したもので，貴重な原本を貸与された同氏の厚志を謝す．なお文久二年大槻磐渓の重刻本もただ一箇順序のちがったものがあるが，図は原本と同じものである．<BR>
+<FONT color="Blue" >［＃ここでキャプション終わり］</FONT><BR>
+<BR>
+<FONT color="Gray"> 
+<code>
+…引用することは必ずしも無駄ではなかろう。&lt;br /&gt;<br />
+&lt;img class="illustration" width="360" height="507" src="fig52468_15.png" alt="「第３図『雪華図説』図版第十面」のキャプション付きの図" /&gt;&lt;br /&gt;<br />
+&lt;div class="caption"&gt;<br />
+第３図『雪華図説』図版第十面&lt;br /&gt;<br />
+　本図は加納一郎氏所蔵原本より複写したもので，貴重な原本を貸与された同氏の厚志を謝す．なお文久二年大槻磐渓の重刻本もただ一箇順序のちがったものがあるが，図は原本と同じものである．&lt;br /&gt;<br />
+&lt;/div&gt;
+</code>
+</FONT>
+<HR>
+<FONT size="-2" >●キャプションの例。中谷宇吉郎「雪」岩波文庫、岩波書店、1994（平成6）年10月17日第1刷、50ページ</FONT><BR>
+</div>
+<BR class="float-clear">
+<BR>
+<FONT size="-1" ><A  href="index.html">目次にもどる。</A></FONT>
+<BR>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
