@@ -42,7 +42,7 @@ OFF
 #1000,50
 
 =COUNTER
-0032075121 http://www.aozora.gr.jp/
+0032084147 http://www.aozora.gr.jp/
 0000000001 http://www.aozora-bunko.sakura.ne.jp/
 0000000443 http://www.aozora.gr.jp
 0000000028 http
@@ -51,3 +51,10 @@ OFF
 0000000002 http://www.aozora.gr.jp.eztest.uncc.edu/
 0000000002 http://www.aozora.gr.jp/?net
 0000000001 http://127.0.0.1:8080/www.aozora.gr.jp/
+0000000001 http://www.aozora.gr.jp/'`"(
+0000000001 http://www.aozora.gr.jp/-0
+0000000001 http://www.aozora.gr.jp/s3
+0000000001 http://www.aozora.gr.jp/'+'
+0000000002 http://www.aozora.gr.jp/'
+0000000001 http://www.aozora.gr.jp/'||'
+0000000001 http://www.aozora.gr.jp/<alert(88952634)>
