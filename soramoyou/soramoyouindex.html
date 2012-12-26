@@ -45,6 +45,42 @@ a[name]:hover { color: black; background: white }
 <!-- main area -->
 <br><table summary="main" width="75%" cellpadding="4" cellspacing="3">
 <tr>
+<td bgcolor="#d3d3d3" width="25%" nowrap align="left" valign="top"><a name="000423"><b>2012年12月27日</b></td>
+<td bgcolor="#ffffcc" width="75%" align="left"><b>データベースと公開サイトのUTF-8化に向けて</b></td>
+</tr>
+<tr><td colspan="2" align="left">
+これまで、EUC-JPだったデータベースと公開サイトを、UTF-8に切り替えようと思っている。<br />
+書誌情報のCSVは従来、<a href="../index_pages/person_all.html" target="_blank">「公開中　作家リスト：全て」</a>と<a href="../index_pages/person_inp_all.html" target="_blank">「作業中　作家リスト：全て」</a>から、Shift_JISで3種類提供してきた。<br />
+明年1月末に予定している切り替え後は、これまでどおりの上記ページから、それぞれにUTF-8版を加え、都合6種類を並行して出力する。<br />
+<br />
+Shift_JIS版は、同じリンク文字から、同じファイル名で提供し続ける。<br />
+ただし、UTF-8をShift_JISに変換してと、作り方が変わる。JIS X 0208にない文字は、基本的には数値文字参照で表現する。Unicodeをあてると表示フォントがなくて見えなくなるだろう一部は、当面、外字注記を残すので、そこだけはShift_JISでも外字注記のままとなる。<br />
+<br />
+UTF-8をShift_JISに変換する際、利用したテーブルは、「―」をU+2015の「&amp;#8213;」とし、「〜」をU+FF5Eの「&amp;#65374;」とする。<br />
+<br />
+この誤変換問題、CSVを利用する側にとって、どう対処するのが望ましいのか。<br />
+サンプルのShift_JIS版では、とりあえず、この数値文字参照のままにする。<br />
+「&amp;#8213;」は「―」に、「&amp;#65374;」は「〜」にして出すという形で良いのか、ご意見を聞かせてほしい。<br />
+<br />
+下記リンク文字から、サンプルを引き落とせるようにしておく。<br />
+他にも正すべき点がないか、チェックしていただけるとありがたい。<br />
+<blockquote><br />
+<a href="list_person_all.zip" target="_blank">「公開中　作家別作品一覧：全て(CSV形式、zip圧縮）」をダウンロード</a><br />
+<a href="list_person_all_extended.zip" target="_blank">「公開中　作家別作品一覧拡充版：全て(CSV形式、zip圧縮）」をダウンロード</a><br />
+<a href="list_person_all_utf8.zip" target="_blank">「公開中　作家別作品一覧：全て(CSV形式、UTF-8、zip圧縮）」をダウンロード</a><br />
+<a href="list_person_all_extended_utf8.zip" target="_blank">「公開中　作家別作品一覧拡充版：全て(CSV形式、UTF-8、zip圧縮）」をダウンロード</a><br />
+<br />
+<a href="list_inp_person_all.zip" target="_blank">「作業中　作家別作品一覧：全て(CSV形式、 zip圧縮）」をダウンロード</a><br />
+<a href="list_inp_person_all_utf8.zip" target="_blank">「作業中　作家別作品一覧：全て(CSV形式、UTF-8、 zip圧縮）」をダウンロード</a><br />
+</blockquote><br />
+皆さんのコメントは、明年1月20日まで、reception@aozora.gr.jpへのメールと、掲示板<a href="http://hpcgi1.nifty.com/hongming/komorebi/wforum.cgi" target="_blank">「こもれび」</a>で待つ。<br />
+その後、必要な修正を加え、データベースと公開サイトの切り替えへと進めたい。<br />
+公開サイトは、一気に全体をUTF-8化するのではなく、新規に作成するものと更新がかかったものから、変えて行こうと考えている。（倫）
+</td></tr>
+</table>
+<br>
+<div align="right"><a href="#top" title="このページの先頭へ">▲</a></div><table summary="main" width="75%" cellpadding="4" cellspacing="3">
+<tr>
 <td bgcolor="#d3d3d3" width="25%" nowrap align="left" valign="top"><a name="000422"><b>2012年12月25日</b></td>
 <td bgcolor="#ffffcc" width="75%" align="left"><b>「青空文庫ものがたり」を公開</b></td>
 </tr>
