@@ -45,6 +45,35 @@ a[name]:hover { color: black; background: white }
 <!-- main area -->
 <br><table summary="main" width="75%" cellpadding="4" cellspacing="3">
 <tr>
+<td bgcolor="#d3d3d3" width="25%" nowrap align="left" valign="top"><a name="000426"><b>2013年01月16日</b></td>
+<td bgcolor="#ffffcc" width="75%" align="left"><b>CP932に変換した従来互換版CSV</b></td>
+</tr>
+<tr><td colspan="2" align="left">
+予定しているデータベースのUnicode化に伴って、書誌情報CSVの作り方を変える。<br />
+変更後、どのような形で提供するか、昨年12月27日付けのそらもよう記事「<a href="soramoyou2012.html#000423" target="_blank">データベースと公開サイトのUTF-8化に向けて</a>」で案内した。<br />
+<br />
+この記事では、変更後大きく2種類提供するCSVのサンプルも紹介した。<br />
+新しく加えるUTF-8版と、従来のものに近いShift_JIS版だ。<br />
+加えて、UTF-8化したデータから変換するよう作り方を変えることで生じる、Shift_JIS版の問題点を示し、どう対処するか、コメントを求めた。<br />
+<br />
+掲示板の「こもれび」や、メール、twitterで意見がよせられ、問題の解消のために、マイクロソフトによるShift_JISの拡張規格、CP932に変換してはという提案があった。<br />
+これにそって、CP932にしたものを用意してみた。<blockquote><a href="cp932/list_person_all.zip" target="_blank">「公開中　作家別作品一覧：全て(CSV形式、zip圧縮）」をダウンロード</a><br />
+<a href="cp932/list_person_all_extended.zip" target="_blank">「公開中　作家別作品一覧拡充版：全て(CSV形式、zip圧縮）」をダウンロード</a><br />
+<br />
+<a href="cp932/list_inp_person_all.zip" target="_blank">「作業中　作家別作品一覧：全て(CSV形式、 zip圧縮）」をダウンロード</a></blockquote>こちらでは、「―」「〜」は、この形で見える。（ただし、波ダッシュが全角チルダに入れ替わる問題は残っている。）<br />
+JIS X 0208にない文字は、Shift_JIS版ではすべて数値文字参照で見えていた。CP932版では、非0208文字の内、Windows外字にあるものはグリフで見え、それ以外は数値文字参照で見える。<br />
+<br />
+どちらも一長一短で、判断に迷う。<br />
+だが、CSVを利用しておられる方から推す声があったことを踏まえて、現時点ではCP932版を選ぼうかと考えている。<br />
+<br />
+先の案内では、1月20日までをコメント期間としていた。<br />
+追加でCP932版を検討していただくために、これを1月23日まで延ばす。<br />
+reception@aozora.gr.jpへのメール、もしくは掲示板<a href="http://hpcgi1.nifty.com/hongming/komorebi/wforum.cgi" target="_blank">「こもれび」</a>に意見を寄せていただけるとありがたい。（倫）
+</td></tr>
+</table>
+<br>
+<div align="right"><a href="#top" title="このページの先頭へ">▲</a></div><table summary="main" width="75%" cellpadding="4" cellspacing="3">
+<tr>
 <td bgcolor="#d3d3d3" width="25%" nowrap align="left" valign="top"><a name="000425"><b>2013年01月01日</b></td>
 <td bgcolor="#ffffcc" width="75%" align="left"><b>春を待つ冬芽</b></td>
 </tr>
