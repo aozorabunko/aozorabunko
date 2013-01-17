@@ -42,15 +42,29 @@ href="#link">リンク</a></td>
 <td align="center" valign="top">
 <a href="shomei/"><img src="images/noextension.png" width="165" height="50" border="0" alt="著作権保護期間延長反対"></a></td>
 <td align="right" valign="top">
-<form method="get" action="http://www.google.com/search" name="f" target="_blank">
-<input type="hidden" name="as_dt" value="i">
-<input type="hidden" name="as_sitesearch" value="www.aozora.gr.jp">
-<input type="hidden" name="lr" value="lang_ja">
-<input type="hidden" name="ie" value="euc-jp">
-<input type="hidden" name="num" value="20">
-www.aozora.gr.jp 内を Google で検索<br>
-<input type=text value="" name="as_q" size="25">
-<input type="submit" name="btng" value="検索"></form></td></tr>
+<script type="text/javascript">
+var nm=0;var qkey=new String("");var dkey=new String("");
+function se(nm){dkey=document.forms[0].qkey.value;
+if(dkey!=""){dkey=uu[nm]+encodeURIComponent(dkey);window.open(dkey,'_blank');}}
+uu=new Array(7);uu[0]="";
+uu[1]="http://www.google.co.jp/#hl=ja&num=20&q=site:www.aozora.gr.jp+";
+uu[2]="http://www.bing.com/search?q=site:www.aozora.gr.jp+";
+uu[3]="http://search.naver.jp/search?&q=site%3Awww.aozora.gr.jp+";
+uu[4]="http://www.baidu.jp/s?rn=20&wd=site:www.aozora.gr.jp+";
+uu[5]="http://search.yahoo.co.jp/search?p=site:www.aozora.gr.jp+";
+uu[6]="http://search.goo.ne.jp/web.jsp?IE=UTF-8&MT=site:www.aozora.gr.jp+";
+</script>
+<form action="#" onsubmit="se('1');return false;">
+<strong>www.aozora.gr.jp 内を検索</strong>&nbsp;
+<input type="text" name="qkey" value="" size="25">&nbsp;
+<br>
+<input type="button" style="width:60px;height:30px" onclick="se(1)" value="Google">
+<input type="button" style="width:60px;height:30px" onclick="se(2)" value="bing">
+<input type="button" style="width:60px;height:30px" onclick="se(3)" value="Naver">
+<input type="button" style="width:60px;height:30px" onclick="se(4)" value="Baidu">
+<!--<input type="button" style="width:60px;height:30px" onclick="se(5)" value="Yahoo!">-->
+<!--<input type="button" style="width:60px;height:30px" onclick="se(6)" value="goo">-->
+</form></td></tr>
 </table>
 
 <h1 style="font-size: 1.5em">インターネットの電子図書館、青空文庫へようこそ。</h1>
@@ -175,17 +189,18 @@ www.aozora.gr.jp 内を Google で検索<br>
 <tr><td width="30%" class="header" bgcolor="#ffffcc" valign="top"><a href="index_pages/whatsnew1.html" title="新着情報">新着情報</a></td>
 <td width="70%" class="summary" bgcolor="#f0f8ff">新規公開作品の一覧表です。随時更新。</td></tr>
 
-<tr><td width="30%" class="subheader" bgcolor="#ffffcc" align="right" valign="top">最新公開作品：<br>01月17日　</td>
+<tr><td width="30%" class="subheader" bgcolor="#ffffcc" align="right" valign="top">最新公開作品：<br>01月18日　</td>
 	<td width="70%" class="summary" bgcolor="#f0f8ff">
-		吉川 英治<br>
-<a href="cards/001562/card52427.html">『私本太平記　07 千早帖』</a>
+		室生 犀星<br>
+<a href="cards/001579/card53512.html">『人真似鳥』</a>
+<a href="cards/001579/card53511.html">『懸巣』</a>
 
 	</td>
 </tr>
 
 <tr><td width="30%" class="header" bgcolor="#ffffcc" valign="top"><a href="soramoyou/soramoyouindex.html" title="青空文庫からのお知らせ">そらもよう</a></td>
 <td width="70%" class="summary" bgcolor="#f0f8ff">青空文庫からのお知らせを掲載します。<br>
-最終更新日：13年01月16日
+最終更新日：13年01月18日
 </td></tr>
 
 <tr><td width="30%" class="header" bgcolor="#ffffcc" valign="top"><a href="teisei.html" title="訂正のお知らせ">訂正のお知らせ</a></td>
@@ -273,9 +288,6 @@ www.aozora.gr.jp 内を Google で検索<br>
 <tr><td width="30%" class="header" bgcolor="#ffffcc" valign="top"><a href="DOKUSYO.html" title="読書ガイド">青空文庫読書ガイド</a></td>
 <td width="70%" class="summary" bgcolor="#f0f8ff">青空文庫で公開しているファイル形式と、使い方についてご紹介しています。</td></tr>
 
-<tr><td width="30%" class="header" bgcolor="#ffffcc" valign="top"><a href="http://www.jca.apc.org/~earthian/aozora/llsearch.html" title="検索くん">青空文庫検索ページ</a></td>
-<td width="70%" class="summary" bgcolor="#f0f8ff">各種検索エンジンで青空文庫サイト内を検索できる、パワフル検索ページ。</td></tr>
-
 <tr><td width="30%" class="header" bgcolor="#ffffcc" valign="top"><a href="readingTEXT/index.html" title="TEXTを楽しむ">青空文庫のXHTML, TEXTの読み方</a></td>
 <td width="70%" class="summary" bgcolor="#f0f8ff">青空文庫のファイルを読む方法をご紹介しています。<br></td></tr>
 
@@ -361,7 +373,7 @@ www.aozora.gr.jp 内を Google で検索<br>
 
 <!-- footer -->
 
-収録作品数：11693（著作権なし：11462、著作権あり：231）
+収録作品数：11695（著作権なし：11464、著作権あり：231）
 
 <hr width="90%">
 
