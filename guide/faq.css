@@ -1,0 +1,82 @@
+body
+{
+	font-family: serif;
+	background-color: rgba(0,200,255,0.30)
+}
+
+div#contents
+{
+	background-color: white;
+	padding:5px;
+	border-color:#358BA0;
+	border-width:3px;
+	border-style:dotted;
+}
+
+hr {
+	height: 20px;
+	border-width: 0px;
+	box-shadow: 0 10px 10px -10px inset;
+}
+
+a img {
+	border: none;
+}
+
+h1 {
+	padding-left: 0.5em;
+	font-family: sans-serif;
+	font-size: 2.5em;
+	color: #000000;
+	text-shadow: white 4px 4px 6px;
+	background-color: maroon;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.6), inset 3px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.6), inset 3px 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.6), inset 3px 3px 3px rgba(0,0,0,0.2);
+	background-image: -o-linear-gradient(177deg , #ffffff 30%, #8888ff 100%);
+	background-image: -moz-linear-gradient(177deg , #ffffff 30%, #8888ff 100%);
+	background-image: -webkit-linear-gradient(177deg , #ffffff 30%, #8888ff 100%);
+	background-image: -ms-linear-gradient(177deg , #ffffff 30%, #8888ff 100%);
+	background-image: linear-gradient(177deg , #ffffff 30%, #8888ff 100%);
+}
+
+h2.editor {
+	font-family: sans-serif;
+	font-size: 1.5em;
+	color: blue;
+	text-shadow: white 10px 10px 10px;
+	margin-bottom: -1em;
+}
+
+h3.o-midashi {
+	font-family: sans-serif;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: rgba(0,128,128,1) 4px 4px 8px;
+	margin-top: -0.5em;
+	margin-bottom: -0.5em;
+	background-image: url(../images/book_icon_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+h4.naka-midashi {
+	font-family: sans-serif;
+	color: #0067ff;
+	text-shadow: rgba(36,224,199,1) 4px 4px 6px;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	background-color: #ffffff;
+	background-image: -o-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: -moz-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: -webkit-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: -ms-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: linear-gradient(179deg , #ffffff 50%, #808080 150%);
+	padding: 0.25em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
