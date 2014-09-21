@@ -1,9 +1,9 @@
 
 
-document.getElementById('link').innerHTML='<a href="JavaScript:goBooklog();"><img align="middle" src="http://www.aozora.gr.jp/cards/images/booklog_88_31.gif" alt="本の感想を書き込もう　web本棚サービスブクログ" width="88" height="31" border="0"></a>「<a href="JavaScript:goBooklog();">ブクログでレビューを読む、書く。</a>」<br><input type="button" value="青空inBrowsers" onclick="goVoyager()">で縦書き表示</form><form><input type="button" value="えあ草紙・青空図書館" onclick="goAirzoshi()">で縦書き表示</form>';
+document.getElementById('link').innerHTML='<a href="JavaScript:goBooklog();"><img align="middle" src="../images/booklog_88_31.gif" alt="本の感想を書き込もう　web本棚サービスブクログ" width="88" height="31" border="0"></a>「<a href="JavaScript:goBooklog();">ブクログでレビューを読む、書く。</a>」<br><input type="button" value="青空inBrowsers" onclick="goVoyager()">で縦書き表示</form><form><input type="button" value="えあ草紙・青空図書館" onclick="goAirzoshi()">で縦書き表示</form>';
 
 
-var num = location.href.replace(/.html/,'').replace(/http:\/\/www.aozora.gr.jp\/cards\/[0-9]+\/card/,'');
+var num = location.href.replace(/.html/,'').replace(/http:\/\/(www|mirror).aozora.gr.jp\/cards\/[0-9]+\/card/,'');
 var numm = (Array(6).join('0') + num).slice(-6);
 
 
@@ -22,7 +22,7 @@ function goAirzoshi(){
 }
 
 
-//青空文庫サーバ内ではnumのreplaceふたつめを/http:\/\/www.aozora.gr.jp\/cards\/[0-9]+\/card/と書くこと
+//青空文庫サーバ内ではnumのreplaceふたつめを/http:\/\/(www|mirror).aozora.gr.jp\/cards\/[0-9]+\/card/と書くこと
 
 //新しくリンク先サイトを増やすときは
 //はじめのdocumentのなかに
