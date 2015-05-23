@@ -1,0 +1,59 @@
+body { margin: 8% 10%; }
+div, h1, h2 { line-height: 160%; }
+
+div#contents
+{
+	padding:5px;
+	border-color:#358BA0;
+	border-width:1px;
+	border-style:dotted;
+}
+
+hr {
+	height: 24px;
+	background: url(../images/bar.gif);
+	border-width: 0px;
+}
+
+h1 {
+	width: 400px;
+	height: 100px;
+	text-indent:-9877em;
+	background:url(../images/kaikei.png) no-repeat;
+}
+
+a img {
+	border: none;
+}
+
+ul {
+	list-style-image: url(../images/book_icon_small.gif);
+}
+
+.present {
+	list-style-image: url(../images/arrow.gif);
+}
+
+li {
+	margin-top: 1em;
+	margin-left: 50px;
+	padding-left: 20px;
+}
+
+
+h4.naka-midashi {
+	color: #0067ff;
+	text-shadow: rgba(36,224,199,1) 4px 4px 6px;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	background-color: #ffffff;
+	background-image: -o-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: -moz-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: -webkit-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: -ms-linear-gradient(177deg , #ffffff 50%, #808080 100%);
+	background-image: linear-gradient(179deg , #ffffff 50%, #808080 150%);
+	padding: 0.25em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
