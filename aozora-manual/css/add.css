@@ -1,0 +1,74 @@
+
+
+
+.pht{
+padding:3px;
+border:1px solid #666;
+margin-bottom:1em;
+}
+
+.ex-img{
+padding:3px;
+}
+
+.label-chuki{
+   background-color: #f00;
+}
+
+.label-more{
+   background-color: #090;
+}
+
+.label-point{
+   background-color: #f90;
+}
+
+p.ex-more{
+margin-bottom: 20px;
+font-size:24px;
+line-height:30px;
+padding:10px 0 0 0;
+font-weight:bold;
+border-top:dotted 1px #ccc;
+}
+
+.bs-docs-sidebar .nav .nav {
+    display: none;
+    padding-bottom: 10px
+}
+
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 400
+}
+
+
+@media (min-width:992px){.bs-docs-sidebar .nav>.active>ul {
+        display: block
+    }
+
+.bs-docs-sidebar .nav>.active>a, .bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    padding-left: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #3585ca;
+}
+
+.bs-docs-sidenav .icon-chevron-right2 {
+  float: right;
+  margin-top: 2px;
+  margin-right: 10px;
+  opacity: .25;
+}
+
+.bs-docs-sidenav a:hover .icon-chevron-right2 {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right2,
+.bs-docs-sidenav .active a:hover .icon-chevron-right2 {
+  background-image: url(../img/glyphicons-halflings.png);
+  opacity: .25;
+}
