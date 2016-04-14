@@ -5,19 +5,22 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS" />
 	<meta http-equiv="content-style-type" content="text/css" />
-	<link rel="stylesheet" type="text/css" href="../../default.css" />
+	<link rel="stylesheet" type="text/css" href="../../aozora.css" />
 	<title>岸田國士 妻の日記</title>
-	<link rel="DC.Schema" href="http://purl.org/dc/elements/1.1/" />
+	<script type="text/javascript" src="../../jquery-1.4.2.min.js"></script>
+  <link rel="Schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<meta name="DC.Title" content="妻の日記" />
 	<meta name="DC.Creator" content="岸田國士" />
 	<meta name="DC.Publisher" content="青空文庫" />
 </head>
 <body>
+<div class="metadata">
 <h1 class="title">妻の日記</h1>
 <h2 class="author">岸田國士</h2>
-<div class="main_text">
 <br />
 <br />
-<br />
+</div>
+<div id="contents" style="display:none"></div><div class="main_text"><br />
 　かういふ場所で<ruby><rb>私事</rb><rp>（</rp><rt>わたくしごと</rt><rp>）</rp></ruby>を語ることは、由来、私の最も好まぬところである。如何なる理由があらうとも、誰がどう勧めようとも、私は今日までその気持を押し通して来た。従つて、小説の形ですらも、「私」の身辺を題材とすることは、それがたとへ現代文学の主潮であらうとなからうと、私は頑として享け容れなかつたのである。<br />
 　ところが、去年は母の死に遭ひ、今年はまた妻を喪つて、私の生活は激しく揺り動かされ、「家」といふものの存在がはつきり私の全体につながつてゐる事を痛感させられた。それはやがて、私のこれからの仕事にも影響し、また、世の中を観る眼をもかへさせるだらうと思ふほどである。私がこれから、いくぶんの勇気をもつて語らねばならぬ「私事」は、いはゆる私一個に関することではなくて、おそらく万人に共通の問題であり、殊に、この時代に日本に生れ育つたものの、ひとしく身をもつて経験し、または、するであらういろいろな事実を含んでゐる筈である。<br />
 　さて、私の母は、七十七歳の長寿を全うして世を去つたのであるから、云はゞこれは自然の順序であり、特に異常な衝撃を受けるといふやうなこともなかつたけれども、妻は、結婚後十五年、病床にあること半歳、私が医師から危険の宣告をうけて僅か三日後に、四十年の短い生涯を終つたのである。<br />
@@ -205,7 +208,7 @@
 　服従が若し日本の女の美徳であるとすれば、その服従は、男に委せるべきものを委せる果断と没我の勇気から来るものであると、私は信ずる。それゆゑに、女の服従は男の決意を固めさせ、行為の責任を自覚せしめる力となるのである。<br />
 　私は、命ずれば音の響きに応ずるやうな「諾」の返事ほど、夫の心に妻を凜々しく感じさせるものはないと思ふ。まことに、日本の家の深々とした重みである。<br />
 　以上で、私たち、即ち私と亡妻との合作になる女性訓を終ることにする。<br />
-　家内は幽明を隔てた界から、この原稿を嘗て屡<img gaiji="gaiji" src="../../../gaiji/1-02/1-02-22.png" alt="※(二の字点、1-2-22)" class="gaiji" />さうしたやうに、私に読み返してみせるであらう。<br />
+　家内は幽明を隔てた界から、この原稿を嘗て屡<img src="../../../gaiji/1-02/1-02-22.png" alt="※(二の字点、1-2-22)" class="gaiji" />さうしたやうに、私に読み返してみせるであらう。<br />
 　こゝをかうしたらといふ意見も出すであらう。私は笑つて、そのまゝでよろしいと答へる。彼女は従ふであらう。<br />
 　あゝ、しかし、彼女の眼に涙が溜つてゐはせぬか。<br />
 　私は、堪へ難い彼女への憐憫と作家としての良心にかけて、この一文を敢へて発表する。<br />
@@ -217,8 +220,7 @@
 <div class="bibliographical_information">
 <hr />
 <br />
-底本：「岸田國士全集26」岩波書店
-<br />
+底本：「岸田國士全集26」岩波書店<br />
 　　　1991（平成3）年10月8日発行<br />
 底本の親本：「婦人公論　第二十八年新年号、二月号」<br />
 　　　1943（昭和18）年1月1日、2月1日発行<br />
@@ -227,6 +229,7 @@
 入力：tatsuki<br />
 校正：門田裕志<br />
 2010年3月1日作成<br />
+2016年4月14日修正<br />
 青空文庫作成ファイル：<br />
 このファイルは、インターネットの図書館、<a href="http://www.aozora.gr.jp/">青空文庫（http://www.aozora.gr.jp/）</a>で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<br />
 <br />
@@ -241,5 +244,10 @@
 	<li>「くの字点」をのぞくJIS X 0213にある文字は、画像化して埋め込みました。</li>
 </ul>
 </div>
-</body>
+<div id="card">
+<hr />
+<br />
+<a href="JavaScript:goLibCard();" id="goAZLibCard">●図書カード</a><script type="text/javascript" src="../../contents.js"></script>
+<script type="text/javascript" src="../../golibcard.js"></script>
+</div></body>
 </html>
