@@ -4,7 +4,7 @@ document.getElementById('link').innerHTML='<a href="JavaScript:goBooklog();"><im
 
 
 
-var num = location.href.replace(/.html/,'').replace(/http:\/\/(www|mirror).aozora.gr.jp\/cards\/[0-9]+\/card/,'');
+var num = location.href.replace(/.html/,'').replace(/https?:\/\/(www|mirror).aozora.gr.jp\/cards\/[0-9]+\/card/,'');
 var numm = (Array(6).join('0') + num).slice(-6);
 var title = document.title.replace(/図書カード：/,'');
 
@@ -43,7 +43,7 @@ function goRodoku(){
 }(document, 'script', 'facebook-jssdk'));
 
 
-//青空文庫サーバ内ではnumのreplaceふたつめを/http:\/\/(www|mirror).aozora.gr.jp\/cards\/[0-9]+\/card/と書くこと
+//青空文庫サーバ内ではnumのreplaceふたつめを/https?:\/\/(www|mirror).aozora.gr.jp\/cards\/[0-9]+\/card/と書くこと
 
 //新しくリンク先サイトを増やすときは
 //はじめのdocumentのなかに
