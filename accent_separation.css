@@ -1,0 +1,61 @@
+body { margin: 8% 10%; }
+div, h1, h2 { line-height: 160%; }
+
+div#contents
+{
+	padding:5px;
+	border-color:#358BA0;
+	border-width:1px;
+	border-style:dotted;
+}
+
+hr {
+	height: 24px;
+	background: url(images/bar.gif);
+	border-width: 0px;
+}
+
+h1 {
+	width: 607px;
+	height: 100px;
+	text-indent:-9877em;
+	background:url(images/accent.png) no-repeat;
+}
+
+a img {
+	border: none;
+}
+
+dt {
+	margin-top: 1em;
+	margin-left: 20px;
+	padding-left: 10px;
+	background-image: url("images/arrow.gif");
+	background-repeat: no-repeat;
+	background-position: 2em;
+}
+
+dd {
+	margin-left: 20px;
+	padding-left: 8em;
+}
+
+h3 {
+	color: #0067ff;
+	text-shadow: rgba(36,224,199,1) 4px 4px 6px;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	padding: 0.25em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+h4 {
+	color: navy;
+	text-shadow: rgba(0,192,192,1) 4px 4px 8px;
+	margin-top: 1em;
+	background-image: url(images/book_icon_small.gif);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
