@@ -21,7 +21,7 @@ function goVoyager(){
 
 
 function goAirzoshi(){
-  window.open().location.href = 'http://www.satokazzz.com/airzoshi/reader.php?action=aozora&id='+num;
+  window.open().location.href = 'https://www.satokazzz.com/airzoshi/reader.php?action=aozora&id='+num;
 }
 
 
