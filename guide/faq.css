@@ -1,12 +1,32 @@
 body
 {
 	font-family: serif;
+	background-color: rgba(0,200,255,0.30)
 }
 
 div#contents
 {
-	padding: 1em;
+	background-color: white;
+	padding:5px;
+	border-color:#358BA0;
+	border-width:3px;
+	border-style:dotted;
+}
+
+hr {
+	height: 20px;
+	border-width: 0px;
+	box-shadow: 0 10px 10px -10px inset;
+}
+
+a img {
+	border: none;
+}
+
+h1 {
+	padding-left: 0.5em;
 	font-family: sans-serif;
+	font-size: 2.5em;
 	color: #000000;
 	text-shadow: white 4px 4px 6px;
 	background-color: maroon;
@@ -23,25 +43,6 @@ div#contents
 	background-image: linear-gradient(177deg , #ffffff 30%, #8888ff 100%);
 }
 
-hr {
-	height: 24px;
-	background: url(../images/bar.gif);
-	border-width: 0px;
-}
-
-a img {
-	border: none;
-}
-
-h1 {
-	color: navy;
-	line-height: 100px;
-	text-shadow: rgba(0,192,192,1) 4px 4px 8px;
-	background-image: url(../images/top_logo.png);
-	background-repeat: no-repeat;
-	padding-left: 110px;
-}
-
 h2.editor {
 	font-family: sans-serif;
 	font-size: 1.5em;
@@ -53,9 +54,10 @@ h2.editor {
 h3.o-midashi {
 	font-family: sans-serif;
 	font-size: 1.5em;
-	color: navy;
-	text-shadow: rgba(0,192,192,1) 4px 4px 8px;
-	margin-top: 1em;
+	color: white;
+	text-shadow: rgba(0,128,128,1) 4px 4px 8px;
+	margin-top: -0.5em;
+	margin-bottom: -0.5em;
 	background-image: url(../images/book_icon_small.gif);
 	background-repeat: no-repeat;
 	padding-left: 20px;
