@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+	<title>青空文庫 txt2xhtml</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+
+    <nav class="green lighten " role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">txt2xhtml変換</a>
+      </div>
+    </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div class="row">
+        <p>「ファイルを選択」ボタンを使って、変換したいテキストファイルを指定し、「変換」ボタンを押すとXHTMLファイルを生成します。</p>
+
+        <div class="col">
+          <div class="card grey lighten">
+            <div class="card-content white-text">
+              <span class="card-title">注意：</span>
+              <ul>
+                <li>変換するデータファイル名には、1バイトの文字だけを用いてください。スペース、仮名、漢字は使えません。</li>
+                <li>ファイルの拡張子は、.txtとしてください。</li>
+                <li>改行コードは、CR+LFにしてください。</li>
+                <li>変換するファイルの大きさは2MB以下にしてください。</li>
+                <li>入力したファイルはすぐに消去します。（あなたの手元には、ファイルは残ります。）</li>
+                <li>XHTMLに変換した結果は表示しますが、ダウンロードの機能はありません。必要なら、ブラウザーでソースを保存してください。</li>
+                <li>生成されたファイルのみをダウンロードして、PCのローカル環境でブラウザーで開いても、表示を支援するファイル群（cssや外字ファイル等）がないと、期待される表示とはなりません。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <form enctype="multipart/form-data" method="post" action="./txt2xhtml.cgi" target="_blank">
+              <input type="file" class="form-control-file" name="file1">
+
+              <button class="btn-large waves-effect waves-light" type="submit" name="action">変換
+              </button>
+        </form>
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </body>
+</html>
