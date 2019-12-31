@@ -1,1 +1,1009 @@
-<!DOCTYPE html><html lang="ja">  <head>    <meta charset="utf-8">    <title>青空文庫作業マニュアル【入力編】</title>    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="">    <meta name="author" content="">    <!-- Le styles -->    <link href="./css/bootstrap.css" rel="stylesheet">    <link href="./css/bootstrap-responsive.css" rel="stylesheet">    <link href="./css/docs.css" rel="stylesheet">    <link href="./css/prettify.css" rel="stylesheet">    <link href="./css/add.css" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->    <!--[if lt IE 9]>      <script src="assets/js/html5shiv.js"></script>    <![endif]-->   </head>  <body data-spy="scroll" data-target=".bs-docs-sidebar">    <!-- Navbar    ================================================== -->    <div class="navbar navbar-inverse navbar-fixed-top">      <div class="navbar-inner">        <div class="container">          <a class="brand" href="https://www.aozora.gr.jp">青空文庫</a>          <div class="nav-collapse collapse">            <ul class="nav">              <li class="">                <a href="index.html">青空文庫作業マニュアル【本という財産とどう向き合うか】</a>              </li>              <li class="active">                <a href="index-input.html">青空文庫作業マニュアル【入力編】</a>              </li>              <li class="">                <a href="index-proofreading.html">青空文庫作業マニュアル【校正編】</a>              </li>            </ul>          </div>        </div>      </div>    </div><!-- Subhead================================================== --><header class="jumbotron subhead" id="overview">  <div class="container">    <h1>青空文庫作業マニュアル【入力編】</h1>    <p class="lead" style="font-size:18px;">青空文庫形式のテキストファイルを作るためのマニュアルです。</p></div></header>  <script type="text/javascript">  $('.dropdown-toggle').dropdown();  </script>  <div class="container">    <!-- Docs nav    ================================================== -->    <div class="row">      <div class="span3 bs-docs-sidebar">        <ul class="nav nav-list bs-docs-sidenav">          <li><a href="#select-book"><i class="icon-chevron-right"></i>1. 入力する作品を選ぶ</a></li>          <li><a href="#apply"><i class="icon-chevron-right"></i>2. 入力の申込み</a></li>          <li><a href="#input"><i class="icon-chevron-right"></i>3. 入力にあたって</a> <ul class="nav">          <li><a href="#input-method"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-1. 入力方法</div></a></li>          <li><a href="#input-basic"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-2. 基本となる書式</div></a></li>          <li><a href="#input-word"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-3. 入力に使える文字</div></a></li>          <li><a href="#bigining-line"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-4. 行頭の字下げ</div></a></li>          <li><a href="#ke"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-5. 「ケ」のようにみえる文字</div></a></li>  </ul></li>          <li><a href="#markup"><i class="icon-chevron-right"></i>4. 青空文庫注記形式</a> <ul class="nav">          <li><a href="#ruby"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-1. ルビ</div></a></li>          <li><a href="#heading"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-2. 見出し</div></a></li>          <li><a href="#indentation"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-3. 字下げ</div></a></li>          <li><a href="#page-break"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-4. 改段、改ページ、改丁</div></a></li>          <li><a href="#center"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-5. センター寄せ</div></a></li>          <li><a href="#gaiji"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-6. 外字</div></a></li>          <li><a href="#kunten"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-7. 傍点・傍線・訓点</div></a></li>          <li><a href="#emphasis"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-8. 文字サイズ・太字</div></a></li>          <li><a href="#table"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-9. 表組み・罫囲み</div></a></li>          <li><a href="#images"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-10. 画像とキャプション</div></a></li>          <li><a href="#etc"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-11. その他</div></a></li>          <li><a href="#lost"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-12. 処理に迷ったとき</div></a></li>  </ul></li>          <li><a href="#foreign-language"><i class="icon-chevron-right"></i>5. 外国語の入力</a></li>          <li><a href="#symbol"><i class="icon-chevron-right"></i>6. 記号の入力</a></li>          <li><a href="#save"><i class="icon-chevron-right"></i>7. 文書の保存</a></li>          <li><a href="#proofreading"><i class="icon-chevron-right"></i>8. 入力者校正</a></li>          <li><a href="#send"><i class="icon-chevron-right"></i>9. 文書の送信</a></li>        </ul>      </div><div class="span9"><div style="margin:0 0 0 0;"><!-- 1. 入力する作品を選ぶ================================================== --><section id="select-book"><div class="page-header"><h1>1. 入力する作品を選ぶ</h1></div><p class="lead">入力する作品を選ぶ前に、まずは「青空文庫作業マニュアル【はじめに】」をお読みください。作品を選ぶ時に理解しなければならない著作権について書かれてあります。</p><p class="lead">青空文庫に登録したい作品があったら、まずは作者の没年を調べ、著作権の有無について確認してください。文学系の著作者については、青空文庫内にある<a href="https://www.aozora.gr.jp/siryo1.html" target="_blank">「著作権が消滅した作家一覧」を参照</a>してください。</p><p class="lead">著作権切れを控えた作家の作品は、「翌々年の１月１日までに公開できるもの」に限って、着手報告を受け入れます。</p><p class="lead">青空文庫では作品ごとに登録します。出版時に作品集としてまとめられていても、一つ一つ作品ごとに登録します。入力するための元にする本（これを底本と呼びます）は、自分が所有している本、図書館から借りた本など何でもかまいません。</p><p class="lead">次に、青空文庫の「公開中の作品」にあたって、入力したい作品が、すでに登録されていないか確認してください。青空文庫への登録を前提として、作業が進んでいる場合もあります。進行状況を示す「作業中の作品」にも、目を通してください。これらに記載されているものについては、原則として、同じ文字づかいでは、新たに入力していただくことはできません。ただし「進行状態」が「入力取り消し」となっているものは、入力可能です。それ以外にも、以下に該当する場合は、取り組んでもらえます。</p><p class="lead">旧字旧仮名で書かれた作品は、本来の姿にそった形（旧字旧仮名版）と現代表記に書き換えた形（新字新仮名版）、加えて旧字のみを新字に置き換えた中間的な形（新字旧仮名版）でも登録しています。ある形式ですでに登録、着手されている作品を、別の文字づかいで、新たに入力していただくことは可能です。 同じ文字づかいの同じ作品でも、内容に違いがあれば、重複して入力していただけます。</p><p class="lead">長期にわたって作業中のものを引き継ぎたいときは、ファイル作成の進行管理にあたっている点検グループ（reception@aozora.gr.jp）に申し入れてください。点検グループから前任者に働きかけても引き継げない場合は、同じ文字づかいでの入力を認めます。ただしその際は、作業中のものとは別の底本を選んでください。</p></section><!-- 2. 入力の申込み================================================== --><section id="apply"><div class="page-header"><h1>2. 入力の申込み</h1></div><p class="lead">入力する作品を選んだならば、「<a href="https://reception.aozora.gr.jp" target="_blank">作業着手連絡システム</a>」の「<a href="https://reception.aozora.gr.jp/accept.php" target="_blank">入力受付システム</a>」を使って申請してください。</p><p class="lead">作業中の作品総数は、一人200以下に抑えてください。</p><p class="lead">入力を申し込んだものの作業が続けられなくなった場合には、必ず点検グループ（reception@aozora.gr.jp）にお知らせください。入力の取り消し作業を行います。</p><p class="lead">作業着手後、メールアドレスが変わった場合は、必ず点検グループ（reception@aozora.gr.jp）に連絡してください。</p></section><!-- 3.入力にあたって================================================== --><section id="input"><div class="page-header"><h1>3. 入力にあたって</h1></div><p class="lead">一つの作品はさまざまな要素から成り立っています。本文だけを見ても、例えば文章にはルビ（ふりがな）や注釈があります。表組みもみられます。写真や挿し絵が使われている本も多数あります。</p><p class="lead">青空文庫では、本文だけをテキストで入力します。注釈は、これを書いた人の著作権が発生する場合があるので、著者注とはっきりと確認できるものを除いて入力を省きます。</p><p class="lead">写真や挿し絵などの画像は、写真撮影者や画家の著作権が切れていると確認できる場合のみ公開ファイルにおさめます。</p><p class="lead">青空文庫は、「底本に基づいた電子ファイルの作成」を目標に置き、「勝手な編集作業は行わない」という点を原則にしています。</p><p class="lead">漢字の使い方や送りがなは、「底本どおり」とします。旧かなのテキストであれば旧かなのままに、時代によって変化の激しい送りがなも、底本にならって入力してください。漢字で書くか、かなを用いるか、どんな漢字をあてるか、あるいは、かな表記の細部がばらついていたとしても、原則的には、底本通りに入力してください。</p><p class="lead">ただし旧漢字、旧かなのテキストが、私たちの多くにとって読みにくいこともまた事実です。現代表記にあらためたものがあれば、それを底本とすることで読みやすくできます。けれど、すべての作品で書き換え版が用意されているわけではありません。そこで、旧字、旧かなの書きあらために関しては、作業を進める上での目安を定めた上で、例外的にこれを認めることとします。自分自身で書き換えを行おうと考える人は、「<a href="https://www.aozora.gr.jp/KOSAKU/genndaihyouki.html" target="_blank">旧字、旧仮名で書かれた作品を、現代表記にあらためる際の作業指針</a>」にそって、対処してください。</p></section><!-- 3-1.入力方法================================================== --><section id="input-method"><h2>3-1. 入力方法</h2><p class="lead">テキスト作成に使うアプリケーションは、どんなものでもかまいません。シンプルなエディタでも、ワープロでも、あるいはアウトラインプロセッサなどの特殊なエディタでも、ご自分が使い慣れたものをお使いください。</p><p class="lead">保存形式は、青空文庫が使うと決めている、「Shift_JISのテキスト、改行コードはCR+LF」に合わせてください。（<a href="index-input.html#save">「7文書の保存」を参照</a>）。</p><p class="lead">書籍のページなどをスキャナーで読み込み、読み込まれた画像データを解析して文字データに変換し、テキストとして保存するしくみを、OCR（Optical Character Reader）といいます。OCRの活用は、負担の大きい入力作業の負担軽減につながります。</p><p class="lead">ただし、100％の精度で変換できるOCRソフトはありません。ソフト自体が優秀でも、スキャニングに用いる書籍やコピーの質の問題もあります。OCRによるテキスト入力は必ずエディタなどによる修正作業をともないます。</p><p class="lead">OCRで誤認識されやすい文字は「<a href="http://eunheui.sakura.ne.jp/aozora/proofreader.html" target="_blank">校正ツール2.0化ひとりプロジェクト</a>」でチェックすることもできます。</p></section><!-- 3-2.基本となる書式================================================== --><section id="input-basic"><div class="page-header"><h2>3-2. 基本となる書式</h2></div><p class="lead">入力ファイルは、次のように作っていきます。</p><div class="prettyprint" style="padding:20px;"><ol><li class="lead">一番最初の行には、「作品名」を入れる。（底本の表題にルビが付いていたとしても、１行目に入れる作品名には、ルビは入れません。表題のルビを省いたときは、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」に従って、ファイル末にその旨を記載してください。） </li><li class="lead">その次の行に「著者名」を入れる。  人物名などの書誌データのとりかたは「<a href="https://www.aozora.gr.jp/metadata_collection/index.html" target="_blank">青空文庫における書誌データのとりかた</a>」を参考にしてください。</li><li class="lead">訳者、編者などが関わっていたり、副題、原題等がある場合等は、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」の形式に沿って３行目以降に入れる。（副題のルビも、入力しません。副題のルビを省いたときは、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」に従って、ファイル末にその旨を記載してください。）  </li><li class="lead">冒頭の記載事項を書き終えたら、１行開けて、ルビなどを表す記号の使い方を説明した、【<a href="https://www.aozora.gr.jp/KOSAKU/txt_chu_kigo.html" target="_blank">テキスト中に現れる記号について</a>】を入れる。（記号を使わないですむ場合は、入れる必要はありません。）  </li><li class="lead">１行開けて、本文を入れる。（【テキスト中に現れる記号について】が入らない場合は、冒頭の記載事項から１行開けて、本文を入れてください。） </li><li class="lead">本文の末尾から３行開けて、「使用した底本の正式名称・出版社・発行年月日、入力者名」等を「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」の形式に沿って入れる。 </li><li class="lead">現代表記に書き改めた場合の作業履歴、その他の注記事項などがある場合は、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」の形式に沿って入れる。</li></ol></div><p class="lead" style="margin:20px 0 0 0;">文庫本などではそれ自体に底本（全集など）が存在する場合があります。その場合には、「底本の親本（底本の底本）の正式名称・出版社・発行年月日」もわかる範囲でつけ加えてください。</p><p class="lead">入力ファイルの基本的な形を掴む上では、新規公開作品のテキスト版をいくつか開いてみると、参考になります。</p></section><!-- 3-3.入力に使える文字================================================== --><section id="input-word"><div class="page-header"><h2>3-3. 入力に使える文字</h2></div><p class="lead">青空文庫では、「半角カナ」をのぞくJIS X 0201の文字（いわゆる半角英数と半角の記号）と、JIS X 0208のすべての文字を使って入力します。</p><p class="lead">最近のパソコン、タブレット、スマートフォンでは、JIS X 0213で新たに規定された文字を含むUnicodeを使用できますが、青空文庫はJIS X 0201およびJIS X 0208にある文字のみを使います。</p><p class="lead">入力した文字がJIS X 0201およびJIS X 0208の範囲内であるのかを確認するには、「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」というツールを使用してください。</p><p class="lead">「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」は、結城浩さんによって書かれ、ゼファー生さんによって改善、維持されています。</p></section><!-- 3-4.行頭の字下げ================================================== --><section id="bigining-line"><div class="page-header"><h2>3-4. 行頭の字下げ</h2></div><p class="lead">行頭の字下げは全角のスペースを入力します。</p><p class="lead">行頭にかぎ括弧　「」　が来る場合は字下げはしません。底本によっては字下げをしている場合がありますが、青空文庫では統一して字下げをしません。</p><p class="lead">同じように　（）『』【】　などの括弧類が行頭に来る場合も字下げをしません。</p><div class="bs-docs-example"><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/kakko_sage1.gif" alt="行頭の字下げ" /></div><p class="lead" style="margin:20px 0 20px 0;">この底本では、行頭にかぎ括弧が来ても１字下げてあります。こうした場合にも、下のようにスペースは入れずに入力してください。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/kakko_sage2.gif" alt="行頭の字下げ" /></div></div></section><!-- 3-5.「ケ」のようにみえる文字================================================== --><section id="ke"><div class="page-header"><h2>3-5. 「ケ」のようにみえる文字</h2></div><p class="lead">「ケ」のようにみえる文字には、「け」と読まれる片仮名と、「こ」「か」「が」と読み分けられる漢字があります。</p><p class="lead">「ケ」にみえる文字は、前後の文章の流れを読んで、以下に示すように入力してください。 </p><p class="lead">「け」と読む片仮名は、次のように、区点番号5-17の「ケ」で入れてください。</p><p class="prettyprint">ケンタッキー</p><p class="lead">「こ」「か」「が」と読む漢字は、次のように、区点番号5-86の「ヶ」で入れてください。</p><p class="prettyprint">一ヶ（「こ」）</p><p class="prettyprint">二ヶ所、六ヶしい（「か」）</p><p class="prettyprint">霞ヶ関、槍ヶ岳（「が」） </p><p class="lead">底本が「こ」「か」「が」と読むものを小書きせず、他の文字と同じ大きさにつくっている場合は、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」にそって、ファイル末に以下のように注記してください。</p><p class="prettyprint">※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。</p><span class="label label-more">more</span><p class="ex-more">詳しくは、「<a href="https://www.aozora.gr.jp/KOSAKU/small_or_large/guide_line.html" target="_blank">区点番号5-17と5-86の使い分け指針</a>」を参照してください。</p></section><!-- 4. 青空文庫注記形式================================================== --><section id="markup"><div class="page-header"><h1>4. 青空文庫注記形式</h1></div><p class="lead">底本にあるレイアウトをテキストで表現するために青空文庫注記形式を使います。使用する記号はルビ（ふりがな）に使う「《》」とレイアウト情報、入力者注に使う「［＃…］」です。以下に、その用法に付いて説明します。</p></section><!-- 4-1. ルビ================================================== --><section id="ruby"><div class="page-header"><h2>4-1. ルビ</h2></div><p class="lead">ルビは、ルビの付く文字列のあとに、「《》」でくくって入力します。（学術記号の「≪≫」と混同しやすいので注意してください。）</p><p class="lead">印刷物では通常、「がつこう」、「きようしつ」のように、ルビの拗促音が小書きされません。けれど青空文庫のファイルでは、原則として「学校《がっこう》」、「教室《きょうしつ》」などと、ルビの拗促音を小書きしてください。</p><p class="lead">ただし、拗促音を小書きしない旧かな作品では、ルビにも小書きを用いないでください。</p><p class="lead">作品本文が旧かなであるにもかかわらず、ルビは新仮名とした底本があります。この際は、ルビの拗促音は小書きしてください。（旧かな作品中の新仮名ルビの拗促音を小書きしたたときは、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」に従って、ファイル末にその旨を記載してください。）</p><p class="lead">ルビ付きの熟語が連続する場合には、</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">一応《いちおう》何時《いつ》もの</p><p class="lead">のようにルビを分割します。</p><p class="lead">ただし、複合語として定着している場合は、</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">一瀉千里《いっしゃせんり》 </p><p class="lead">のように１つにまとめます。</p><p class="lead">分けるべきか、まとめるべきか迷ったときは、まとめてください。</p><p class="lead">ルビの付く文字列がはじまる前には、「｜」を入れます。</p><p class="lead">書き込まれた「｜」は、「《》」におさめられたルビを、プログラムを使って底本にある形に再現しようとする際などに、処理の手がかりとして利用できます。</p><p class="lead">底本に次のようにあれば、</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby0.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">武州｜青梅《おうめ》の宿</p><p class="lead">と入力してください。</p><p class="lead">ルビのかかる部分が漢字だけで構成され、かな、記号、空白など、「漢字以外の文字」に続いている場合には「｜」は必要ありません。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby3.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">耳まで火照《ほて》って</p><p class="lead">繰り返し記号「々」は、漢字として扱います</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby7.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">すると稍々《やや》度を失った</p><p class="lead">「々」と同様、JIS X 0208では第1水準第2水準に含められていない、「仝」（おなじ、ドウ、くりかえし）、「〆」（しめ）、「〇」（ぜろ、レイ）、「ヶ」（コ、カ、ガ）も、「｜」がいるかいらないかの判断にあたっては、漢字とみなしてください。</p><p class="lead">【外字注記】（4-6参照）で表現する「二の字点」（二の字点、面区点番号1-2-22）も、「々」と同様に漢字として扱います。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">確実さで、益※［＃二の字点、面区点番号1-2-22］《ますます》はっきりと</p><p class="lead">アルファベットの単語にルビが付く場合は、【外国語の入力】（5参照）の項にあるように、原則として単語の前後に半角のスペースを入れて入力するので、その内側に記述します。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby4.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">兄きのような Fanatiker《ファナチイケル》 とは </p><p class="lead">※単語のあとにくる半角アキは、「《」の前ではなく、「》」のあとに置きます。</p><p class="lead">アルファベットの句や文にルビが付く場合は、単語ごとにルビを付けます。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby8.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">“Kosinski《コジンスキイ》 soll《ゾル》 leben《レエベン》 !” </p><p class="lead">ルビのかかる範囲の特定ができない場合には、「｜」を用います。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby1.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">そんな｜お伽話《フェヤリー・ストーリース》は、 </p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby2.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">霧の｜ロンドン警視庁《スコットランドヤード》…</p><p class="lead">ヱ」などのカタカナが含む場合も「｜」を用います。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby5.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">いいか｜釜右ヱ門《かまえもん》。</p><p class="lead">複数のアルファベットの単語に、一つのまとまったルビが付く場合には、「｜」を用いてルビのかかる範囲を特定してください。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby9.gif" alt="ルビ" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">彼は ｜Au revoir《さらば》 と、</p><p class="lead">アルファベット入力時に入れる半角アキは、上の例では「彼は」と「｜」のあいだと、「》」 と「と」のあいだに置きます。</p><span class="label label-more">more</span><p class="ex-more">詳しくは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#ruby" target="_blank">ルビとルビのように付く文字</a>」を参照してください。</p><p class="lead">ルビの付く文字の分け方とまとめ方に付いては、「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html" target="_blank">入力ファイルを「テキスト版」に仕上げるために</a>」の「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html#chap4" target="_blank">テキスト版に求められる形式４　本文</a>」を参照してください。</p></section><!-- 4-2. 見出し================================================== --><section id="heading"><div class="page-header"><h1>4-2. 見出し</h1></div><p class="lead">見出し注記には、「大見出し」、「中見出し」、「小見出し」の、三つのレベルを設けます。</p><p class="lead">作品中に一つのレベルの見出しだけが使われている場合は、○○［＃「○○」は中見出し］と注記してください。</p><p class="lead">二つのレベルの見出しが使われている場合は、大中を用いて、大きなレベルを○○［＃「○○」は大見出し］、小さなレベルを、○○［＃「○○」は中見出し］と注記してください。</p><p class="lead">三つのレベルの見出しが使われている場合は、大中小を用いて、大きなレベルを○○［＃「○○」は大見出し］、中のレベルを○○［＃「○○」は中見出し］、小さなレベルを○○［＃「○○」は小見出し］と注記してください。</p><p class="lead">三つ以上のレベルの見出しが使われている場合は、大きなレベルから○○［＃「○○」は大見出し］、○○［＃「○○」は中見出し］、○○［＃「○○」は小見出し］と注記し、それ以下のレベルの見出しは注記しないでください。その上で、「※小見出しよりもさらに下位の見出しには、注記しませんでした。」のようにファイル末に書き入れてください。</p><p class="lead">見出しのルビは、注記対象文字の後に置く、前方参照型の見出し注記には含めません。○○《まるまる》［＃「○○《まるまる》」は中見出し］ではなく、○○《まるまる》［＃「○○」は中見出し］のように書いてください。</p><div class="bs-docs-example"><p>二つのレベルの見出し</p><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/midashi_1.png" alt="二つのレベルの見出し" class="pht" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃２字下げ］上　先生と私［＃「上　先生と私」は大見出し］<br /><br /><br />［＃５字下げ］一［＃「一」は中見出し］<br /><br />　私《わたくし》はその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を憚《はば》かる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を執《と》っても心持は同じ事である。よそよそしい頭文字《かしらもじ》などはとても使う気にならない。</p></div><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/heading.html" target="_blank">詳しくはこちら</a></p></section><!-- 4-3. 字下げ================================================== --><section id="indentation"><div class="page-header"><h1>4-3. 字下げ</h1></div><p class="lead">字下げされた箇所は、原則として、注記を用いてレイアウトを表現します。</p><p class="lead">本文の一部が字下げしてあったり、地（ページの下）に寄せてある場合は、以下の要領で注記してください。</p><p class="lead">ここでは、あきなしで天に寄せてある処理を、「天付き」と呼びます。</p><p class="lead">あきなしで地に寄せてある処理を、「地付き」と呼びます。</p><p class="lead">数文字分下をあけて、地に寄せてある処理を、「地寄せ」と呼ぶことにします。</p><div class="bs-docs-example"><h3>１行だけの字下げ</h3><p>字下げされている文字列の前に、［＃○字下げ］と書き込んでください。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/tenkara.png" alt="１行だけの字下げ" class="pht" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">…ここでもっと大事なのは論述のスタイルである。<br /><br />［＃３字下げ］灰いろの抽象の世に住まんには濃きに過ぎたる煩悩の色<br /><br />　九鬼周造が詩と短歌をかなり数多く残し、…</p><p>１行だけの字下げは、ブロックの注記を用いて、次のように書くこともできます。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">…ここでもっと大事なのは論述のスタイルである。<br /><br />［＃ここから３字下げ］<br />灰いろの抽象の世に住まんには濃きに過ぎたる煩悩の色<br />［＃ここで字下げ終わり］<br /><br />　九鬼周造が詩と短歌をかなり数多く残し、…</p><h3>ブロックでの字下げ</h3><p>字下げされているブロックの１行前に、［＃ここから○字下げ］と書き込んでください。</p><p>○には、ブロック全体が何字分下げてあるかを、全角のアラビア数字で書き込んでください。</p><p>字下げされたブロックが終わったら、改行して［＃ここで字下げ終わり］と書いてください。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/jisage.png" alt="ブロックでの字下げ" class="pht" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">…然し愚な純な弱い白が、主人夫妻にはいつまでも忘られぬのである。<br /><br /><br />［＃ここから５字下げ］<br />白は大正七年一月十四日の夜半病死し、赤沢君の山の上の小家の梅の木陰に葬られました。甲州に往って十年です。村の人々が赤沢君に白のクヤミを言うたそうです。「白は人となり候」と赤沢君のたよりにありました。「白」は幸福な犬です。<br />　　大正十二年二月九日追記<br />［＃ここで字下げ終わり］</p><h3>地付き</h3><p>地付き処理されている文字列の前に、［＃地付き］と書き込んでください。</p><p>地付き処理された文字列だけが、独立した行の下に位置しているときは、改行してまず［＃地付き］と書き込み、続けて、その文字列を入力してください。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/chitsuki_1.png" alt="地付き" class="pht" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">◯四月に於けるわが収入は、金五十二円八十銭であった。大学卒業後今日までに於ける最低収入の月であった。記憶に値する。<br />［＃地付き］（この日記終り）</p></div><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/layout_2.html#jisage_kakushu" target="_blank">詳しくはこちら</a></p></section><!-- 4-4. 改段、改ページ、改丁================================================== --><section id="page-break"><div class="page-header"><h1>4-4. 改丁、改ページ、改段</h1></div><p class="lead">書籍や雑誌ではしばしば、内容の切れ目でページや段をあらため、次のページや次の段のはじめから、あとを続ける組み版が行われます。</p><p class="lead">前の内容が、左右どちらのページで終わったかにかかわらず、続きを次の左ページ（縦組みの場合）から始める処理を、「改丁（かいちょう）」と呼びます。「改丁」はしばしば、大きな内容の切れ目で用いられます。</p><p class="lead">続きを次のページから始める処理を、「改ページ」と呼びます。（「改頁」とも書きますが、青空文庫の注記では「改ページ」とします。）「改ページ」はしばしば、中程度の内容の切れ目で用いられます。</p><p class="lead">段組された書籍で用いられる、内容の切れ目で段を改める処理を、「改段」と呼びます。</p><p class="lead">段組された書籍でも、新しい内容が次のページから始まる場合は「改ページ」、次の左ページから始まる場合は「改丁」と呼びます。</p><div class="bs-docs-example"><h3>改丁</h3><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/kaicho_1.png" alt="改丁" class="pht" /><img src="https://www.aozora.gr.jp/annotation/fig/kaicho_2.png" alt="改丁" class="pht" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">…頗《すこぶ》る理論の品価を増《まし》たるもの多し。明治八年三月二十五日、福沢諭吉｜記《しるす》。<br />［＃改丁］<br /><br />［＃１字下げ］文明論之概略　巻之一［＃「文明論之概略　巻之一」は大見出し］<br /><br /><br />［＃３字下げ］第一章　議論の本意を定る事［＃「第一章　議論の本意を定る事」は中見出し］<br /><br /><br />　軽重、長短、善悪、是非等の字は、相対《あいたい》したる考えより生じたるものなり。…</p><h3>改ページ</h3><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/kaipage.png" alt="改ページ" class="pht" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">…もし得ることあらば、他日これを記してその功徳《こうとく》を表《ひょう》し、もって世人の亀鑑に供すべし。<br />［＃地から１字上げ］（明治七年三月出版）<br />［＃改ページ］<br /><br />［＃１字下げ］学問のすゝめ　八編［＃「学問のすゝめ　八編」は大見出し］<br /><br />［＃地から３字上げ］福沢諭吉著<br /><br /><br />［＃５字下げ］我心をもって他人の身を制すべからず［＃「我心をもって他人の身を制すべからず」は中見出し］<br /><br />　アメリカのウェイランドなる人の著《あらわ》したる「モラルサイヤンス」という書に、人の心身の自由を論じたることあり。…</p> <h3>改段</h3><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/kaidan.png" alt="改段" class="pht" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">…彼らの青春のすべてを決して見ることはない一〇〇万の観客に捧げたことに、十分な感謝もしていないようである。<br />［＃改段］<br /><br />［＃３字下げ］２　最近まで、私はフランスにいた［＃「２　最近まで、私はフランスにいた」は中見出し］<br /><br /><br /><br /><br /><br />　一九八三年の七月一四日、フランス革命記念日、フランス大統領は、コンコルド広場の記念塔の下にたって、…</p> </div><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/layout_1.html#kaicho+kaidanl" target="_blank">詳しくはこちら</a></p></section><!-- 4-5. センター寄せ================================================== --><section id="center"><div class="page-header"><h1>4-5. センター寄せ</h1></div><p class="lead">章名や献辞、数行の一節などだけを示したページではしばしば、左右中央に文字を置く組み版が行われます。 ここではこれを、「左右中央」と呼びます。</p><p class="lead">作品の冒頭や、改丁、改ページの後で、ページの左右中央に組まれた文字列を入力する際には、まず［＃ページの左右中央］と書き込んでください。</p><div class="bs-docs-example"><div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/sayu_chuo1.png" alt="センター寄せ" class="pht" /></p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃ページの左右中央］<br /><br /><br />［＃３字下げ］短章　その一［＃「短章　その一」は中見出し］<br /><br /><br />［＃改ページ］</p> </div><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/layout_3.html" target="_blank">詳しくはこちら</a></p></section><!-- 4-6. 外字================================================== --><section id="gaiji"><div class="page-header"><h1>4-6. 外字</h1></div><p class="lead">青空文庫の入力は、JIS X 0201で定義され、半角で表示されるラテン文字、数字、記号と、JIS X 0208で定義され、全角で表示される漢字（第1水準と第2水準）、かな、ラテン文字、ギリシア文字、キリール文字、数字、記号によって行います。 JIS X 0208（JIS X 0201の文字は、ここにすべて含まれます。）にない文字を、このマニュアルでは外字と呼びます。</p><p class="lead">パソコンやその他の情報機器では、Unicodeが広く使えるようになっていますが、青空文庫の作業では今のところ、これも使いません。 入力した文字にJIS X 0208以外の文字が入っていないかは、「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」というツールで確認できます。ファイルは必ず、チェッカー君を通してください。</p><p class="lead">入力したい文字がパソコンでみつからないときや、候補はみつかったけれど、それで入れてよいか疑問が残るときは、<a href="https://www.aozora.gr.jp/gaiji_chuki/" target="_blank">「外字注記辞書」を参照</a>してください。</p><p class="lead">「外字注記辞書」の最新版は、<a href="https://www.aozora.gr.jp/gaiji_chuki/" target="_blank">このページから</a>ダウンロードできます。その都度、ここから開くこともできますが、手もとにおいて、作業時に簡単、迅速に開けるようにしておくことを、おすすめします。</p><p class="lead">索引から探してみつかった文字が、次のように表示されていれば、入れるべき文字は青空文庫で使える範囲にあります。<br />「→［包摂適用　■］」 <br />「→［統合適用　■］」 <br />「→［デザイン差　■］」 <br />「→［78互換包摂　■］」 <br />「■」に入っている文字で入力してください。</p><p class="lead">例えば底本に「靑」と書かれてあるとします。現在のパソコンからは入力できますが、「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」を通すと「<span style="color:#f00;">[gaiji]【靑】</span>」と出ます。その場合は「外字注記辞書」を参照してください。「外字注記辞書」には次のように書いてあります。</p><p class="lead">0． 靑※［＃「睛のつくり」］→［包摂適用　青］　146</p><p class="lead">これは、JIS漢字コードが採用している「包摂」という考え方を適用して、JIS X 0208では、「靑」は「青」のコードで入れる決まりになっているという意味です。 上記の「→［包摂適用　■］」に該当しますから、「■」のところに示された「青」で入力してください。</p><p class="lead">青空文庫の入力で使えるJIS X 0208は、第1水準第2水準の漢字を規定した上に、細かな字体差によって漢字のコードを区別するかしないかの約束事を、「包摂規準」という名前で定めています。</p><p class="lead">青空文庫の漢字の入力は、JIS X 0208に明示された185番までの包摂規準に加え、JIS X 0213で追加された186〜199番を受け入れた上で、底本に忠実に行います。詳しくは<a href="https://www.aozora.gr.jp/hosetsu_kijyun/index.html" target="_blank">こちら</a>をごらんください。</p><p class="lead">「外字注記辞書」には、「→［包摂適用　■］」のような、矢印以下の形が示されていない、次のようなものがあります。</p><p class="lead">★ 4． 棈※［＃「木＋睛のつくり」、第3水準1-85-73］補助漢字と共通</p><p class="lead">矢印以下がないときは、入力すべき文字は、青空文庫で使える範囲にありません。 その際は、以下を基本形とした外字注記で入力します。</p><p class="lead">※［＃…］</p><p class="lead">上記の例では、「※［＃「木＋睛のつくり」、第3水準1-85-73］」に相当する部分です。これを外字注記辞書からコピーして、次のようにファイルにペーストしてください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">※［＃「木＋睛のつくり」、第3水準1-85-73］松《あべまつ》さん</p><p class="lead">外字にルビが付いている場合は、以下のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">喉を掻き※［＃「てへん＋劣」、第3水準1-84-77］《むし》って</p></div><p class="lead">旧字作品の入力ファイルには、使うべきでない新字や俗字が、しばしば紛れこみます。</p><p class="lead">これらを見つけ出すために、「<a href="http://www.aozora.jp/kouetsukun/replace.cgi" target="_blank">校閲君</a>」と名付けたチェックツールを用意しました。詳しい使い方は、「<a href="https://www.aozora.gr.jp/tools/kouetsukun/" target="_blank">旧字ファイルの新字・俗字を、校閲君で洗い出そう！</a>」で説明しています。</p><p class="lead">旧字作品の入力が終わったら、青空文庫宛にファイルを送る前に、必ず校閲君でチェックしてください。</p><p class="lead">校閲君は、結城浩さんによって書かれた後、ゼファー生さんによって書き直され、維持されています。</p></section><!-- 4-7. 訓点================================================== --><section id="kunten"><div class="page-header"><h1>4-7. 傍点・傍線・訓点</h1></div><p class="lead">強調のために語句のわきに打つ点を、傍点といいます。傍点は、入力者注で処理してください。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/OYA.GIF" alt="傍点" /></div><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">胡麻塩おやじ［＃「おやじ」に傍点］ </p><p class="lead">傍点には「傍点」だけでなく、「傍点」、「●」、「○」、「▲」、「△」、「◎」、「傍点」、「×」などが使われることもあります。 </p><p class="lead">「傍点」が使われている場合は、「傍点」の代わりに「白ゴマ傍点」と入力してください。「●」は「丸傍点」、「○」は「白丸傍点」、「▲」は「黒三角傍点」、「△」は「白三角傍点」、「◎」は「二重丸傍点」、「傍点」は「蛇の目傍点」、「×」は「ばつ傍点」と書いてください。 </p><p class="lead">傍点の書き方の詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/emphasis.html#boten_chuki" target="_blank">傍点</a>」を参照してください。 </p><p class="lead">強調のために語句の脇に添えられた線を、傍線といいます。傍線は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/emphasis.html#bosen_chuki" target="_blank">傍線</a>」に従って注記してください。  </p><p class="lead">漢文の字間や行の脇に小書きで添えられる、返り点などの符号や送り仮名を、訓点といいます。訓点は、入力者注を略した記号を添えて、次のように入力してください。</p><p class="lead">返り点は、［＃…］におさめて入力します。レ点には、カタカナの「レ」を用いてください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">自［＃二］女王國［＃一］東度［＃レ］海千餘里。</p><p class="lead">漢字の右下に、小書きのカタカナで添えられる訓点送り仮名は、［＃（…）］におさめて入力します。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">阪［＃（ノ）］上［＃（ノ）］郎女</p><p class="lead">小書きの漢字（万葉仮名）が、訓点送り仮名として使われている場合も、同じ形で入力します。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">爾時倭姫命見悦給［＃（弖）］、其處［＃（爾）］魚見社定賜［＃（支）］</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/kunten.html" target="_blank">詳しくはこちら</a></p></section><!-- 4-8. 文字サイズ・太字================================================== --><section id="emphasis"><div class="page-header"><h1>4-8. 文字サイズ・太字</h1></div><p class="lead">見出しのサイズが本文とは変えてあるといった、編集による処理と思われるものは、注記する必要はありません。一方、著者の表現意図に基づくと思われるものは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#moji_size" target="_blank">文字サイズ</a>」に従って注記してください。</p><p class="lead">明朝体の本文の中で、強調のために、文章の一部にゴシックやイタリックが使われることがあります。 </p><p class="lead">見出しがゴシックで組んであるといった、編集による処理と思われるものは、注記する必要はありません。一方、著者の表現意図に基づくと思われるものは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/emphasis.html#futoji_gothic,shatai_italic" target="_blank">太字（ゴシック）と斜体（イタリック）</a>」に従って注記してください。 </p></section><!-- 4-9. 表組み・系囲み================================================== --><section id="table"><div class="page-header"><h1>4-9. 表組み・罫囲み</h1></div><p class="lead">テキストで表組みを正確に再現することはできません。簡単な表組みの場合には、項目と項目とのあいだをスペースで調整して入力してください。</p><p class="lead">表の枠や区切りには、罫線素片を用いてください。</p><p class="prettyprint"> ─ │ ┌ ┐ ┘ └ ├ ┬ ┤ ┴ ┼ ━ ┃ ┏ ┓ ┛ ┗ ┣ ┳ ┫ ┻ ╋ ┠ ┯ ┨ ┷ ┿ ┝ ┰ ┥ ┸ ╂</p><p class="lead">複雑な表組みは、図版として扱います。どの形式でどう組み込むか、reception@aozora.gr.jpに相談してください。 </p><p class="lead">行中の文字が罫囲みされている場合は、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">そしてキ劇の［＃「キ劇の」は罫囲み］犠牲になるようなことは</p><p class="lead">ブロックで罫囲みしてある場合は、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃ここから罫囲み］ <br />「工場委員会」の選挙制協議のため時間後一人残らず食堂へ集合の事。危機は迫っている。団結の力を以って我等を守ろう。<br />［＃ここで罫囲み終わり］</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#keigakomi" target="_blank">>詳しくはこちら</a></p></section><!-- 4-10. 画像とキャプション================================================== --><section id="images"><div class="page-header"><h1>4-10. 画像とキャプション</h1></div><p class="lead">著作権の問題のない、写真、挿絵、図版はスキャナーで読み取ってください。ご自身でスキャナーが利用できなければ、点検グループに相談してください。</p><p class="lead">挿絵の著作権の保護期間は、作者（画家）の死後50年で切れると考えて、収録の可否を判断してください。</p><p class="lead">無署名で掲載されている図版や挿絵の保護期間は、公表後50年と考えてください。</p><p class="lead">写真は、保護期間に関する著作権法の規定が繰り返し変更されたため、発行時期に即して、収録の可否を個別に検討する必要があります。 ただし、発行後10年間だけ保護するとしていた旧著作権法の規定が関わって、1956（昭和31）年12月31日までに発行されたものは、すべて権利が消滅しています。これに該当するものは、写真家の没年や、存命か否かにかかわらず、収録が可能です。</p><p class="lead">画像ファイルを点検グループ（reception@aozora.gr.jp）に送る際は、「収録できる」と判断した根拠を、書き添えてください。</p><p class="lead">収録可能か否か判断に迷ったら、点検グループに相談してください。</p><p class="lead">白黒の図版は、グレースケールで。カラーの図版は、カラーで作成してください。</p><p class="lead">ファイル形式は、次のようにしてください。</p><p class="prettyprint">画像形式：png<br />解像度：72ppi<br />色深度：カラー3万2000色、グレースケール256階調をめどに、画質の明らかな劣化を招かない範囲で、浅くしてください。</p><p class="lead">ファイル名は、次のようにつけてください。</p><p class="prettyprint">fig作品ID_通し番号.png</p><p class="lead">「作品ID」は、1バイトの数字で表記します。</p><p class="lead">各作品のIDは、総合インデックスで確認できます。 「通し番号」は、1バイト数字2ケタの「01」から始まる連番として次のようにします。</p><p class="prettyprint">fig2441_01.png</p><p class="lead">画像ファイル数が100をこえて、通し番号が「99」以上必要になる際は、「001」から始まる1バイト数字3ケタの連番としてください。</p><p class="prettyprint">fig2441_001.png</p><p class="lead">画像の入るところには、テキストに次のように注記してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃石鏃二つの図（fig42154_01.png、横321×縦123）入る］</p><p class="lead">注記の基本形の中に、画像の説明、丸括弧して、画像ファイル名とサイズをおさめます。</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/graphics.html" target="_blank">詳しくはこちら</a></p><p class="lead">写真や図版に添えられている説明（キャプション）は、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">神戸港頭の袂別［＃「神戸港頭の袂別」はキャプション］</p><p class="lead">キャプションは、図版注記の次行に書き入れ、１行あけてから、本文を再開してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">…暫く経文を唱えて居られたが神色自若《しんしょくじじゃく》として少しも今死に臨むという状態は見えない。ごく安泰に読経《どきょう》せられて居ったそうです。<br />［＃「大獅子金剛大ラマの水刑」のキャプション付きの図（fig49966_02.png、横353×縦514）入る］ <br />大獅子金剛大ラマの水刑［＃「大獅子金剛大ラマの水刑」はキャプション］ <br /> <br />　その節この尊いお方が、人に憎まるるためにわずかの罪を口実に殺されるというのはいかにもお気の毒な事であるといって見送りに来て居った人が沢山ありまして、…</p><p class="lead">ほとんどの場合、キャプションは横組みで添えられていますが、その際も、横組み注記を併用する必要はありません。</p><p class="lead">キャプション中に改行がある場合は、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃「第３図『雪華図説』図版第十面」のキャプション付きの図（fig52468_15.png、横360×縦507）入る］ <br />［＃ここからキャプション］ <br />第３図『雪華図説』図版第十面 <br />　本図は加納一郎氏所蔵原本より複写したもので，貴重な原本を貸与された同氏の厚志を謝す．なお文久二年大槻磐渓の重刻本もただ一箇順序のちがったものがあるが，図は原本と同じものである． <br />［＃ここでキャプション終わり］</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/graphics.html#caption" target="_blank">詳しくはこちら</a></p></section><!-- 4-11. その他================================================== --><section id="etc"><div class="page-header"><h1>4-11. その他</h1></div><h3>縦中横</h3><p class="lead">縦組み中で、例えば「B29」のアラビア数字や「（一）」のような括弧付き数字等が、そこだけ横に組まれていることがあります。 </p><p class="lead">「縦中横」と呼ばれるこうした組みは、次のように入力してください。 </p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">Ｂ29［＃「29」は縦中横］</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">（一）［＃「（一）」は縦中横］</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#tatechu_yoko" target="_blank">詳しくはこちら</a></p><h3>割り注</h3><p class="lead">本文の途中に、小さな文字の２行組みで挟み込まれる柱を、割り注と呼びます。</p><p class="lead">割り注は、次のように入力してください。 </p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃割り注］価は四百円であった。［＃割り注終わり］ </p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#warichu" target="_blank">詳しくはこちら</a></p><h3>字詰め</h3><p class="lead">他の箇所よりも字詰めが短く設定してあるところは、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃ここから１０字詰め］<br />昭和十五年五月二十九日京都義方会に於ける講演速記で同年八月若干追補した。<br />［＃ここで字詰め終わり］</p><p class="lead">字詰めが設定してある箇所は、しばしば字下げされています。字詰めと字下げの組み合わせなどの詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#jizume" target="_blank">字詰め</a>」を参照してください。</p><h3>横組み</h3><p class="lead">横組みの底本から入力した際は、ファイル末に「※底本は横組みです。」と書いてください。</p><p class="lead">縦組みのなかで、行中の文字の一部が横組みされている際は、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">スハフ［＃「スハフ」は横組み］</p><p class="lead">縦組みの中で、ブロックで横組みしてあるときは、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">［＃ここから横組み］<br />手持現金旧券＋（新円100円×家族人数）＋500円以内の給料＋300円＋（100×Ｘ）<br />［＃ここで横組み終わり］</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#yokogumi" target="_blank">詳しくはこちら</a></p><h3>ママ</h3><p class="lead">作品中に「ママ」というルビがふってある文字がときどきあります。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/MAMA.GIF" alt="ママ" /></div><p class="lead">これは形はルビであっても意味はルビではなく、「親本（原稿）の誤植（誤字）と思われるがそのまま（ママ）にする」という注釈です。これについては、ルビではなく入力者注を用いて次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">吹喋［＃「喋」に「ママ」の注記］</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#teisei_mama" target="_blank">詳しくはこちら</a></p><h3>踊り字</h3><p class="lead">「人々」の「々」のように同じ文字の繰り返しを表す文字を、踊り字といいます。くの字点踊り字には、右の例のように２倍の長さ（全角２文字分）の「くの字点」もあります。くの字点は、青空文庫で使える文字には含まれていません。代わりに「／＼」と入力してください。</p><div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ODORI.GIF" alt="踊り字" /></div><p class="lead">くの字点には濁点付きのものがあります。この場合は、間に「″」を入れて「／″＼」と入力します。</p><p class="lead">印刷物では、「々」「ゝ」などが行頭にくる場合には、「人々→人人」のように、踊り字を一字目の漢字に置き換えるのが普通です。この処理が行われたと判断できるときは、二つ目の漢字を踊り字に戻し、「人々」といった形で入力してください。２倍の踊り字が、置き換えられたと思われる場合にも、踊り字に戻してください。</p><h3>上付き文字、下付き文字</h3><p class="lead">数式や元素記号などで使われる行の上部や下部に小さく入る文字は、入力者注で処理してください。例えば、「２の２乗」を表す数式は次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">22［＃「2」は上付き小文字］</p><p class="lead">また、水の元素記号は、次のように入力してください。</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">H2［＃「2」は下付き小文字］O と入力します。</p><span class="label label-more">more</span><p class="ex-more">詳しくは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#gyomigi_gyohidari" target="_blank">行右小書き、行左小書き文字（縦組み）</a>」と「<a href="https://www.aozora.gr.jp/annotation/etc.html#uwatsuki_shitatsuki" target="_blank">上付き小文字、下付き小文字（横組み）</a>」を参照してください。<h3>数式</h3><p class="lead">数式の入力方法については、まだ検討の途中ですが、「<a href="http://attic.neophilia.co.jp/aozora/task/numerical_formula/" target="_blank">数式の入力</a>」を参照してください。</p><h3>伏せ字</h3><p class="lead">国家による検閲が盛んに行われた時代に発行された書籍では、問題があるとされた箇所を「×」などで置き換えた、伏せ字が使われている場合があります。伏せ字は、底本で使われている記号を、使われている個数分入力してください。</p></section><!-- 4-12. 処理に迷ったとき================================================== --><section id="lost"><div class="page-header"><h1>4-12. 処理に迷ったとき</h1></div><p class="lead">世に出ている書籍の数は膨大、しかも内容は多岐にわたります。入力途中でどう処理していいか迷う場面が、きっと出てくるはずです。また、底本の文字が欠けていて判読できないなどといったトラブルもありえます。処理に困ったときは、原則として「入力者注」で処理してください。</p><p class="lead">本にはしばしば誤植があります。著者の誤記と思われる表現にもぶつかります。明らかに誤植、誤記、脱字だと判断できる文字は、入力者注で処理してください。迷う場合には、原文通りに入力してください。</p><p class="lead">例えば、「宮沢憲治」のように明らかな誤植と思われる場合は、</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">宮沢賢治［＃「賢治」は底本では「憲治」］</p><p class="lead">書き換えの記録を残さずに本文を変更することは、行わないでください。</p><p class="lead">誤植と断定することはできないけれど、表記が疑わしい場合、もしくは、明らかに誤りではあるけれど、正しい内容が特定できない場合には、</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">彼は12381［＃「12381」はママ］年に生まれ、</p><p class="lead">のように、「ママ」を用いて注記してください。</p><p class="lead">底本の表記に疑いをもった際の対処の詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#teisei_mama" target="_blank">訂正と「ママ」</a>」にまとめてあります。</p><p class="lead">文字が判読できないなどの場合は、その文字のかわりに「※」を入れ、</p><span class="label label-chuki">青空文庫注記</span><p class="prettyprint">※［＃判読不可、30-16］</p><p class="lead">のように入力者注で処理してください。</p></section><!-- 5. 外国語の入力================================================== --><section id="foreign-language"><div class="page-header"><h1>5. 外国語の入力</h1></div><h3>アルファベット</h3><p class="lead">JIS X 0208にある文字を使って行う青空文庫の入力では、ラテン文字、ギリシア文字、（ロシア語などの表記に使われる） キリール文字の三種類のアルファベットが使えます。</p><p class="lead">このうちラテン文字については、一般のパソコンでは、半角のものと全角のものを使い分けられます。 青空文庫の入力でも、半角、全角双方のラテン文字を使います。</p><p class="lead">アルファベットの語句は、原則として、英文モードで半角のラテン文字を使い、次のように入力してください。</p><p class="prettyprint">僕は Victor Hugo の Notre Dame を読んだとき、</p><p class="lead">半角ラテン文字の語間は、上のように、半角開けてください。</p><p class="lead">ギリシア文字、キリール文字は、和文モードの全角でしか入力できません。全角の文字を用いて、次のように入力してください。</p><p class="prettyprint">そこには ΚΑΜΑΤΟΣ　ΕΥΚΑΜΑΤΟΣ とあった。</p><p class="lead">ギリシア文字、キリール文字の語間は、上のように、全角開けてください。</p><p class="lead">かな、漢字、記号（句読点と括弧をのぞく）とアルファベットの境は、次のように、半角開けてください。</p><p class="prettyprint">外道哲学と Sokrates 前の希臘哲学</p><p class="lead">アルファベット文字列に組み込まれた、ピリオドやコンマ、中点、コロン、セミコロン、疑問符、感嘆符などの各種記号は、アルファベットととして扱います。半角のものがあれば、半角で入力し、かな、漢字、記号（句読点と括弧をのぞく）と接するときは、次のように、半角開けてください。</p><p class="prettyprint">Il nevivra pas ! と云った。</p><p class="prettyprint">青空文庫の玄関口は https://www.aozora.gr.jp/ です。</p><p class="lead">句読点とアルファベットの境には、次のように、アキを入れないでください。</p><p class="prettyprint">西洋にいた時から、Archive とか</p><p class="lead">日本語が入る括弧とアルファベットの境には、次のように、アキを入れないでください。</p><p class="prettyprint">そこには ΚΑΜΑΤΟΣ　ΕΥΚΑΜΑΤΟΣ（苦は苦にならぬ）とあった。</p><p class="lead">括弧の中にアルファベットが入る場合、アルファベットの前後には、次のように、アキを入れないでください。</p><p class="prettyprint">“Kosinski soll leben !”</p><p class="prettyprint">バヴァリア（Bavaria, Bayern）は、</p><p class="prettyprint">苦は苦にならぬ（ΚΑΜΑΤΟΣ　ΕΥΚΑΜΑΤΟΣ） </p><p class="lead">アルファベットの入る括弧には、全角のものを使ってください。括弧の前後には、アキを入れないでください。</p><p class="lead">縦組みの底本中で、縦に組まれているアルファベットは、和文モードで、全角のものを用いて入力してください。</p><p class="lead">全角で入力した、アルファベットの略号や縦アルファベットが、かな、漢字、記号と接するところには、次のように、アキを入れないでください。</p><p class="prettyprint">ＡＴ＆Ｔ、ＮＴＴはともに、</p><p class="prettyprint">ａ、ｂ、ｃと黒板に</p><h3>アクセント符号付きのラテン文字</h3><p class="lead">アクサン（´）（｀）や、ウムラウト（¨）などの付いたラテン文字は、青空文庫で使える文字の範囲にはありません。</p><p class="lead">これらは、「<a href="https://www.aozora.gr.jp/accent_separation.html" target="_blank">青空文庫テキストへの「アクセント分解」の適用</a>」で概要を説明している、「アクセント分解」を用いて入力します。</p><p class="lead">この方式で、アクセント符号付きのラテン文字をどう表現するかは、<a href="http://cosmoshouse.com/tools/acc-conv-j.htm" target="_blank">アクセント付き文字の変換表</a>にまとめられています。</p><p class="lead">「raffiné」という単語の「é」は、変換表によれば「e'」と書くとわかります。「raffiné」という単語であれば、アクセント分解で用いる記号「〔〕」で挟んで、次のように入力します。 </p><p class="prettyprint">raffine'</p><span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/external_character.html#accent" target="_blank">詳しくはこちら</a></p></section><!-- 6. 記号の入力================================================== --><section id="symbol"><div class="page-header"><h1>6. 記号の入力</h1></div><h3>数字</h3><p class="lead">１文字のアラビア数字（算用数字）は全角で、２文字以上の場合は半角で入力してください。</p><p class="lead">半角数字中の「,」は、半角で入力してください。</p><p class="lead">底本の表記が「一九九八年」のような漢数字の場合は、そのまま漢数字で入力してください。</p><h3>記号</h3><p class="lead">「（」、「）」、「「」、「」」などの括弧記号、「，」、「．」、「・」、「？」、「！」などの記述記号は、原則として、和文モードで入力してください。ただし、アルファベットとアラビア数字の、半角文字列中で用いられる場合には、英文モードで半角のものを入力してください。</p><p class="lead">かな漢字変換ソフトの設定によっては、句読点などが自動的に半角や「．」「，」に変換されてしまうことがあります。和文モードでこうなっていたら、マニュアルやインターネットの記述を参考にして、設定をあらためてください。</p><h3>ハイフンとダッシュ</h3><p class="lead">半角のアルファベット、数字文字列中で使われているハイフンには、半角の「-」を使ってください。</p><p class="lead">ハイフンを少し長くした形のダッシュは、ダッシュ記号「―」を使用してください。（キーボードから直接入力できるのは、線が少し短いマイナス記号（－）です。混同しないよう注意してください。）</p><p class="lead">印刷物でよく使われる２倍の長さ（全角２文字分）のダッシュは、上記のダッシュ記号を２つ続け、「――」と入力してください。実線についても同様です。</p><p class="lead">ダッシュが二重になった形の記号には、等号「＝」を使用してください。</p><h3>点線</h3><p class="lead">底本が「……」のようになっている場合は、３点リーダー「…」を使用してください。</p><p class="lead">底本が「‥‥」のようになっている場合は、２点リーダー「‥」を使用してください。</p><p class="lead">底本が「・・」のようになっている場合は、中点（中黒）「・」を使用してください。</p></section><!-- 7. 文書の保存================================================== --><section id="save"><div class="page-header"><h1>7. 文書の保存</h1></div><p class="lead">入力データは、テキスト形式で保存します。</p><p class="lead">改行コードは、Windowsで用いられている「CR+LF」とします。</p><p class="lead">符号化方式（エンコーディング）は、Shift_JISを選びます。</p><p class="lead">作業にはエディタを使ってもワープロを使ってもかまいませんが、マニュアルやインターネット上の記述を参考にして、自分の用いるソフトで、「保存形式はShift_JISのテキスト、改行コードはCR+LF」になるよう設定してください。</p><p class="lead">ファイル名は、作品名を小文字のアルファベットで表記し、拡張子.txtを加えたものを用います。</p><p class="lead">ファイル名の付け方の詳細は、「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html" target="_blank">入力ファイルを「テキスト版」に仕上げるために</a>」の「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html#chap1" target="_blank">テキスト版に求められる形式１　ファイル名</a>」を参照してください。</p></section><!-- 8. 入力者校正================================================== --><section id="proofreading"><div class="page-header"><h1>8. 入力者校正</h1></div><p class="lead">プロの入力者、プロの校正者、プロの編集者の共同作業でつくられる市販の書籍でさえ誤植があります。アマチュアである私たちが入力したテキストには「確実に誤りが含まれている」と見なすべきでしょう。</p><p class="lead">そこで、入力が完了したら、必ず「入力者校正」を行い、入力データを修正してください。入力者校正は、後述する「原稿つきあわせ」と「素読み」の二段階に分けて行ってください。詳しくは「<a href="index-proofreading.html">青空文庫作業マニュアル【校正編】</a>」をごらんください。</p><p class="lead">入力時の誤りは、同じパターンで何度も生じがちです。みつけた誤りに繰り返しの可能性を感じたら、エディタやワープロの検索機能を使って、他にもないか確認してください。</p><p class="lead">OCRを使った入力では、似た形の文字の読み取り誤りが、しばしば生じます。片仮名の「ヘペベ」と平仮名の「へぺべ」等、フォントでの識別がほぼできないものもあります。こうしたものも、検索機能を使って、チェックしてください。OCRで誤認識されやすい文字は「<a href="http://eunheui.sakura.ne.jp/aozora/proofreader.html" target="_blank">校正ツール2.0化ひとりプロジェクト</a>」でチェックすることもできます。</p><p class="lead">「<a href="index-proofreading.html">青空文庫作業マニュアル【校正編】</a>」の「校正は繰り返し行う」で詳しく説明している正規表現を使えば、OCR誤植などの入力時の誤りを、効率的に、高い精度で取り除けます。</p><p class="lead">ファイルの精度を高めるためには、「できるだけ早い段階でミスを修正しておく」ことが鉄則です。入力者校正に、ぜひご協力ください。</p></section><!-- 9. 文書の送信================================================== --><section id="send"><div class="page-header"><h1>9. 文書の送信</h1></div><p class="lead">入力者校正が済んだファイルは、reception@aozora.gr.jp宛に電子メールで送信してください。その際、ファイルには「圧縮」をかけ、「添付ファイル」として処理してください。</p><p class="lead">圧縮方式は、zipを推奨します。自分のパソコンでzip圧縮する方法は、マニュアルやインターネットの記述を参考にしてください。</p><p class="lead">送信していただいたファイルは、校正に名乗りを上げてくれた人のところへとまわされ、校正作業に移ります。このとき、当然ながら入力に使用された底本が必要になります。</p><p class="lead">底本は、原則的には校正者、もしくは点検グループで確保していますが、ときには最寄りの図書館で手配できず、絶版・品切れのため、古書店でも入手できない場合があります。そのため、底本もしくはそのコピーを送付していただく必要が出るかもしれません。ご協力をお願いします。</p></section><div style="margin-top:100px;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">クリエイティブ・コモンズ 表示 - 非営利 2.1 日本 ライセンスの下に提供されています。</a></div></div>      </div>    </div>  </div>    <!-- Footer    ================================================== -->    <footer class="footer">      <div class="container">        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>        <ul class="footer-links">          <li><a href="http://blog.getbootstrap.com">Blog</a></li>          <li class="muted">&middot;</li>          <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>          <li class="muted">&middot;</li>          <li><a href="https://github.com/twbs/bootstrap/releases">Changelog</a></li>        </ul>      </div>    </footer>    <!-- Le javascript    ================================================== -->    <!-- Placed at the end of the document so the pages load faster -->    <script src="./js/bootstrap-affix.js"></script>    <script src="./js/application.js"></script>  </body></html>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>青空文庫作業マニュアル【入力編】</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/docs.css" rel="stylesheet">
+    <link href="./css/prettify.css" rel="stylesheet">
+    <link href="./css/add.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+
+   </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="https://www.aozora.gr.jp">青空文庫</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="index.html">青空文庫作業マニュアル【本という財産とどう向き合うか】</a>
+              </li>
+              <li class="active">
+                <a href="index-input.html">青空文庫作業マニュアル【入力編】</a>
+              </li>
+              <li class="">
+                <a href="index-proofreading.html">青空文庫作業マニュアル【校正編】</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>青空文庫作業マニュアル【入力編】</h1>
+    <p class="lead" style="font-size:18px;">青空文庫形式のテキストファイルを作るためのマニュアルです。</p>
+</div>
+</header>
+
+  <script type="text/javascript">
+  $('.dropdown-toggle').dropdown();
+  </script>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#select-book"><i class="icon-chevron-right"></i>1. 入力する作品を選ぶ</a></li>
+          <li><a href="#apply"><i class="icon-chevron-right"></i>2. 入力の申込み</a></li>
+          <li><a href="#input"><i class="icon-chevron-right"></i>3. 入力にあたって</a>
+ <ul class="nav">
+          <li><a href="#input-method"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-1. 入力方法</div></a></li>
+          <li><a href="#input-basic"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-2. 基本となる書式</div></a></li>
+          <li><a href="#input-word"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-3. 入力に使える文字</div></a></li>
+          <li><a href="#bigining-line"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-4. 行頭の字下げ</div></a></li>
+          <li><a href="#ke"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">3-5. 「ケ」のようにみえる文字</div></a></li>
+  </ul>
+</li>
+          <li><a href="#markup"><i class="icon-chevron-right"></i>4. 青空文庫注記形式</a>
+ <ul class="nav">
+          <li><a href="#ruby"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-1. ルビ</div></a></li>
+          <li><a href="#heading"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-2. 見出し</div></a></li>
+          <li><a href="#indentation"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-3. 字下げ</div></a></li>
+          <li><a href="#page-break"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-4. 改段、改ページ、改丁</div></a></li>
+          <li><a href="#center"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-5. センター寄せ</div></a></li>
+          <li><a href="#gaiji"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-6. 外字</div></a></li>
+          <li><a href="#kunten"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-7. 傍点・傍線・訓点</div></a></li>
+          <li><a href="#emphasis"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-8. 文字サイズ・太字</div></a></li>
+          <li><a href="#table"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-9. 表組み・罫囲み</div></a></li>
+          <li><a href="#images"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-10. 画像とキャプション</div></a></li>
+          <li><a href="#etc"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-11. その他</div></a></li>
+          <li><a href="#lost"><i class="icon-chevron-right2"></i><div  style="padding:0 0 0 10px;">4-12. 処理に迷ったとき</div></a></li>
+  </ul>
+</li>
+          <li><a href="#foreign-language"><i class="icon-chevron-right"></i>5. 外国語の入力</a></li>
+          <li><a href="#symbol"><i class="icon-chevron-right"></i>6. 記号の入力</a></li>
+          <li><a href="#save"><i class="icon-chevron-right"></i>7. 文書の保存</a></li>
+          <li><a href="#proofreading"><i class="icon-chevron-right"></i>8. 入力者校正</a></li>
+          <li><a href="#send"><i class="icon-chevron-right"></i>9. 文書の送信</a></li>
+        </ul>
+      </div>
+
+<div class="span9">
+<div style="margin:0 0 0 0;">
+
+
+<!-- 1. 入力する作品を選ぶ
+================================================== -->
+<section id="select-book">
+<div class="page-header">
+<h1>1. 入力する作品を選ぶ</h1>
+</div>
+<p class="lead">入力する作品を選ぶ前に、まずは「青空文庫作業マニュアル【はじめに】」をお読みください。作品を選ぶ時に理解しなければならない著作権について書かれてあります。</p>
+<p class="lead">青空文庫に登録したい作品があったら、まずは作者の没年を調べ、著作権の有無について確認してください。文学系の著作者については、青空文庫内にある<a href="https://www.aozora.gr.jp/siryo1.html" target="_blank">「著作権が消滅した作家一覧」を参照</a>してください。</p>
+<p class="lead">著作権切れを控えた作家の作品は、「翌々年の１月１日までに公開できるもの」に限って、着手報告を受け入れます。</p>
+<p class="lead">青空文庫では作品ごとに登録します。出版時に作品集としてまとめられていても、一つ一つ作品ごとに登録します。入力するための元にする本（これを底本と呼びます）は、自分が所有している本、図書館から借りた本など何でもかまいません。</p>
+<p class="lead">次に、青空文庫の「公開中の作品」にあたって、入力したい作品が、すでに登録されていないか確認してください。青空文庫への登録を前提として、作業が進んでいる場合もあります。進行状況を示す「作業中の作品」にも、目を通してください。これらに記載されているものについては、原則として、同じ文字づかいでは、新たに入力していただくことはできません。ただし「進行状態」が「入力取り消し」となっているものは、入力可能です。それ以外にも、以下に該当する場合は、取り組んでもらえます。</p>
+<p class="lead">旧字旧仮名で書かれた作品は、本来の姿にそった形（旧字旧仮名版）と現代表記に書き換えた形（新字新仮名版）、加えて旧字のみを新字に置き換えた中間的な形（新字旧仮名版）でも登録しています。ある形式ですでに登録、着手されている作品を、別の文字づかいで、新たに入力していただくことは可能です。 同じ文字づかいの同じ作品でも、内容に違いがあれば、重複して入力していただけます。</p>
+<p class="lead">長期にわたって作業中のものを引き継ぎたいときは、ファイル作成の進行管理にあたっている点検グループ（reception@aozora.gr.jp）に申し入れてください。点検グループから前任者に働きかけても引き継げない場合は、同じ文字づかいでの入力を認めます。ただしその際は、作業中のものとは別の底本を選んでください。</p>
+</section>
+
+<!-- 2. 入力の申込み
+================================================== -->
+<section id="apply">
+<div class="page-header">
+<h1>2. 入力の申込み</h1>
+</div>
+<p class="lead">入力する作品を選んだならば、「<a href="https://reception.aozora.gr.jp" target="_blank">作業着手連絡システム</a>」の「<a href="https://reception.aozora.gr.jp/accept.php" target="_blank">入力受付システム</a>」を使って申請してください。</p>
+<p class="lead">作業中の作品総数は、一人200以下に抑えてください。</p>
+<p class="lead">入力を申し込んだものの作業が続けられなくなった場合には、必ず点検グループ（reception@aozora.gr.jp）にお知らせください。入力の取り消し作業を行います。</p>
+<p class="lead">作業着手後、メールアドレスが変わった場合は、必ず点検グループ（reception@aozora.gr.jp）に連絡してください。</p>
+</section>
+
+<!-- 3.入力にあたって
+================================================== -->
+<section id="input">
+<div class="page-header">
+<h1>3. 入力にあたって</h1>
+</div>
+<p class="lead">一つの作品はさまざまな要素から成り立っています。本文だけを見ても、例えば文章にはルビ（ふりがな）や注釈があります。表組みもみられます。写真や挿し絵が使われている本も多数あります。</p>
+<p class="lead">青空文庫では、本文だけをテキストで入力します。注釈は、これを書いた人の著作権が発生する場合があるので、著者注とはっきりと確認できるものを除いて入力を省きます。</p>
+<p class="lead">写真や挿し絵などの画像は、写真撮影者や画家の著作権が切れていると確認できる場合のみ公開ファイルにおさめます。</p>
+<p class="lead">青空文庫は、「底本に基づいた電子ファイルの作成」を目標に置き、「勝手な編集作業は行わない」という点を原則にしています。</p>
+<p class="lead">漢字の使い方や送りがなは、「底本どおり」とします。旧かなのテキストであれば旧かなのままに、時代によって変化の激しい送りがなも、底本にならって入力してください。漢字で書くか、かなを用いるか、どんな漢字をあてるか、あるいは、かな表記の細部がばらついていたとしても、原則的には、底本通りに入力してください。</p>
+<p class="lead">ただし旧漢字、旧かなのテキストが、私たちの多くにとって読みにくいこともまた事実です。現代表記にあらためたものがあれば、それを底本とすることで読みやすくできます。けれど、すべての作品で書き換え版が用意されているわけではありません。そこで、旧字、旧かなの書きあらために関しては、作業を進める上での目安を定めた上で、例外的にこれを認めることとします。自分自身で書き換えを行おうと考える人は、「<a href="https://www.aozora.gr.jp/KOSAKU/genndaihyouki.html" target="_blank">旧字、旧仮名で書かれた作品を、現代表記にあらためる際の作業指針</a>」にそって、対処してください。</p>
+</section>
+
+<!-- 3-1.入力方法
+================================================== -->
+<section id="input-method">
+<h2>3-1. 入力方法</h2>
+<p class="lead">テキスト作成に使うアプリケーションは、どんなものでもかまいません。シンプルなエディタでも、ワープロでも、あるいはアウトラインプロセッサなどの特殊なエディタでも、ご自分が使い慣れたものをお使いください。</p>
+<p class="lead">保存形式は、青空文庫が使うと決めている、「Shift_JISのテキスト、改行コードはCR+LF」に合わせてください。（<a href="index-input.html#save">「7文書の保存」を参照</a>）。</p>
+<p class="lead">書籍のページなどをスキャナーで読み込み、読み込まれた画像データを解析して文字データに変換し、テキストとして保存するしくみを、OCR（Optical Character Reader）といいます。OCRの活用は、負担の大きい入力作業の負担軽減につながります。</p>
+<p class="lead">ただし、100％の精度で変換できるOCRソフトはありません。ソフト自体が優秀でも、スキャニングに用いる書籍やコピーの質の問題もあります。OCRによるテキスト入力は必ずエディタなどによる修正作業をともないます。</p>
+<p class="lead">OCRで誤認識されやすい文字は「<a href="http://eunheui.sakura.ne.jp/aozora/proofreader.html" target="_blank">校正ツール2.0化ひとりプロジェクト</a>」でチェックすることもできます。</p>
+</section>
+
+<!-- 3-2.基本となる書式
+================================================== -->
+<section id="input-basic">
+<div class="page-header">
+<h2>3-2. 基本となる書式</h2>
+</div>
+<p class="lead">入力ファイルは、次のように作っていきます。</p>
+
+<div class="prettyprint" style="padding:20px;">
+<ol>
+<li class="lead">一番最初の行には、「作品名」を入れる。（底本の表題にルビが付いていたとしても、１行目に入れる作品名には、ルビは入れません。表題のルビを省いたときは、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」に従って、ファイル末にその旨を記載してください。） </li>
+<li class="lead">その次の行に「著者名」を入れる。  人物名などの書誌データのとりかたは「<a href="https://www.aozora.gr.jp/metadata_collection/index.html" target="_blank">青空文庫における書誌データのとりかた</a>」を参考にしてください。</li>
+<li class="lead">訳者、編者などが関わっていたり、副題、原題等がある場合等は、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」の形式に沿って３行目以降に入れる。（副題のルビも、入力しません。副題のルビを省いたときは、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」に従って、ファイル末にその旨を記載してください。）  </li>
+<li class="lead">冒頭の記載事項を書き終えたら、１行開けて、ルビなどを表す記号の使い方を説明した、【<a href="https://www.aozora.gr.jp/KOSAKU/txt_chu_kigo.html" target="_blank">テキスト中に現れる記号について</a>】を入れる。（記号を使わないですむ場合は、入れる必要はありません。）  </li>
+<li class="lead">１行開けて、本文を入れる。（【テキスト中に現れる記号について】が入らない場合は、冒頭の記載事項から１行開けて、本文を入れてください。） </li>
+<li class="lead">本文の末尾から３行開けて、「使用した底本の正式名称・出版社・発行年月日、入力者名」等を「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」の形式に沿って入れる。 </li>
+<li class="lead">現代表記に書き改めた場合の作業履歴、その他の注記事項などがある場合は、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」の形式に沿って入れる。</li>
+</ol>
+</div>
+<p class="lead" style="margin:20px 0 0 0;">文庫本などではそれ自体に底本（全集など）が存在する場合があります。その場合には、「底本の親本（底本の底本）の正式名称・出版社・発行年月日」もわかる範囲でつけ加えてください。</p>
+<p class="lead">入力ファイルの基本的な形を掴む上では、新規公開作品のテキスト版をいくつか開いてみると、参考になります。</p>
+</section>
+
+<!-- 3-3.入力に使える文字
+================================================== -->
+<section id="input-word">
+<div class="page-header">
+<h2>3-3. 入力に使える文字</h2>
+</div>
+<p class="lead">青空文庫では、「半角カナ」をのぞくJIS X 0201の文字（いわゆる半角英数と半角の記号）と、JIS X 0208のすべての文字を使って入力します。</p>
+<p class="lead">最近のパソコン、タブレット、スマートフォンでは、JIS X 0213で新たに規定された文字を含むUnicodeを使用できますが、青空文庫はJIS X 0201およびJIS X 0208にある文字のみを使います。</p>
+<p class="lead">入力した文字がJIS X 0201およびJIS X 0208の範囲内であるのかを確認するには、「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」というツールを使用してください。</p>
+<p class="lead">「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」は、結城浩さんによって書かれ、ゼファー生さんによって改善、維持されています。</p>
+</section>
+
+
+<!-- 3-4.行頭の字下げ
+================================================== -->
+<section id="bigining-line">
+<div class="page-header">
+<h2>3-4. 行頭の字下げ</h2>
+</div>
+<p class="lead">行頭の字下げは全角のスペースを入力します。</p>
+<p class="lead">行頭にかぎ括弧　「」　が来る場合は字下げはしません。底本によっては字下げをしている場合がありますが、青空文庫では統一して字下げをしません。</p>
+<p class="lead">同じように　（）『』【】　などの括弧類が行頭に来る場合も字下げをしません。</p>
+<div class="bs-docs-example">
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/kakko_sage1.gif" alt="行頭の字下げ" /></div>
+<p class="lead" style="margin:20px 0 20px 0;">この底本では、行頭にかぎ括弧が来ても１字下げてあります。こうした場合にも、下のようにスペースは入れずに入力してください。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/kakko_sage2.gif" alt="行頭の字下げ" /></div>
+</div>
+</section>
+
+
+<!-- 3-5.「ケ」のようにみえる文字
+================================================== -->
+<section id="ke">
+<div class="page-header">
+<h2>3-5. 「ケ」のようにみえる文字</h2>
+</div>
+<p class="lead">「ケ」のようにみえる文字には、「け」と読まれる片仮名と、「こ」「か」「が」と読み分けられる漢字があります。</p>
+<p class="lead">「ケ」にみえる文字は、前後の文章の流れを読んで、以下に示すように入力してください。 </p>
+<p class="lead">「け」と読む片仮名は、次のように、区点番号5-17の「ケ」で入れてください。</p>
+<p class="prettyprint">
+ケンタッキー
+</p>
+<p class="lead">「こ」「か」「が」と読む漢字は、次のように、区点番号5-86の「ヶ」で入れてください。</p>
+<p class="prettyprint">
+一ヶ（「こ」）
+</p>
+<p class="prettyprint">
+二ヶ所、六ヶしい（「か」）
+</p>
+<p class="prettyprint">
+霞ヶ関、槍ヶ岳（「が」） 
+</p>
+<p class="lead">底本が「こ」「か」「が」と読むものを小書きせず、他の文字と同じ大きさにつくっている場合は、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」にそって、ファイル末に以下のように注記してください。</p>
+<p class="prettyprint">
+※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。
+</p>
+<span class="label label-more">more</span><p class="ex-more">詳しくは、「<a href="https://www.aozora.gr.jp/KOSAKU/small_or_large/guide_line.html" target="_blank">区点番号5-17と5-86の使い分け指針</a>」を参照してください。</p>
+</section>
+
+
+<!-- 4. 青空文庫注記形式
+================================================== -->
+<section id="markup">
+<div class="page-header">
+<h1>4. 青空文庫注記形式</h1>
+</div>
+<p class="lead">底本にあるレイアウトをテキストで表現するために青空文庫注記形式を使います。使用する記号はルビ（ふりがな）に使う「《》」とレイアウト情報、入力者注に使う「［＃…］」です。以下に、その用法に付いて説明します。</p>
+</section>
+
+
+<!-- 4-1. ルビ
+================================================== -->
+<section id="ruby">
+<div class="page-header">
+<h2>4-1. ルビ</h2>
+</div>
+<p class="lead">ルビは、ルビの付く文字列のあとに、「《》」でくくって入力します。（学術記号の「≪≫」と混同しやすいので注意してください。）</p>
+<p class="lead">印刷物では通常、「がつこう」、「きようしつ」のように、ルビの拗促音が小書きされません。けれど青空文庫のファイルでは、原則として「学校《がっこう》」、「教室《きょうしつ》」などと、ルビの拗促音を小書きしてください。</p>
+<p class="lead">ただし、拗促音を小書きしない旧かな作品では、ルビにも小書きを用いないでください。</p>
+<p class="lead">作品本文が旧かなであるにもかかわらず、ルビは新仮名とした底本があります。この際は、ルビの拗促音は小書きしてください。（旧かな作品中の新仮名ルビの拗促音を小書きしたたときは、「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」に従って、ファイル末にその旨を記載してください。）</p>
+<p class="lead">ルビ付きの熟語が連続する場合には、</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+一応《いちおう》何時《いつ》もの
+</p>
+<p class="lead">のようにルビを分割します。</p>
+<p class="lead">ただし、複合語として定着している場合は、</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+一瀉千里《いっしゃせんり》 
+</p>
+<p class="lead">のように１つにまとめます。</p>
+<p class="lead">分けるべきか、まとめるべきか迷ったときは、まとめてください。</p>
+<p class="lead">ルビの付く文字列がはじまる前には、「｜」を入れます。</p>
+<p class="lead">書き込まれた「｜」は、「《》」におさめられたルビを、プログラムを使って底本にある形に再現しようとする際などに、処理の手がかりとして利用できます。</p>
+<p class="lead">底本に次のようにあれば、</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby0.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+武州｜青梅《おうめ》の宿
+</p>
+<p class="lead">と入力してください。</p>
+<p class="lead">ルビのかかる部分が漢字だけで構成され、かな、記号、空白など、「漢字以外の文字」に続いている場合には「｜」は必要ありません。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby3.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+耳まで火照《ほて》って
+</p>
+<p class="lead">繰り返し記号「々」は、漢字として扱います</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby7.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+すると稍々《やや》度を失った
+</p>
+<p class="lead">「々」と同様、JIS X 0208では第1水準第2水準に含められていない、「仝」（おなじ、ドウ、くりかえし）、「〆」（しめ）、「〇」（ぜろ、レイ）、「ヶ」（コ、カ、ガ）も、「｜」がいるかいらないかの判断にあたっては、漢字とみなしてください。</p>
+<p class="lead">【外字注記】（4-6参照）で表現する「二の字点」（二の字点、面区点番号1-2-22）も、「々」と同様に漢字として扱います。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+確実さで、益※［＃二の字点、面区点番号1-2-22］《ますます》はっきりと
+</p>
+<p class="lead">アルファベットの単語にルビが付く場合は、【外国語の入力】（5参照）の項にあるように、原則として単語の前後に半角のスペースを入れて入力するので、その内側に記述します。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby4.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+兄きのような Fanatiker《ファナチイケル》 とは 
+</p>
+<p class="lead">※単語のあとにくる半角アキは、「《」の前ではなく、「》」のあとに置きます。</p>
+<p class="lead">アルファベットの句や文にルビが付く場合は、単語ごとにルビを付けます。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby8.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+“Kosinski《コジンスキイ》 soll《ゾル》 leben《レエベン》 !” 
+</p>
+<p class="lead">ルビのかかる範囲の特定ができない場合には、「｜」を用います。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby1.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+そんな｜お伽話《フェヤリー・ストーリース》は、 
+</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby2.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+霧の｜ロンドン警視庁《スコットランドヤード》…
+</p>
+<p class="lead">ヱ」などのカタカナが含む場合も「｜」を用います。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby5.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+いいか｜釜右ヱ門《かまえもん》。
+</p>
+<p class="lead">複数のアルファベットの単語に、一つのまとまったルビが付く場合には、「｜」を用いてルビのかかる範囲を特定してください。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ruby9.gif" alt="ルビ" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+彼は ｜Au revoir《さらば》 と、
+</p>
+<p class="lead">アルファベット入力時に入れる半角アキは、上の例では「彼は」と「｜」のあいだと、「》」 と「と」のあいだに置きます。</p>
+<span class="label label-more">more</span><p class="ex-more">詳しくは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#ruby" target="_blank">ルビとルビのように付く文字</a>」を参照してください。</p>
+<p class="lead">ルビの付く文字の分け方とまとめ方に付いては、「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html" target="_blank">入力ファイルを「テキスト版」に仕上げるために</a>」の「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html#chap4" target="_blank">テキスト版に求められる形式４　本文</a>」を参照してください。</p>
+</section>
+
+<!-- 4-2. 見出し
+================================================== -->
+<section id="heading">
+<div class="page-header">
+<h1>4-2. 見出し</h1>
+</div>
+<p class="lead">見出し注記には、「大見出し」、「中見出し」、「小見出し」の、三つのレベルを設けます。</p>
+<p class="lead">作品中に一つのレベルの見出しだけが使われている場合は、○○［＃「○○」は中見出し］と注記してください。</p>
+<p class="lead">二つのレベルの見出しが使われている場合は、大中を用いて、大きなレベルを○○［＃「○○」は大見出し］、小さなレベルを、○○［＃「○○」は中見出し］と注記してください。</p>
+<p class="lead">三つのレベルの見出しが使われている場合は、大中小を用いて、大きなレベルを○○［＃「○○」は大見出し］、中のレベルを○○［＃「○○」は中見出し］、小さなレベルを○○［＃「○○」は小見出し］と注記してください。</p>
+<p class="lead">三つ以上のレベルの見出しが使われている場合は、大きなレベルから○○［＃「○○」は大見出し］、○○［＃「○○」は中見出し］、○○［＃「○○」は小見出し］と注記し、それ以下のレベルの見出しは注記しないでください。その上で、「※小見出しよりもさらに下位の見出しには、注記しませんでした。」のようにファイル末に書き入れてください。</p>
+<p class="lead">見出しのルビは、注記対象文字の後に置く、前方参照型の見出し注記には含めません。○○《まるまる》［＃「○○《まるまる》」は中見出し］ではなく、○○《まるまる》［＃「○○」は中見出し］のように書いてください。</p>
+<div class="bs-docs-example">
+<p>二つのレベルの見出し</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/midashi_1.png" alt="二つのレベルの見出し" class="pht" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃２字下げ］上　先生と私［＃「上　先生と私」は大見出し］<br />
+<br />
+<br />
+［＃５字下げ］一［＃「一」は中見出し］<br />
+<br />
+　私《わたくし》はその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を憚《はば》かる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を執《と》っても心持は同じ事である。よそよそしい頭文字《かしらもじ》などはとても使う気にならない。
+</p>
+</div>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/heading.html" target="_blank">詳しくはこちら</a></p>
+</section>
+
+
+<!-- 4-3. 字下げ
+================================================== -->
+<section id="indentation">
+<div class="page-header">
+<h1>4-3. 字下げ</h1>
+</div>
+<p class="lead">字下げされた箇所は、原則として、注記を用いてレイアウトを表現します。</p>
+<p class="lead">本文の一部が字下げしてあったり、地（ページの下）に寄せてある場合は、以下の要領で注記してください。</p>
+<p class="lead">ここでは、あきなしで天に寄せてある処理を、「天付き」と呼びます。</p>
+<p class="lead">あきなしで地に寄せてある処理を、「地付き」と呼びます。</p>
+<p class="lead">数文字分下をあけて、地に寄せてある処理を、「地寄せ」と呼ぶことにします。</p>
+<div class="bs-docs-example">
+<h3>１行だけの字下げ</h3>
+<p>字下げされている文字列の前に、［＃○字下げ］と書き込んでください。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/tenkara.png" alt="１行だけの字下げ" class="pht" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+…ここでもっと大事なのは論述のスタイルである。<br />
+<br />
+［＃３字下げ］灰いろの抽象の世に住まんには濃きに過ぎたる煩悩の色<br />
+<br />
+　九鬼周造が詩と短歌をかなり数多く残し、…
+</p>
+<p>１行だけの字下げは、ブロックの注記を用いて、次のように書くこともできます。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+…ここでもっと大事なのは論述のスタイルである。<br />
+<br />
+［＃ここから３字下げ］<br />
+灰いろの抽象の世に住まんには濃きに過ぎたる煩悩の色<br />
+［＃ここで字下げ終わり］<br />
+<br />
+　九鬼周造が詩と短歌をかなり数多く残し、…
+</p>
+<h3>ブロックでの字下げ</h3>
+<p>字下げされているブロックの１行前に、［＃ここから○字下げ］と書き込んでください。</p>
+<p>○には、ブロック全体が何字分下げてあるかを、全角のアラビア数字で書き込んでください。</p>
+<p>字下げされたブロックが終わったら、改行して［＃ここで字下げ終わり］と書いてください。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/jisage.png" alt="ブロックでの字下げ" class="pht" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+…然し愚な純な弱い白が、主人夫妻にはいつまでも忘られぬのである。<br />
+<br />
+<br />
+［＃ここから５字下げ］<br />
+白は大正七年一月十四日の夜半病死し、赤沢君の山の上の小家の梅の木陰に葬られました。甲州に往って十年です。村の人々が赤沢君に白のクヤミを言うたそうです。「白は人となり候」と赤沢君のたよりにありました。「白」は幸福な犬です。<br />
+　　大正十二年二月九日追記<br />
+［＃ここで字下げ終わり］
+</p>
+<h3>地付き</h3>
+<p>地付き処理されている文字列の前に、［＃地付き］と書き込んでください。</p>
+<p>地付き処理された文字列だけが、独立した行の下に位置しているときは、改行してまず［＃地付き］と書き込み、続けて、その文字列を入力してください。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/chitsuki_1.png" alt="地付き" class="pht" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+◯四月に於けるわが収入は、金五十二円八十銭であった。大学卒業後今日までに於ける最低収入の月であった。記憶に値する。<br />
+［＃地付き］（この日記終り）
+</p>
+</div>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/layout_2.html#jisage_kakushu" target="_blank">詳しくはこちら</a></p>
+</section>
+
+
+<!-- 4-4. 改段、改ページ、改丁
+================================================== -->
+<section id="page-break">
+<div class="page-header">
+<h1>4-4. 改丁、改ページ、改段</h1>
+</div>
+<p class="lead">書籍や雑誌ではしばしば、内容の切れ目でページや段をあらため、次のページや次の段のはじめから、あとを続ける組み版が行われます。</p>
+<p class="lead">前の内容が、左右どちらのページで終わったかにかかわらず、続きを次の左ページ（縦組みの場合）から始める処理を、「改丁（かいちょう）」と呼びます。
+「改丁」はしばしば、大きな内容の切れ目で用いられます。</p>
+<p class="lead">続きを次のページから始める処理を、「改ページ」と呼びます。（「改頁」とも書きますが、青空文庫の注記では「改ページ」とします。）
+「改ページ」はしばしば、中程度の内容の切れ目で用いられます。</p>
+<p class="lead">段組された書籍で用いられる、内容の切れ目で段を改める処理を、「改段」と呼びます。</p>
+<p class="lead">段組された書籍でも、新しい内容が次のページから始まる場合は「改ページ」、次の左ページから始まる場合は「改丁」と呼びます。</p>
+<div class="bs-docs-example">
+<h3>改丁</h3>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/kaicho_1.png" alt="改丁" class="pht" /><img src="https://www.aozora.gr.jp/annotation/fig/kaicho_2.png" alt="改丁" class="pht" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+…頗《すこぶ》る理論の品価を増《まし》たるもの多し。明治八年三月二十五日、福沢諭吉｜記《しるす》。<br />
+［＃改丁］<br />
+<br />
+［＃１字下げ］文明論之概略　巻之一［＃「文明論之概略　巻之一」は大見出し］<br />
+<br />
+<br />
+［＃３字下げ］第一章　議論の本意を定る事［＃「第一章　議論の本意を定る事」は中見出し］<br />
+<br />
+<br />
+　軽重、長短、善悪、是非等の字は、相対《あいたい》したる考えより生じたるものなり。…
+</p>
+<h3>改ページ</h3>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/kaipage.png" alt="改ページ" class="pht" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+…もし得ることあらば、他日これを記してその功徳《こうとく》を表《ひょう》し、もって世人の亀鑑に供すべし。<br />
+［＃地から１字上げ］（明治七年三月出版）<br />
+［＃改ページ］<br />
+<br />
+［＃１字下げ］学問のすゝめ　八編［＃「学問のすゝめ　八編」は大見出し］<br />
+<br />
+［＃地から３字上げ］福沢諭吉著<br />
+<br />
+<br />
+［＃５字下げ］我心をもって他人の身を制すべからず［＃「我心をもって他人の身を制すべからず」は中見出し］<br />
+<br />
+　アメリカのウェイランドなる人の著《あらわ》したる「モラルサイヤンス」という書に、人の心身の自由を論じたることあり。…
+</p> 
+<h3>改段</h3>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/kaidan.png" alt="改段" class="pht" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+…彼らの青春のすべてを決して見ることはない一〇〇万の観客に捧げたことに、十分な感謝もしていないようである。<br />
+［＃改段］<br />
+<br />
+［＃３字下げ］２　最近まで、私はフランスにいた［＃「２　最近まで、私はフランスにいた」は中見出し］<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+　一九八三年の七月一四日、フランス革命記念日、フランス大統領は、コンコルド広場の記念塔の下にたって、…
+</p> 
+</div>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/layout_1.html#kaicho+kaidanl" target="_blank">詳しくはこちら</a></p>
+</section>
+
+
+<!-- 4-5. センター寄せ
+================================================== -->
+<section id="center">
+<div class="page-header">
+<h1>4-5. センター寄せ</h1>
+</div>
+<p class="lead">章名や献辞、数行の一節などだけを示したページではしばしば、左右中央に文字を置く組み版が行われます。 ここではこれを、「左右中央」と呼びます。</p>
+<p class="lead">作品の冒頭や、改丁、改ページの後で、ページの左右中央に組まれた文字列を入力する際には、まず［＃ページの左右中央］と書き込んでください。</p>
+<div class="bs-docs-example">
+<div class="ex-img"><img src="https://www.aozora.gr.jp/annotation/fig/sayu_chuo1.png" alt="センター寄せ" class="pht" /></p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃ページの左右中央］<br />
+<br />
+<br />
+［＃３字下げ］短章　その一［＃「短章　その一」は中見出し］<br />
+<br />
+<br />
+［＃改ページ］
+</p> 
+</div>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/layout_3.html" target="_blank">詳しくはこちら</a></p>
+</section>
+
+
+<!-- 4-6. 外字
+================================================== -->
+<section id="gaiji">
+<div class="page-header">
+<h1>4-6. 外字</h1>
+</div>
+<p class="lead">青空文庫の入力は、JIS X 0201で定義され、半角で表示されるラテン文字、数字、記号と、JIS X 0208で定義され、全角で表示される漢字（第1水準と第2水準）、かな、ラテン文字、ギリシア文字、キリール文字、数字、記号によって行います。 JIS X 0208（JIS X 0201の文字は、ここにすべて含まれます。）にない文字を、このマニュアルでは外字と呼びます。</p>
+<p class="lead">パソコンやその他の情報機器では、Unicodeが広く使えるようになっていますが、青空文庫の作業では今のところ、これも使いません。 入力した文字にJIS X 0208以外の文字が入っていないかは、「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」というツールで確認できます。ファイルは必ず、チェッカー君を通してください。</p>
+<p class="lead">入力したい文字がパソコンでみつからないときや、候補はみつかったけれど、それで入れてよいか疑問が残るときは、<a href="https://www.aozora.gr.jp/gaiji_chuki/" target="_blank">「外字注記辞書」を参照</a>してください。</p>
+<p class="lead">「外字注記辞書」の最新版は、<a href="https://www.aozora.gr.jp/gaiji_chuki/" target="_blank">このページから</a>ダウンロードできます。その都度、ここから開くこともできますが、手もとにおいて、作業時に簡単、迅速に開けるようにしておくことを、おすすめします。</p>
+<p class="lead">索引から探してみつかった文字が、次のように表示されていれば、入れるべき文字は青空文庫で使える範囲にあります。<br />
+「→［包摂適用　■］」 <br />
+「→［統合適用　■］」 <br />
+「→［デザイン差　■］」 <br />
+「→［78互換包摂　■］」 <br />
+「■」に入っている文字で入力してください。</p>
+<p class="lead">例えば底本に「靑」と書かれてあるとします。現在のパソコンからは入力できますが、「<a href="http://www.aozora.jp/tools/checker.cgi" target="_blank">チェッカー君</a>」を通すと「<span style="color:#f00;">[gaiji]【靑】</span>」と出ます。その場合は「外字注記辞書」を参照してください。「外字注記辞書」には次のように書いてあります。</p>
+<p class="lead">0． 靑※［＃「睛のつくり」］→［包摂適用　青］　146</p>
+<p class="lead">これは、JIS漢字コードが採用している「包摂」という考え方を適用して、JIS X 0208では、「靑」は「青」のコードで入れる決まりになっているという意味です。 上記の「→［包摂適用　■］」に該当しますから、「■」のところに示された「青」で入力してください。</p>
+<p class="lead">青空文庫の入力で使えるJIS X 0208は、第1水準第2水準の漢字を規定した上に、細かな字体差によって漢字のコードを区別するかしないかの約束事を、「包摂規準」という名前で定めています。</p>
+<p class="lead">青空文庫の漢字の入力は、JIS X 0208に明示された185番までの包摂規準に加え、JIS X 0213で追加された186〜199番を受け入れた上で、底本に忠実に行います。詳しくは<a href="https://www.aozora.gr.jp/hosetsu_kijyun/index.html" target="_blank">こちら</a>をごらんください。</p>
+<p class="lead">「外字注記辞書」には、「→［包摂適用　■］」のような、矢印以下の形が示されていない、次のようなものがあります。</p>
+<p class="lead">★ 4． 棈※［＃「木＋睛のつくり」、第3水準1-85-73］補助漢字と共通</p>
+<p class="lead">矢印以下がないときは、入力すべき文字は、青空文庫で使える範囲にありません。 その際は、以下を基本形とした外字注記で入力します。</p>
+<p class="lead">※［＃…］</p>
+<p class="lead">上記の例では、「※［＃「木＋睛のつくり」、第3水準1-85-73］」に相当する部分です。これを外字注記辞書からコピーして、次のようにファイルにペーストしてください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+※［＃「木＋睛のつくり」、第3水準1-85-73］松《あべまつ》さん
+</p>
+<p class="lead">外字にルビが付いている場合は、以下のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+喉を掻き※［＃「てへん＋劣」、第3水準1-84-77］《むし》って
+</p>
+</div>
+<p class="lead">旧字作品の入力ファイルには、使うべきでない新字や俗字が、しばしば紛れこみます。</p>
+<p class="lead">これらを見つけ出すために、「<a href="http://www.aozora.jp/kouetsukun/replace.cgi" target="_blank">校閲君</a>」と名付けたチェックツールを用意しました。詳しい使い方は、「<a href="https://www.aozora.gr.jp/tools/kouetsukun/" target="_blank">旧字ファイルの新字・俗字を、校閲君で洗い出そう！</a>」で説明しています。</p>
+<p class="lead">旧字作品の入力が終わったら、青空文庫宛にファイルを送る前に、必ず校閲君でチェックしてください。</p>
+<p class="lead">校閲君は、結城浩さんによって書かれた後、ゼファー生さんによって書き直され、維持されています。</p>
+
+</section>
+
+
+<!-- 4-7. 訓点
+================================================== -->
+<section id="kunten">
+<div class="page-header">
+<h1>4-7. 傍点・傍線・訓点</h1>
+</div>
+<p class="lead">強調のために語句のわきに打つ点を、傍点といいます。傍点は、入力者注で処理してください。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/OYA.GIF" alt="傍点" /></div>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+胡麻塩おやじ［＃「おやじ」に傍点］ 
+</p>
+<p class="lead">傍点には「傍点」だけでなく、「傍点」、「●」、「○」、「▲」、「△」、「◎」、「傍点」、「×」などが使われることもあります。 </p>
+<p class="lead">「傍点」が使われている場合は、「傍点」の代わりに「白ゴマ傍点」と入力してください。「●」は「丸傍点」、「○」は「白丸傍点」、「▲」は「黒三角傍点」、「△」は「白三角傍点」、「◎」は「二重丸傍点」、「傍点」は「蛇の目傍点」、「×」は「ばつ傍点」と書いてください。 </p>
+<p class="lead">傍点の書き方の詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/emphasis.html#boten_chuki" target="_blank">傍点</a>」を参照してください。 </p>
+<p class="lead">強調のために語句の脇に添えられた線を、傍線といいます。傍線は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/emphasis.html#bosen_chuki" target="_blank">傍線</a>」に従って注記してください。  </p>
+<p class="lead">漢文の字間や行の脇に小書きで添えられる、返り点などの符号や送り仮名を、訓点といいます。訓点は、入力者注を略した記号を添えて、次のように入力してください。</p>
+<p class="lead">返り点は、［＃…］におさめて入力します。レ点には、カタカナの「レ」を用いてください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+自［＃二］女王國［＃一］東度［＃レ］海千餘里。
+</p>
+<p class="lead">漢字の右下に、小書きのカタカナで添えられる訓点送り仮名は、［＃（…）］におさめて入力します。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+阪［＃（ノ）］上［＃（ノ）］郎女
+</p>
+<p class="lead">小書きの漢字（万葉仮名）が、訓点送り仮名として使われている場合も、同じ形で入力します。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+爾時倭姫命見悦給［＃（弖）］、其處［＃（爾）］魚見社定賜［＃（支）］
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/kunten.html" target="_blank">詳しくはこちら</a></p>
+</section>
+
+
+<!-- 4-8. 文字サイズ・太字
+================================================== -->
+<section id="emphasis">
+<div class="page-header">
+<h1>4-8. 文字サイズ・太字</h1>
+</div>
+<p class="lead">見出しのサイズが本文とは変えてあるといった、編集による処理と思われるものは、注記する必要はありません。一方、著者の表現意図に基づくと思われるものは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#moji_size" target="_blank">文字サイズ</a>」に従って注記してください。</p>
+<p class="lead">明朝体の本文の中で、強調のために、文章の一部にゴシックやイタリックが使われることがあります。 </p>
+<p class="lead">見出しがゴシックで組んであるといった、編集による処理と思われるものは、注記する必要はありません。一方、著者の表現意図に基づくと思われるものは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/emphasis.html#futoji_gothic,shatai_italic" target="_blank">太字（ゴシック）と斜体（イタリック）</a>」に従って注記してください。 </p>
+</section>
+
+
+<!-- 4-9. 表組み・系囲み
+================================================== -->
+<section id="table">
+<div class="page-header">
+<h1>4-9. 表組み・罫囲み</h1>
+</div>
+<p class="lead">テキストで表組みを正確に再現することはできません。簡単な表組みの場合には、項目と項目とのあいだをスペースで調整して入力してください。</p>
+<p class="lead">表の枠や区切りには、罫線素片を用いてください。</p>
+<p class="prettyprint">
+ ─ │ ┌ ┐ ┘ └ ├ ┬ ┤ ┴ ┼ ━ ┃ ┏ ┓ ┛ ┗ ┣ ┳ ┫ ┻ ╋ ┠ ┯ ┨ ┷ ┿ ┝ ┰ ┥ ┸ ╂
+</p>
+<p class="lead">複雑な表組みは、図版として扱います。どの形式でどう組み込むか、reception@aozora.gr.jpに相談してください。 </p>
+<p class="lead">行中の文字が罫囲みされている場合は、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+そしてキ劇の［＃「キ劇の」は罫囲み］犠牲になるようなことは
+</p>
+<p class="lead">ブロックで罫囲みしてある場合は、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃ここから罫囲み］ <br />
+「工場委員会」の選挙制協議のため時間後一人残らず食堂へ集合の事。危機は迫っている。団結の力を以って我等を守ろう。<br />
+［＃ここで罫囲み終わり］
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#keigakomi" target="_blank">>詳しくはこちら</a></p>
+</section>
+
+
+<!-- 4-10. 画像とキャプション
+================================================== -->
+<section id="images">
+<div class="page-header">
+<h1>4-10. 画像とキャプション</h1>
+</div>
+<p class="lead">著作権の問題のない、写真、挿絵、図版はスキャナーで読み取ってください。ご自身でスキャナーが利用できなければ、点検グループに相談してください。</p>
+<p class="lead">挿絵の著作権の保護期間は、作者（画家）の没年が1967（昭和42）年以前なら切れていると考えて、収録の可否を判断してください。</p>
+<p class="lead">無署名で掲載されている図版や挿絵の保護期間は、公表年が1967（昭和42）年以前ならと考えてください。</p>
+<p class="lead">写真は、保護期間に関する著作権法の規定が繰り返し変更されたため、発行時期に即して、収録の可否を個別に検討する必要があります。 ただし、発行後10年間だけ保護するとしていた旧著作権法の規定が関わって、1956（昭和31）年12月31日までに発行されたものは、すべて権利が消滅しています。これに該当するものは、写真家の没年や、存命か否かにかかわらず、収録が可能です。</p>
+<p class="lead">画像ファイルを点検グループ（reception@aozora.gr.jp）に送る際は、「収録できる」と判断した根拠を、書き添えてください。</p>
+<p class="lead">収録可能か否か判断に迷ったら、点検グループに相談してください。</p>
+<p class="lead">白黒の図版は、グレースケールで。カラーの図版は、カラーで作成してください。</p>
+<p class="lead">ファイル形式は、次のようにしてください。</p>
+<p class="prettyprint">
+画像形式：png<br />
+解像度：72ppi<br />
+色深度：カラー3万2000色、グレースケール256階調をめどに、画質の明らかな劣化を招かない範囲で、浅くしてください。
+</p>
+<p class="lead">ファイル名は、次のようにつけてください。</p>
+<p class="prettyprint">
+fig作品ID_通し番号.png
+</p>
+<p class="lead">「作品ID」は、1バイトの数字で表記します。</p>
+<p class="lead">各作品のIDは、総合インデックスで確認できます。 「通し番号」は、1バイト数字2ケタの「01」から始まる連番として次のようにします。</p>
+<p class="prettyprint">
+fig2441_01.png
+</p>
+<p class="lead">画像ファイル数が100をこえて、通し番号が「99」以上必要になる際は、「001」から始まる1バイト数字3ケタの連番としてください。</p>
+<p class="prettyprint">
+fig2441_001.png
+</p>
+<p class="lead">画像の入るところには、テキストに次のように注記してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃石鏃二つの図（fig42154_01.png、横321×縦123）入る］
+</p>
+<p class="lead">注記の基本形の中に、画像の説明、丸括弧して、画像ファイル名とサイズをおさめます。</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/graphics.html" target="_blank">詳しくはこちら</a></p>
+<p class="lead">写真や図版に添えられている説明（キャプション）は、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+神戸港頭の袂別［＃「神戸港頭の袂別」はキャプション］
+</p>
+<p class="lead">キャプションは、図版注記の次行に書き入れ、１行あけてから、本文を再開してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+…暫く経文を唱えて居られたが神色自若《しんしょくじじゃく》として少しも今死に臨むという状態は見えない。ごく安泰に読経《どきょう》せられて居ったそうです。<br />
+［＃「大獅子金剛大ラマの水刑」のキャプション付きの図（fig49966_02.png、横353×縦514）入る］ <br />
+大獅子金剛大ラマの水刑［＃「大獅子金剛大ラマの水刑」はキャプション］ <br />
+ <br />
+　その節この尊いお方が、人に憎まるるためにわずかの罪を口実に殺されるというのはいかにもお気の毒な事であるといって見送りに来て居った人が沢山ありまして、…
+</p>
+<p class="lead">ほとんどの場合、キャプションは横組みで添えられていますが、その際も、横組み注記を併用する必要はありません。</p>
+<p class="lead">キャプション中に改行がある場合は、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃「第３図『雪華図説』図版第十面」のキャプション付きの図（fig52468_15.png、横360×縦507）入る］ <br />
+［＃ここからキャプション］ <br />
+第３図『雪華図説』図版第十面 <br />
+　本図は加納一郎氏所蔵原本より複写したもので，貴重な原本を貸与された同氏の厚志を謝す．なお文久二年大槻磐渓の重刻本もただ一箇順序のちがったものがあるが，図は原本と同じものである． <br />
+［＃ここでキャプション終わり］
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/graphics.html#caption" target="_blank">詳しくはこちら</a></p>
+</section>
+
+
+<!-- 4-11. その他
+================================================== -->
+<section id="etc">
+<div class="page-header">
+<h1>4-11. その他</h1>
+</div>
+<h3>縦中横</h3>
+<p class="lead">縦組み中で、例えば「B29」のアラビア数字や「（一）」のような括弧付き数字等が、そこだけ横に組まれていることがあります。 </p>
+<p class="lead">「縦中横」と呼ばれるこうした組みは、次のように入力してください。 </p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+Ｂ29［＃「29」は縦中横］
+</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+（一）［＃「（一）」は縦中横］
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#tatechu_yoko" target="_blank">詳しくはこちら</a></p>
+<h3>割り注</h3>
+<p class="lead">本文の途中に、小さな文字の２行組みで挟み込まれる柱を、割り注と呼びます。</p>
+<p class="lead">割り注は、次のように入力してください。 </p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃割り注］価は四百円であった。［＃割り注終わり］ 
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#warichu" target="_blank">詳しくはこちら</a></p>
+<h3>字詰め</h3>
+<p class="lead">他の箇所よりも字詰めが短く設定してあるところは、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃ここから１０字詰め］<br />
+昭和十五年五月二十九日京都義方会に於ける講演速記で同年八月若干追補した。<br />
+［＃ここで字詰め終わり］
+</p>
+<p class="lead">字詰めが設定してある箇所は、しばしば字下げされています。字詰めと字下げの組み合わせなどの詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#jizume" target="_blank">字詰め</a>」を参照してください。</p>
+<h3>横組み</h3>
+<p class="lead">横組みの底本から入力した際は、ファイル末に「※底本は横組みです。」と書いてください。</p>
+<p class="lead">縦組みのなかで、行中の文字の一部が横組みされている際は、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+スハフ［＃「スハフ」は横組み］
+</p>
+<p class="lead">縦組みの中で、ブロックで横組みしてあるときは、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+［＃ここから横組み］<br />
+手持現金旧券＋（新円100円×家族人数）＋500円以内の給料＋300円＋（100×Ｘ）<br />
+［＃ここで横組み終わり］
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#yokogumi" target="_blank">詳しくはこちら</a></p>
+<h3>ママ</h3>
+<p class="lead">作品中に「ママ」というルビがふってある文字がときどきあります。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/MAMA.GIF" alt="ママ" /></div>
+<p class="lead">これは形はルビであっても意味はルビではなく、「親本（原稿）の誤植（誤字）と思われるがそのまま（ママ）にする」という注釈です。これについては、ルビではなく入力者注を用いて次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+吹喋［＃「喋」に「ママ」の注記］
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/etc.html#teisei_mama" target="_blank">詳しくはこちら</a></p>
+<h3>踊り字</h3>
+<p class="lead">「人々」の「々」のように同じ文字の繰り返しを表す文字を、踊り字といいます。くの字点踊り字には、右の例のように２倍の長さ（全角２文字分）の「くの字点」もあります。くの字点は、青空文庫で使える文字には含まれていません。代わりに「／＼」と入力してください。</p>
+<div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/ODORI.GIF" alt="踊り字" /></div>
+<p class="lead">くの字点には濁点付きのものがあります。この場合は、間に「″」を入れて「／″＼」と入力します。</p>
+<p class="lead">印刷物では、「々」「ゝ」などが行頭にくる場合には、「人々→人人」のように、踊り字を一字目の漢字に置き換えるのが普通です。この処理が行われたと判断できるときは、二つ目の漢字を踊り字に戻し、「人々」といった形で入力してください。２倍の踊り字が、置き換えられたと思われる場合にも、踊り字に戻してください。</p>
+<h3>上付き文字、下付き文字</h3>
+<p class="lead">数式や元素記号などで使われる行の上部や下部に小さく入る文字は、入力者注で処理してください。例えば、「２の２乗」を表す数式は次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+22［＃「2」は上付き小文字］
+</p>
+<p class="lead">また、水の元素記号は、次のように入力してください。</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+H2［＃「2」は下付き小文字］O と入力します。
+</p>
+<span class="label label-more">more</span><p class="ex-more">詳しくは、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#gyomigi_gyohidari" target="_blank">行右小書き、行左小書き文字（縦組み）</a>」と「<a href="https://www.aozora.gr.jp/annotation/etc.html#uwatsuki_shitatsuki" target="_blank">上付き小文字、下付き小文字（横組み）</a>」を参照してください。
+<h3>数式</h3>
+<p class="lead">数式の入力方法については、まだ検討の途中ですが、「<a href="http://attic.neophilia.co.jp/aozora/task/numerical_formula/" target="_blank">数式の入力</a>」を参照してください。</p>
+<h3>伏せ字</h3>
+<p class="lead">国家による検閲が盛んに行われた時代に発行された書籍では、問題があるとされた箇所を「×」などで置き換えた、伏せ字が使われている場合があります。伏せ字は、底本で使われている記号を、使われている個数分入力してください。</p>
+</section>
+
+
+<!-- 4-12. 処理に迷ったとき
+================================================== -->
+<section id="lost">
+<div class="page-header">
+<h1>4-12. 処理に迷ったとき</h1>
+</div>
+<p class="lead">世に出ている書籍の数は膨大、しかも内容は多岐にわたります。入力途中でどう処理していいか迷う場面が、きっと出てくるはずです。また、底本の文字が欠けていて判読できないなどといったトラブルもありえます。処理に困ったときは、原則として「入力者注」で処理してください。</p>
+<p class="lead">本にはしばしば誤植があります。著者の誤記と思われる表現にもぶつかります。明らかに誤植、誤記、脱字だと判断できる文字は、入力者注で処理してください。迷う場合には、原文通りに入力してください。</p>
+<p class="lead">例えば、「宮沢憲治」のように明らかな誤植と思われる場合は、</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+宮沢賢治［＃「賢治」は底本では「憲治」］
+</p>
+<p class="lead">書き換えの記録を残さずに本文を変更することは、行わないでください。</p>
+<p class="lead">誤植と断定することはできないけれど、表記が疑わしい場合、もしくは、明らかに誤りではあるけれど、正しい内容が特定できない場合には、</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+彼は12381［＃「12381」はママ］年に生まれ、
+</p>
+<p class="lead">のように、「ママ」を用いて注記してください。</p>
+<p class="lead">底本の表記に疑いをもった際の対処の詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#teisei_mama" target="_blank">訂正と「ママ」</a>」にまとめてあります。</p>
+<p class="lead">文字が判読できないなどの場合は、その文字のかわりに「※」を入れ、</p>
+<span class="label label-chuki">青空文庫注記</span>
+<p class="prettyprint">
+※［＃判読不可、30-16］
+</p>
+<p class="lead">のように入力者注で処理してください。</p>
+</section>
+
+
+<!-- 5. 外国語の入力
+================================================== -->
+<section id="foreign-language">
+<div class="page-header">
+<h1>5. 外国語の入力</h1>
+</div>
+<h3>アルファベット</h3>
+<p class="lead">JIS X 0208にある文字を使って行う青空文庫の入力では、ラテン文字、ギリシア文字、（ロシア語などの表記に使われる） キリール文字の三種類のアルファベットが使えます。</p>
+<p class="lead">このうちラテン文字については、一般のパソコンでは、半角のものと全角のものを使い分けられます。 青空文庫の入力でも、半角、全角双方のラテン文字を使います。</p>
+<p class="lead">アルファベットの語句は、原則として、英文モードで半角のラテン文字を使い、次のように入力してください。</p>
+<p class="prettyprint">
+僕は Victor Hugo の Notre Dame を読んだとき、
+</p>
+<p class="lead">半角ラテン文字の語間は、上のように、半角開けてください。</p>
+<p class="lead">ギリシア文字、キリール文字は、和文モードの全角でしか入力できません。全角の文字を用いて、次のように入力してください。</p>
+<p class="prettyprint">
+そこには ΚΑΜΑΤΟΣ　ΕΥΚΑΜΑΤΟΣ とあった。
+</p>
+<p class="lead">ギリシア文字、キリール文字の語間は、上のように、全角開けてください。</p>
+<p class="lead">かな、漢字、記号（句読点と括弧をのぞく）とアルファベットの境は、次のように、半角開けてください。</p>
+<p class="prettyprint">
+外道哲学と Sokrates 前の希臘哲学
+</p>
+<p class="lead">アルファベット文字列に組み込まれた、ピリオドやコンマ、中点、コロン、セミコロン、疑問符、感嘆符などの各種記号は、アルファベットととして扱います。半角のものがあれば、半角で入力し、かな、漢字、記号（句読点と括弧をのぞく）と接するときは、次のように、半角開けてください。</p>
+<p class="prettyprint">
+Il nevivra pas ! と云った。
+</p>
+<p class="prettyprint">
+青空文庫の玄関口は https://www.aozora.gr.jp/ です。
+</p>
+<p class="lead">句読点とアルファベットの境には、次のように、アキを入れないでください。</p>
+<p class="prettyprint">
+西洋にいた時から、Archive とか
+</p>
+<p class="lead">日本語が入る括弧とアルファベットの境には、次のように、アキを入れないでください。</p>
+<p class="prettyprint">
+そこには ΚΑΜΑΤΟΣ　ΕΥΚΑΜΑΤΟΣ（苦は苦にならぬ）とあった。
+</p>
+<p class="lead">括弧の中にアルファベットが入る場合、アルファベットの前後には、次のように、アキを入れないでください。</p>
+<p class="prettyprint">
+“Kosinski soll leben !”
+</p>
+<p class="prettyprint">
+バヴァリア（Bavaria, Bayern）は、
+</p>
+<p class="prettyprint">
+苦は苦にならぬ（ΚΑΜΑΤΟΣ　ΕΥΚΑΜΑΤΟΣ） 
+</p>
+<p class="lead">アルファベットの入る括弧には、全角のものを使ってください。括弧の前後には、アキを入れないでください。</p>
+<p class="lead">縦組みの底本中で、縦に組まれているアルファベットは、和文モードで、全角のものを用いて入力してください。</p>
+<p class="lead">全角で入力した、アルファベットの略号や縦アルファベットが、かな、漢字、記号と接するところには、次のように、アキを入れないでください。</p>
+<p class="prettyprint">
+ＡＴ＆Ｔ、ＮＴＴはともに、
+</p>
+<p class="prettyprint">
+ａ、ｂ、ｃと黒板に
+</p>
+<h3>アクセント符号付きのラテン文字</h3>
+<p class="lead">アクサン（´）（｀）や、ウムラウト（¨）などの付いたラテン文字は、青空文庫で使える文字の範囲にはありません。</p>
+<p class="lead">これらは、「<a href="https://www.aozora.gr.jp/accent_separation.html" target="_blank">青空文庫テキストへの「アクセント分解」の適用</a>」で概要を説明している、「アクセント分解」を用いて入力します。</p>
+<p class="lead">この方式で、アクセント符号付きのラテン文字をどう表現するかは、<a href="http://cosmoshouse.com/tools/acc-conv-j.htm" target="_blank">アクセント付き文字の変換表</a>にまとめられています。</p>
+<p class="lead">「raffiné」という単語の「é」は、変換表によれば「e'」と書くとわかります。「raffiné」という単語であれば、アクセント分解で用いる記号「〔〕」で挟んで、次のように入力します。 </p>
+<p class="prettyprint">
+raffine'
+</p>
+<span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/external_character.html#accent" target="_blank">詳しくはこちら</a></p>
+</section>
+
+
+<!-- 6. 記号の入力
+================================================== -->
+<section id="symbol">
+<div class="page-header">
+<h1>6. 記号の入力</h1>
+</div>
+<h3>数字</h3>
+<p class="lead">１文字のアラビア数字（算用数字）は全角で、２文字以上の場合は半角で入力してください。</p>
+<p class="lead">半角数字中の「,」は、半角で入力してください。</p>
+<p class="lead">底本の表記が「一九九八年」のような漢数字の場合は、そのまま漢数字で入力してください。</p>
+<h3>記号</h3>
+<p class="lead">「（」、「）」、「「」、「」」などの括弧記号、「，」、「．」、「・」、「？」、「！」などの記述記号は、原則として、和文モードで入力してください。ただし、アルファベットとアラビア数字の、半角文字列中で用いられる場合には、英文モードで半角のものを入力してください。</p>
+<p class="lead">かな漢字変換ソフトの設定によっては、句読点などが自動的に半角や「．」「，」に変換されてしまうことがあります。和文モードでこうなっていたら、マニュアルやインターネットの記述を参考にして、設定をあらためてください。</p>
+<h3>ハイフンとダッシュ</h3>
+<p class="lead">半角のアルファベット、数字文字列中で使われているハイフンには、半角の「-」を使ってください。</p>
+<p class="lead">ハイフンを少し長くした形のダッシュは、ダッシュ記号「―」を使用してください。（キーボードから直接入力できるのは、線が少し短いマイナス記号（－）です。混同しないよう注意してください。）</p>
+<p class="lead">印刷物でよく使われる２倍の長さ（全角２文字分）のダッシュは、上記のダッシュ記号を２つ続け、「――」と入力してください。実線についても同様です。</p>
+<p class="lead">ダッシュが二重になった形の記号には、等号「＝」を使用してください。</p>
+<h3>点線</h3>
+<p class="lead">底本が「……」のようになっている場合は、３点リーダー「…」を使用してください。</p>
+<p class="lead">底本が「‥‥」のようになっている場合は、２点リーダー「‥」を使用してください。</p>
+<p class="lead">底本が「・・」のようになっている場合は、中点（中黒）「・」を使用してください。</p>
+</section>
+
+
+<!-- 7. 文書の保存
+================================================== -->
+<section id="save">
+<div class="page-header">
+<h1>7. 文書の保存</h1>
+</div>
+<p class="lead">入力データは、テキスト形式で保存します。</p>
+<p class="lead">改行コードは、Windowsで用いられている「CR+LF」とします。</p>
+<p class="lead">符号化方式（エンコーディング）は、Shift_JISを選びます。</p>
+<p class="lead">作業にはエディタを使ってもワープロを使ってもかまいませんが、マニュアルやインターネット上の記述を参考にして、自分の用いるソフトで、「保存形式はShift_JISのテキスト、改行コードはCR+LF」になるよう設定してください。</p>
+<p class="lead">ファイル名は、作品名を小文字のアルファベットで表記し、拡張子.txtを加えたものを用います。</p>
+<p class="lead">ファイル名の付け方の詳細は、「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html" target="_blank">入力ファイルを「テキスト版」に仕上げるために</a>」の「<a href="https://www.aozora.gr.jp/KOSAKU/textfile_checklist/index.html#chap1" target="_blank">テキスト版に求められる形式１　ファイル名</a>」を参照してください。</p>
+</section>
+
+
+<!-- 8. 入力者校正
+================================================== -->
+<section id="proofreading">
+<div class="page-header">
+<h1>8. 入力者校正</h1>
+</div>
+<p class="lead">プロの入力者、プロの校正者、プロの編集者の共同作業でつくられる市販の書籍でさえ誤植があります。アマチュアである私たちが入力したテキストには「確実に誤りが含まれている」と見なすべきでしょう。</p>
+<p class="lead">そこで、入力が完了したら、必ず「入力者校正」を行い、入力データを修正してください。入力者校正は、後述する「原稿つきあわせ」と「素読み」の二段階に分けて行ってください。詳しくは「<a href="index-proofreading.html">青空文庫作業マニュアル【校正編】</a>」をごらんください。</p>
+<p class="lead">入力時の誤りは、同じパターンで何度も生じがちです。みつけた誤りに繰り返しの可能性を感じたら、エディタやワープロの検索機能を使って、他にもないか確認してください。</p>
+<p class="lead">OCRを使った入力では、似た形の文字の読み取り誤りが、しばしば生じます。片仮名の「ヘペベ」と平仮名の「へぺべ」等、フォントでの識別がほぼできないものもあります。こうしたものも、検索機能を使って、チェックしてください。OCRで誤認識されやすい文字は「<a href="http://eunheui.sakura.ne.jp/aozora/proofreader.html" target="_blank">校正ツール2.0化ひとりプロジェクト</a>」でチェックすることもできます。</p>
+<p class="lead">「<a href="index-proofreading.html">青空文庫作業マニュアル【校正編】</a>」の「校正は繰り返し行う」で詳しく説明している正規表現を使えば、OCR誤植などの入力時の誤りを、効率的に、高い精度で取り除けます。</p>
+<p class="lead">ファイルの精度を高めるためには、「できるだけ早い段階でミスを修正しておく」ことが鉄則です。入力者校正に、ぜひご協力ください。</p>
+
+</section>
+
+
+<!-- 9. 文書の送信
+================================================== -->
+<section id="send">
+<div class="page-header">
+<h1>9. 文書の送信</h1>
+</div>
+<p class="lead">入力者校正が済んだファイルは、reception@aozora.gr.jp宛に電子メールで送信してください。その際、ファイルには「圧縮」をかけ、「添付ファイル」として処理してください。</p>
+<p class="lead">圧縮方式は、zipを推奨します。自分のパソコンでzip圧縮する方法は、マニュアルやインターネットの記述を参考にしてください。</p>
+<p class="lead">送信していただいたファイルは、校正に名乗りを上げてくれた人のところへとまわされ、校正作業に移ります。このとき、当然ながら入力に使用された底本が必要になります。</p>
+<p class="lead">底本は、原則的には校正者、もしくは点検グループで確保していますが、ときには最寄りの図書館で手配できず、絶版・品切れのため、古書店でも入手できない場合があります。そのため、底本もしくはそのコピーを送付していただく必要が出るかもしれません。ご協力をお願いします。</p>
+
+</section>
+
+<div style="margin-top:100px;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">クリエイティブ・コモンズ 表示 - 非営利 2.1 日本 ライセンスの下に提供されています。</a>
+</div>
+
+
+
+
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twbs/bootstrap/releases">Changelog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/bootstrap-affix.js"></script>
+    <script src="./js/application.js"></script>
+
+  </body>
+</html>
