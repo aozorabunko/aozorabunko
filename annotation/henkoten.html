@@ -1,202 +1,203 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=SHIFT_JIS" >
-<TITLE>�e�L�X�g�Œ��L��XHTML�ł̕ύX�_</TITLE>
-<style type="text/css">
-<!--
-body { margin-left: 5%; margin-right: 5%; font-size: smaller;}
-.left { float:left; width:50%;}
-.right { float:right; width:50%;}
-.float-clear { clear:both;}
--->
-</style>
-</HEAD>
-<BODY>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" >
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" >
+	<meta http-equiv="content-style-type" content="text/css" />
+	<link rel="stylesheet" type="text/css" href="annotation.css" />
+	<title>テキスト版注記とXHTML版の変更点</title>
+	<script type="text/javascript" src="../cards/jquery-1.4.2.min.js"></script>
+  <link rel="Schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<meta name="DC.Title" content="テキスト版注記とXHTML版の変更点" />
+	<meta name="DC.Creator" content="青空文庫" />
+	<meta name="DC.Publisher" content="青空文庫" />
+</head>
+<body>
+<div class="contents">
+<h2>テキスト版注記とXHTML版の変更点</h2>
+<hr />
+<a name="txt"></a>
+<h3>テキスト版注記の変更点</h3>
+<blockquote>
+<A  href="index.html#block_inline">ブロックとインラインの分離原則</A>：［＃ここから…］～［＃ここで…終わり］をブロックに限定。インラインに［＃…］～［＃…終わり］を新設した。<br />
+<blockquote>
+これまでは、［＃ここから…］、［＃ここで…終わり］という記法を、行中（インライン）とブロックへの注記の、双方で用いてきた。<br />
+テキスト版のプログラム処理を容易にすることを狙って、今後は、これを分離する。<br />
+<br />
+▼インライン<br />
+<br />
+（１）注記対象が短めの場合に使用（従来通り）<br />
+<br />
+○○［＃「○○」に（は）…］<br />
+<br />
+（２）注記対象が長めの場合もしくは、外字注記、アクセント分解が含まれている場合に使用（新設）<br />
+<br />
+［＃…］～［＃…終わり］<br />
+<blockquote>
+割り注の注記は、必ずインラインで用いる。<br />
+<br />
+これまでは、［＃ここから割り注］～［＃ここで割り注終わり］と書いてきたが、今回の分離に伴って、これを［＃割り注］～［＃割り注終わり］に変更する。<br />
+<br />
+詳細は、<A  href="etc.html#warichu" TARGET="_TOP">割り注</A>を参照。<br />
+</blockquote>
+▼ブロック<br />
+<br />
+（３）注記対象がブロックの場合に使用（従来通り）<br />
+<br />
+［＃ここから…］<br />
+　　　　：<br />
+［＃ここで…終わり］<br />
+<br />
+詳細は、<A  href="heading.html" TARGET="_TOP">●見出し</A>、<A  href="emphasis.html" TARGET="_TOP">●強調</A>の各項と、<A  href="etc.html#keigakomi" TARGET="_TOP">罫囲み</A>、<A  href="etc.html#yokogumi" TARGET="_TOP">横組み</A>、<A  href="etc.html#moji_size" TARGET="_TOP">文字サイズ</A>を参照。<br />
+<br />
+</blockquote>
+<A  href="duplication.html#chofuku">注記の独立表記の原則</A>：同じ語句に重ねて注記する際は、分離して書く原則を立てた。<br />
+<blockquote>
+プログラムによるテキスト版の処理を容易にすることを狙って、複数の内容をまとめて、［＃ここから○字下げ、●字詰め、罫囲み］のように書くことを行わないことにする。<br />
+<br />
+テキスト版をそのまま読んだ際は煩雑になるが、以下のように分けて書く。<br />
+<blockquote>
+［＃ここから○字下げ］<br />
+［＃ここから●字詰め］<br />
+［＃ここから罫囲み］<br />
+　…………………………………………<br />
+［＃ここで罫囲み終わり］<br />
+［＃ここで字詰め終わり］<br />
+［＃ここで字下げ終わり］<br />
+</blockquote>
+詳細は、<A  href="etc.html#jizume" TARGET="_TOP">字詰め</A>、<A  href="etc.html#keigakomi" TARGET="_TOP">罫囲み</A>、<A  href="etc.html#yokogumi" TARGET="_TOP">横組み</A>を参照。<br />
+</blockquote>
 
-<H2>�e�L�X�g�Œ��L��XHTML�ł̕ύX�_</H2>
-
-<HR>
-
-<A name="txt"></A>
-<H3>�e�L�X�g�Œ��L�̕ύX�_</H3>
-<BLOCKQUOTE>
-<A  href="index.html#block_inline">�u���b�N�ƃC�����C���̕�������</A>�F�m����������c�n�`�m�������Łc�I���n���u���b�N�Ɍ���B�C�����C���Ɂm���c�n�`�m���c�I���n��V�݂����B<BR>
-<BLOCKQUOTE>
-����܂ł́A�m����������c�n�A�m�������Łc�I���n�Ƃ����L�@���A�s���i�C�����C���j�ƃu���b�N�ւ̒��L�́A�o���ŗp���Ă����B<BR>
-�e�L�X�g�ł̃v���O����������e�Ղɂ��邱�Ƃ�_���āA����́A����𕪗�����B<BR>
-<BR>
-���C�����C��<BR>
-<BR>
-�i�P�j���L�Ώۂ��Z�߂̏ꍇ�Ɏg�p�i�]���ʂ�j<BR>
-<BR>
-�����m���u�����v�Ɂi�́j�c�n<BR>
-<BR>
-�i�Q�j���L�Ώۂ����߂̏ꍇ�������́A�O�����L�A�A�N�Z���g�������܂܂�Ă���ꍇ�Ɏg�p�i�V�݁j<BR>
-<BR>
-�m���c�n�`�m���c�I���n<BR>
-<BLOCKQUOTE>
-���蒍�̒��L�́A�K���C�����C���ŗp����B<BR>
-<BR>
-����܂ł́A�m���������犄�蒍�n�`�m�������Ŋ��蒍�I���n�Ə����Ă������A����̕����ɔ����āA������m�����蒍�n�`�m�����蒍�I���n�ɕύX����B<BR>
-<BR>
-�ڍׂ́A<A  href="etc.html#warichu" TARGET="_TOP">���蒍</A>���Q�ƁB<BR>
-</BLOCKQUOTE>
-���u���b�N<BR>
-<BR>
-�i�R�j���L�Ώۂ��u���b�N�̏ꍇ�Ɏg�p�i�]���ʂ�j<BR>
-<BR>
-�m����������c�n<BR>
-�@�@�@�@�F<BR>
-�m�������Łc�I���n<BR>
-<BR>
-�ڍׂ́A<A  href="heading.html" TARGET="_TOP">�����o��</A>�A<A  href="emphasis.html" TARGET="_TOP">������</A>�̊e���ƁA<A  href="etc.html#keigakomi" TARGET="_TOP">�r�͂�</A>�A<A  href="etc.html#yokogumi" TARGET="_TOP">���g��</A>�A<A  href="etc.html#moji_size" TARGET="_TOP">�����T�C�Y</A>���Q�ƁB<BR>
-<BR>
-</BLOCKQUOTE>
-<A  href="duplication.html#chofuku">���L�̓Ɨ��\�L�̌���</A>�F�������ɏd�˂Ē��L����ۂ́A�������ď��������𗧂Ă��B<BR>
-<BLOCKQUOTE>
-�v���O�����ɂ��e�L�X�g�ł̏�����e�Ղɂ��邱�Ƃ�_���āA�����̓��e���܂Ƃ߂āA�m���������灛�������A�����l�߁A�r�͂݁n�̂悤�ɏ������Ƃ��s��Ȃ����Ƃɂ���B<BR>
-<BR>
-�e�L�X�g�ł����̂܂ܓǂ񂾍ۂ͔ώG�ɂȂ邪�A�ȉ��̂悤�ɕ����ď����B<BR>
-<BLOCKQUOTE>
-�m���������灛�������n<BR>
-�m���������灜���l�߁n<BR>
-�m����������r�͂݁n<BR>
-�@�c�c�c�c�c�c�c�c�c�c�c�c�c�c�c�c<BR>
-�m�������Ōr�͂ݏI���n<BR>
-�m�������Ŏ��l�ߏI���n<BR>
-�m�������Ŏ������I���n<BR>
-</BLOCKQUOTE>
-�ڍׂ́A<A  href="etc.html#jizume" TARGET="_TOP">���l��</A>�A<A  href="etc.html#keigakomi" TARGET="_TOP">�r�͂�</A>�A<A  href="etc.html#yokogumi" TARGET="_TOP">���g��</A>���Q�ƁB<BR>
-</BLOCKQUOTE>
-
-�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@��<BR>
-<BR>
-<A  href="layout_3.html#sayu_chuo">�y�[�W���E�����ւ̑Ώ�</A>�F�K��𖾊m�������B<BR>
-<BR>
-<A  href="heading.html">���o�����L�̒ǉ�</A>�F�ʏ�̌��o���A���s���o���A�����o���̒��L��V�݂����B<BR>
-<BR>
-<A  href="kunten.html#kaeriten_chuki">�G�_�̓���</A>�F�Ȃɂ𓖂Ă邩�����߂��B<BR>
-<BR>
-<A  href="emphasis.html#boten_chuki">�T�����L�̖��L�ڂ��������A�T�_�A�T�����L�̋L�@��ǉ�</A>�F�m���c�n�`�m���c�I���n�̌`����V���ɍ̗p�����B<BR>
-<BR>
-<A  href="emphasis.html#futoji_gothic,shatai_italic">�Α̒��L�̖��L�ڂ��������A�����A�Α̒��L�̋L�@��ǉ�</A>�F�m���c�n�`�m���c�I���n�̌`����V���ɍ̗p�����B<BR>
-<BR>
-<A  href="graphics.html#gazo_chuki">�}�Œ��L�ւ̃T�C�Y�L��</A>�F�}�Œ��L�ɉ摜�T�C�Y���������ނ��ƂƂ����B<BR>
-<BR>
-<A  href="etc.html#warichu">���蒍�̋L�@�ύX</A>�F�u��������v�u�����܂Łv���Ȃ��A�V�����L�@�ɕύX�����B<BR>
-<BR>
-<A  href="etc.html#keigakomi">�������f�Ђɂ��r�݂͂̔p�~</A>�F�p���Ȃ����Ƃɂ����B<BR>
-<BR>
-<A  href="etc.html#yokogumi">�s���̉��g�݂̋L�@�ύX</A>�F�u��������v�u�����܂Łv���Ȃ��A�V�����L�@�ɕύX�����B<BR>
-<BR>
-<A  href="etc.html#moji_size">�����T�C�Y�̋L�@�ǉ�</A>�F�m���c�n�`�m���c�I���n�̌`����V���ɍ̗p�����B<BR>
-<BR>
-�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@��<BR>
-<BR>
-<A  href="extra.html#end_annotation">�󕶌ɊO�̃t�@�C���ɂ�����{���I��</A>�F�{���I�����L��V�݂����B<BR>
-<BR>
-<A  href="extra.html#unavailable_character">�󕶌ɂŎg���Ȃ������̑�֕\�L</A>�F���r�L���u�s�t�v����\���������ۂ̑�֕\���ɂ��Ē�Ă����B<BR>
-</BLOCKQUOTE>
-<BR>
+　　　　　　　　　　　　　　　　　　※<br />
+<br />
+<A  href="layout_3.html#sayu_chuo">ページ左右中央への対処</A>：規定を明確化した。<br />
+<br />
+<A  href="heading.html">見出し注記の追加</A>：通常の見出し、同行見出し、窓見出しの注記を新設した。<br />
+<br />
+<A  href="kunten.html#kaeriten_chuki">竪点の入力</A>：なにを当てるかを決めた。<br />
+<br />
+<A  href="emphasis.html#boten_chuki">傍線注記の未記載を解消し、傍点、傍線注記の記法を追加</A>：［＃…］～［＃…終わり］の形式を新たに採用した。<br />
+<br />
+<A  href="emphasis.html#futoji_gothic,shatai_italic">斜体注記の未記載を解消し、太字、斜体注記の記法を追加</A>：［＃…］～［＃…終わり］の形式を新たに採用した。<br />
+<br />
+<A  href="graphics.html#gazo_chuki">図版注記へのサイズ記入</A>：図版注記に画像サイズを書き込むこととした。<br />
+<br />
+<A  href="etc.html#warichu">割り注の記法変更</A>：「ここから」「ここまで」を省く、新しい記法に変更した。<br />
+<br />
+<A  href="etc.html#keigakomi">けい線素片による罫囲みの廃止</A>：用いないことにした。<br />
+<br />
+<A  href="etc.html#yokogumi">行中の横組みの記法変更</A>：「ここから」「ここまで」を省く、新しい記法に変更した。<br />
+<br />
+<A  href="etc.html#moji_size">文字サイズの記法追加</A>：［＃…］～［＃…終わり］の形式を新たに採用した。<br />
+<br />
+　　　　　　　　　　　　　　　　　　※<br />
+<br />
+<A  href="extra.html#end_annotation">青空文庫外のファイルにおける本文終了</A>：本文終了注記を新設した。<br />
+<br />
+<A  href="extra.html#unavailable_character">青空文庫で使えない文字の代替表記</A>：ルビ記号「《》」等を表示したい際の代替表現について提案した。<br />
+</blockquote>
+<br />
 <A name="xhtml"></A>
-<H3>XHTML��</H3>
-<BLOCKQUOTE>
-�_�u�����R�A���O��Ԃ̒����F<BR>
-<BLOCKQUOTE>
-&lt;link rel="DC.Schema" href="http://purl.org/dc/elements/1.1/" /&gt;<BR>
-�@�@�@�@�@�@�@�@�@�@�@�@�@�@��<BR>
-&lt;link rel="Schema.DC" href="http://purl.org/dc/elements/1.1/" /&gt;<BR>
-</BLOCKQUOTE>
-<BR>
-�_�u�����R�A�uDC.Title�v�̒ǉ��F<BR>
-<BLOCKQUOTE>
-&lt;meta name="DC.Creator" content="���Җ�" /&gt;<BR>
-&lt;meta name="DC.Publisher" content="�󕶌�" /&gt;<BR>
-�@�@�@�@�@�@�@�@�@�@�@�@�@�@��<BR>
-&lt;meta name="DC.Title" content="��i��" /&gt;<BR>
-&lt;meta name="DC.Creator" content="���Җ�" /&gt;<BR>
-&lt;meta name="DC.Publisher" content="�󕶌�" /&gt;<BR>
-</BLOCKQUOTE>
-�t�@�C�����́u�\�L�ɂ��āv��&lt;ul&gt;&lt;/ul&gt;������ӏ������ɂȂ��Ă��Ȃ��O�����L���ړ��F<BR>
-<BLOCKQUOTE>
-���\�L�ɂ���&lt;br /&gt;<BR>
-&lt;ul&gt;<BR>
-	&lt;li&gt;���̃t�@�C���� W3C ���� XHTML1.1 �ɂ������`���ō쐬����Ă��܂��B&lt;/li&gt;<BR>
-	&lt;li&gt;�m���c�n�́A���͎҂ɂ�钍��\���L���ł��B&lt;/li&gt;<BR>
-	&lt;li&gt;���̍�i�ɂ́AJIS X 0213�ɂȂ��A�ȉ��̕������p�����Ă��܂��B�i�����́A��{���̏o���u�y�[�W-�s�v���B�j�����̕����͖{�����ł́u���m���c�n�v�̌`�Ŏ����܂����B&lt;/li&gt;<BR>
-&lt;br /&gt;<BR>
-&lt;br /&gt;<BR>
-		&lt;table&gt;<BR>
-			&lt;tr&gt;<BR>
-				&lt;td&gt;<BR>
-				�u�����̂ւ�{�t�v<BR>
-				&lt;/td&gt;<BR>
-				&lt;td&gt;&nbsp;&nbsp;&lt;/td&gt;<BR>
-				&lt;td&gt;<BR>
-251-2				&lt;/td&gt;<BR>
-				&lt;!--<BR>
-				&lt;td&gt;<BR>
-				�@�@&lt;img src="../../../gaiji/others/xxxx.png" alt="�u�����̂ւ�{�t�v" width=32 height=32 /&gt;<BR>
-				&lt;/td&gt;<BR>
-				--&gt;<BR>
-			&lt;/tr&gt;<BR>
-		&lt;/table&gt;<BR>
-&lt;/ul&gt;<BR>
-�@�@�@�@�@�@�@�@�@�@�@�@�@�@��<BR>
-���\�L�ɂ���&lt;br /&gt;<BR>
-&lt;ul&gt;<BR>
-	&lt;li&gt;���̃t�@�C���� W3C ���� XHTML1.1 �ɂ������`���ō쐬����Ă��܂��B&lt;/li&gt;<BR>
-	&lt;li&gt;���̍�i�ɂ́AJIS X 0213�ɂȂ��A�ȉ��̕������p�����Ă��܂��B�i�����́A��{���̏o���u�y�[�W-�s�v���B�j�����̕����͖{�����ł́u���m���c�n�v�̌`�Ŏ����܂����B&lt;/li&gt;<BR>
-&lt;/ul&gt;<BR>
-&lt;br /&gt;<BR>
-		&lt;table class="gaiji_list"&gt;<BR>
-			&lt;tr&gt;<BR>
-				&lt;td&gt;<BR>
-				�u�����̂ւ�{�t�v<BR>
-				&lt;/td&gt;<BR>
-				&lt;td&gt;&nbsp;&nbsp;&lt;/td&gt;<BR>
-				&lt;td&gt;<BR>
-251-2				&lt;/td&gt;<BR>
-				&lt;!--<BR>
-				&lt;td&gt;<BR>
-				�@�@&lt;img src="../../../gaiji/others/xxxx.png" alt="�u�����̂ւ�{�t�v" width=32 height=32 /&gt;<BR>
-				&lt;/td&gt;<BR>
-				--&gt;<BR>
-			&lt;/tr&gt;<BR>
-		&lt;/table&gt;<BR>
-</BLOCKQUOTE>
-<A  href="heading.html">���o���^�O�̐V��</A>�F�V�݂������o�����L���Ahn�`���Ń^�O�������B<BR>
-<BR>
-<A  href="external_character.html#0208gaiji_chuki">�O���^�O�̕ύX</A>�F�u&lt;img gaiji="gaiji" src="../../../gaiji/1-84/1-84-77.png" alt="��(�u�Ăւ�{��v�A��3����1-84-77)" class="gaiji" /&gt;�v�̂悤�ɏ����Ă������̂��A�u&lt;img src="../../../gaiji/1-84/1-84-77.png" alt="��(�u�Ăւ�{��v�A��3����1-84-77)" class="gaiji" /&gt;�v�̂悤�ɂ��炽�߂��B<BR>
-<BR>
-<A  href="kunten.html#kunten_okurigana_chuki">�P�_���艼���^�O�̕ύX</A>�F�N���X�����Akuten-okurigana����okurigana�ɕύX�����B<BR>
-<BR>
-<A  href="emphasis.html#boten_chuki">�T�_�^�O�̕ύX</A>�F�]���́A�T�_��strong�A�T����em�ɂ��Ă������A�E�F�b�u�u���E�U�[��ŖT�_�A�T���̌`�������Ƃ����ύX��O��ɁAem�ɕύX�����B�啶���A�����������p���Ă����N���X�����A�������ɓ��ꂵ���B<BR>
-<BR>
-<A  href="emphasis.html#boten_chuki">���iafter�j�T�_�̃^�O��</A>�F����܂ł͒P��notes�Ƃ��Ă������̂��A�^�O�������B<BR>
-<BR>
-<A  href="emphasis.html#bosen_chuki">�T���^�O�̕ύX</A>�F����܂ł͖{�����̃^�O�Ɋ܂߂Ă����ustyle="text-decoration: underline; line-style: solid"�v���폜�����B<BR>
-<BR>
-<A  href="emphasis.html#bosen_chuki">���iafter�j�T���̃^�O��</A>�F����܂ł͒P��notes�Ƃ��Ă������̂��A�^�O�������B<BR>
-<BR>
-<A  href="emphasis.html#futoji_gothic,shatai_italic">�����^�O�̕ύX</A>�F�]���́A&lt;b&gt;�`&lt;/b&gt;�ƃ^�O�t�����Ă������̂��A�N���X����^����`�ɂ��炽�߂��B<BR>
-<BR>
-<A  href="emphasis.html#futoji_gothic,shatai_italic">�Α̃^�O�̕ύX</A>�F�]���́A&lt;i&gt;�`&lt;/i&gt;�ƃ^�O�t�����Ă������̂��A�N���X����^����`�ɂ��炽�߂��B<BR>
-<BR>
-<A  href="etc.html#jizume">���l�߂̃^�O��</A>�F����܂ł͒P��notes�Ƃ��Ă������̂��A�^�O�������B<BR>
-<BR>
-<A  href="etc.html#keigakomi">�r�݂͂̃^�O��</A>�F����܂ł͒P��notes�Ƃ��Ă������̂��A�^�O�������B<BR>
-<BR>
-<A  href="etc.html#yokogumi">���g�݂̃^�O��</A>�F����܂ł͒P��notes�Ƃ��Ă������̂��A�^�O�������B<BR>
-<BR>
-<A  href="etc.html#moji_size">�����T�C�Y�̃^�O�̕ύX</A>�F�]���́A&lt;big&gt;�`&lt;/big&gt;�A&lt;small&gt;�`&lt;/small&gt;�Ń^�O�����Ă������̂��A�N���X����^����`�ɂ��炽�߂��B<BR>
-<BR>
-�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@��<BR>
-<BR>
-<A  href="extra.html#end_annotation">�{���I�����L�ɑΉ�����^�O�̐V��</A>�F�{���I�����L�ȍ~���Aafter_text �ƃ^�O�t�������B<BR>
-</BLOCKQUOTE>
-<FONT size="-1" ><A  href="index.html">�ڎ��ɂ��ǂ�B</A></FONT>
-<BR>
-</BODY>
-</HTML>
+<H3>XHTML版</H3>
+<blockquote>
+ダブリンコア名前空間の訂正：<br />
+<blockquote>
+&lt;link rel="DC.Schema" href="http://purl.org/dc/elements/1.1/" /&gt;<br />
+　　　　　　　　　　　　　　↓<br />
+&lt;link rel="Schema.DC" href="http://purl.org/dc/elements/1.1/" /&gt;<br />
+</blockquote>
+<br />
+ダブリンコア「DC.Title」の追加：<br />
+<blockquote>
+&lt;meta name="DC.Creator" content="著者名" /&gt;<br />
+&lt;meta name="DC.Publisher" content="青空文庫" /&gt;<br />
+　　　　　　　　　　　　　　↓<br />
+&lt;meta name="DC.Title" content="作品名" /&gt;<br />
+&lt;meta name="DC.Creator" content="著者名" /&gt;<br />
+&lt;meta name="DC.Publisher" content="青空文庫" /&gt;<br />
+</blockquote>
+ファイル末の「表記について」の&lt;ul&gt;&lt;/ul&gt;内から箇条書きになっていない外字注記を移動：<br />
+<blockquote>
+●表記について&lt;br /&gt;<br />
+&lt;ul&gt;<br />
+	&lt;li&gt;このファイルは W3C 勧告 XHTML1.1 にそった形式で作成されています。&lt;/li&gt;<br />
+	&lt;li&gt;［＃…］は、入力者による注を表す記号です。&lt;/li&gt;<br />
+	&lt;li&gt;この作品には、JIS X 0213にない、以下の文字が用いられています。（数字は、底本中の出現「ページ-行」数。）これらの文字は本文内では「※［＃…］」の形で示しました。&lt;/li&gt;<br />
+&lt;br /&gt;<br />
+&lt;br /&gt;<br />
+		&lt;table&gt;<br />
+			&lt;tr&gt;<br />
+				&lt;td&gt;<br />
+				「けものへん＋付」<br />
+				&lt;/td&gt;<br />
+				&lt;td&gt;&nbsp;&nbsp;&lt;/td&gt;<br />
+				&lt;td&gt;<br />
+251-2				&lt;/td&gt;<br />
+				&lt;!--<br />
+				&lt;td&gt;<br />
+				　　&lt;img src="../../../gaiji/others/xxxx.png" alt="「けものへん＋付」" width=32 height=32 /&gt;<br />
+				&lt;/td&gt;<br />
+				--&gt;<br />
+			&lt;/tr&gt;<br />
+		&lt;/table&gt;<br />
+&lt;/ul&gt;<br />
+　　　　　　　　　　　　　　↓<br />
+●表記について&lt;br /&gt;<br />
+&lt;ul&gt;<br />
+	&lt;li&gt;このファイルは W3C 勧告 XHTML1.1 にそった形式で作成されています。&lt;/li&gt;<br />
+	&lt;li&gt;この作品には、JIS X 0213にない、以下の文字が用いられています。（数字は、底本中の出現「ページ-行」数。）これらの文字は本文内では「※［＃…］」の形で示しました。&lt;/li&gt;<br />
+&lt;/ul&gt;<br />
+&lt;br /&gt;<br />
+		&lt;table class="gaiji_list"&gt;<br />
+			&lt;tr&gt;<br />
+				&lt;td&gt;<br />
+				「けものへん＋付」<br />
+				&lt;/td&gt;<br />
+				&lt;td&gt;&nbsp;&nbsp;&lt;/td&gt;<br />
+				&lt;td&gt;<br />
+251-2				&lt;/td&gt;<br />
+				&lt;!--<br />
+				&lt;td&gt;<br />
+				　　&lt;img src="../../../gaiji/others/xxxx.png" alt="「けものへん＋付」" width=32 height=32 /&gt;<br />
+				&lt;/td&gt;<br />
+				--&gt;<br />
+			&lt;/tr&gt;<br />
+		&lt;/table&gt;<br />
+</blockquote>
+<A  href="heading.html">見出しタグの新設</A>：新設した見出し注記を、hn形式でタグ化した。<br />
+<br />
+<A  href="external_character.html#0208gaiji_chuki">外字タグの変更</A>：「&lt;img gaiji="gaiji" src="../../../gaiji/1-84/1-84-77.png" alt="※(「てへん＋劣」、第3水準1-84-77)" class="gaiji" /&gt;」のように書いてきたものを、「&lt;img src="../../../gaiji/1-84/1-84-77.png" alt="※(「てへん＋劣」、第3水準1-84-77)" class="gaiji" /&gt;」のようにあらためた。<br />
+<br />
+<A  href="kunten.html#kunten_okurigana_chuki">訓点送り仮名タグの変更</A>：クラス名を、kuten-okuriganaからokuriganaに変更した。<br />
+<br />
+<A  href="emphasis.html#boten_chuki">傍点タグの変更</A>：従来は、傍点をstrong、傍線をemにしてきたが、ウェッブブラウザー上で傍点、傍線の形を示すという変更を前提に、emに変更した。大文字、小文字を混用してきたクラス名を、小文字に統一した。<br />
+<br />
+<A  href="emphasis.html#boten_chuki">左（after）傍点のタグ化</A>：これまでは単にnotesとしてきたものを、タグ化した。<br />
+<br />
+<A  href="emphasis.html#bosen_chuki">傍線タグの変更</A>：これまでは本文中のタグに含めていた「style="text-decoration: underline; line-style: solid"」を削除した。<br />
+<br />
+<A  href="emphasis.html#bosen_chuki">左（after）傍線のタグ化</A>：これまでは単にnotesとしてきたものを、タグ化した。<br />
+<br />
+<A  href="emphasis.html#futoji_gothic,shatai_italic">太字タグの変更</A>：従来は、&lt;b&gt;～&lt;/b&gt;とタグ付けしてきたものを、クラス名を与える形にあらためた。<br />
+<br />
+<A  href="emphasis.html#futoji_gothic,shatai_italic">斜体タグの変更</A>：従来は、&lt;i&gt;～&lt;/i&gt;とタグ付けしてきたものを、クラス名を与える形にあらためた。<br />
+<br />
+<A  href="etc.html#jizume">字詰めのタグ化</A>：これまでは単にnotesとしてきたものを、タグ化した。<br />
+<br />
+<A  href="etc.html#keigakomi">罫囲みのタグ化</A>：これまでは単にnotesとしてきたものを、タグ化した。<br />
+<br />
+<A  href="etc.html#yokogumi">横組みのタグ化</A>：これまでは単にnotesとしてきたものを、タグ化した。<br />
+<br />
+<A  href="etc.html#moji_size">文字サイズのタグの変更</A>：従来は、&lt;big&gt;～&lt;/big&gt;、&lt;small&gt;～&lt;/small&gt;でタグ化していたものを、クラス名を与える形にあらためた。<br />
+<br />
+　　　　　　　　　　　　　　　　　　※<br />
+<br />
+<A  href="extra.html#end_annotation">本文終了注記に対応するタグの新設</A>：本文終了注記以降を、after_text とタグ付けした。<br />
+</blockquote>
+<div id="card">
+<hr />
+<br />
+<a href="index.html" id="gotop"><img src="../images/modoru.gif" alt="戻る" /></a>
+</div></body>
+</html>

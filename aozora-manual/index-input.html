@@ -182,6 +182,7 @@
 </div>
 <p class="lead" style="margin:20px 0 0 0;">文庫本などではそれ自体に底本（全集など）が存在する場合があります。その場合には、「底本の親本（底本の底本）の正式名称・出版社・発行年月日」もわかる範囲でつけ加えてください。</p>
 <p class="lead">入力ファイルの基本的な形を掴む上では、新規公開作品のテキスト版をいくつか開いてみると、参考になります。</p>
+<span class="label label-more">more</span><p class="ex-more">「<a href="https://www.aozora.gr.jp/guide/kisai.html" target="_blank">青空文庫収録ファイルへの記載事項</a>」と、「<a href="https://reception.aozora.gr.jp/accept.php" target="_blank">入力受付システム</a>」申請時の底本記載事項には、若干の差異があります。詳しくは、「青空文庫ＦＡＱ」の<a href="https://www.aozora.gr.jp/guide/aozora_bunko_faq.html#midashi841" target="_blank">当該項目</a>を参照してください。</p>
 </section>
 
 <!-- 3-3.入力に使える文字
@@ -208,7 +209,7 @@
 <p class="lead">同じように　（）『』【】　などの括弧類が行頭に来る場合も字下げをしません。</p>
 <div class="bs-docs-example">
 <div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/kakko_sage1.gif" alt="行頭の字下げ" /></div>
-<p class="lead" style="margin:20px 0 20px 0;">この底本では、行頭にかぎ括弧が来ても１字下げてあります。こうした場合にも、下のようにスペースは入れずに入力してください。</p>
+<p style="margin:20px 0 20px 0;">この底本では、行頭にかぎ括弧が来ても１字下げてあります。こうした場合にも、下のようにスペースは入れずに入力してください。</p>
 <div class="ex-img"><img src="https://www.aozora.gr.jp/KOSAKU/kakko_sage2.gif" alt="行頭の字下げ" /></div>
 </div>
 </section>
@@ -243,6 +244,20 @@
 <span class="label label-more">more</span><p class="ex-more">詳しくは、「<a href="https://www.aozora.gr.jp/KOSAKU/small_or_large/guide_line.html" target="_blank">区点番号5-17と5-86の使い分け指針</a>」を参照してください。</p>
 </section>
 
+<!-- 3-6.均等割り付けの空白
+================================================== -->
+<section id="waritsuke">
+<div class="page-header">
+<h2>3-6. 均等割り付けの空白</h2>
+</div>
+<p class="lead">均等割り付けのため、単語の字間に空白が入っている場合は、入力しないでください。</p>
+<div class="bs-docs-example">
+<div class="ex-img"><img src="img/waritsuke.png" width=30% alt="均等割付" /></div>
+<p style="margin:20px 0 20px 0;">底本で「先　生」と一語の文字の間に全角空白に見えるスペースがあっても、「先生」のように詰めて入力します。</p>
+<p class="prettyprint">先生：おはようございます。<br />生徒Ａ：おはようございます！</p>
+</div>
+</section>
+
 
 <!-- 4. 青空文庫注記形式
 ================================================== -->
@@ -250,7 +265,9 @@
 <div class="page-header">
 <h1>4. 青空文庫注記形式</h1>
 </div>
-<p class="lead">底本にあるレイアウトをテキストで表現するために青空文庫注記形式を使います。使用する記号はルビ（ふりがな）に使う「《》」とレイアウト情報、入力者注に使う「［＃…］」です。以下に、その用法に付いて説明します。</p>
+<p class="lead">底本にあるレイアウトをテキストで表現するために青空文庫注記形式を使います。使用する記号はルビ（ふりがな）に使う「《》」とレイアウト情報、入力者注に使う「［＃…］」です。</p>
+<p class="lead">（※なお、注記に使う「［＃］」の記号、およびルビの区切りに用いる「｜」は、すべて２バイトの全角文字で入力してください。「＃」はキーボードから入力可能な「井桁」「番号記号」であり、「シャープ記号♯」とは異なります。）</p>
+<p class="lead">以下に、その用法に付いて説明します。</p>
 </section>
 
 
@@ -432,6 +449,10 @@
 ◯四月に於けるわが収入は、金五十二円八十銭であった。大学卒業後今日までに於ける最低収入の月であった。記憶に値する。<br />
 ［＃地付き］（この日記終り）
 </p>
+<h3>区切り記号の字下げ</h3>
+<p>本文の区切りに使う記号の字下げには字下げ注記を使いません。</p>
+<p>底本で５字下げて「＊」と表記されていても、テキストファイルでは「［＃５字下げ］＊」とせず、たとえば以下のように全角空白をその数のぶん入力してください。</p>
+<p class="prettyprint">　　　　　＊</p>
 </div>
 <span class="label label-more">more</span><p class="ex-more"><a href="https://www.aozora.gr.jp/annotation/layout_2.html#jisage_kakushu" target="_blank">詳しくはこちら</a></p>
 </section>
@@ -809,22 +830,24 @@ H2［＃「2」は下付き小文字］O と入力します。
 <p class="lead">例えば、「宮沢憲治」のように明らかな誤植と思われる場合は、</p>
 <span class="label label-chuki">青空文庫注記</span>
 <p class="prettyprint">
-宮沢賢治［＃「賢治」は底本では「憲治」］
+宮沢賢治［＃「宮沢賢治」は底本では「宮沢憲治」］
 </p>
 <p class="lead">書き換えの記録を残さずに本文を変更することは、行わないでください。</p>
 <p class="lead">誤植と断定することはできないけれど、表記が疑わしい場合、もしくは、明らかに誤りではあるけれど、正しい内容が特定できない場合には、</p>
 <span class="label label-chuki">青空文庫注記</span>
 <p class="prettyprint">
-彼は12381［＃「12381」はママ］年に生まれ、
+彼は12381年に［＃「12381年に」はママ］生まれ、
 </p>
 <p class="lead">のように、「ママ」を用いて注記してください。</p>
-<p class="lead">底本の表記に疑いをもった際の対処の詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#teisei_mama" target="_blank">訂正と「ママ」</a>」にまとめてあります。</p>
+<p class="lead">こうした訂正注記やママ注記の適用範囲は、文節単位としてください。訂正注記やママ注記の範囲にルビが含まれるときは、（ルビそのものが注記の対象でない限り）注記の「」内にルビを含める必要はありません。</p>
 <p class="lead">文字が判読できないなどの場合は、その文字のかわりに「※」を入れ、</p>
 <span class="label label-chuki">青空文庫注記</span>
 <p class="prettyprint">
 ※［＃判読不可、30-16］
 </p>
 <p class="lead">のように入力者注で処理してください。</p>
+<span class="label label-more">more</span><p class="ex-more">底本の表記に疑いをもった際の記法の詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」の「<a href="https://www.aozora.gr.jp/annotation/etc.html#teisei_mama" target="_blank">訂正と「ママ」</a>」にまとめてあります。</p>
+<p class="lead">また、誤りと思えるものでも、作者特有の書き癖だったり、かつては当たり前のものだったりすることが、しばしばあります。訂正注記やママ注記の根拠の検討については、「青空文庫ＦＡＱ」の<a href="https://www.aozora.gr.jp/guide/aozora_bunko_faq.html#midashi785" target="_blank">当該項目</a>も参照してください。</p>
 </section>
 
 
@@ -949,6 +972,8 @@ raffine'
 <p class="lead">OCRを使った入力では、似た形の文字の読み取り誤りが、しばしば生じます。片仮名の「ヘペベ」と平仮名の「へぺべ」等、フォントでの識別がほぼできないものもあります。こうしたものも、検索機能を使って、チェックしてください。OCRで誤認識されやすい文字は「<a href="http://eunheui.sakura.ne.jp/aozora/proofreader.html" target="_blank">校正ツール2.0化ひとりプロジェクト</a>」でチェックすることもできます。</p>
 <p class="lead">「<a href="index-proofreading.html">青空文庫作業マニュアル【校正編】</a>」の「校正は繰り返し行う」で詳しく説明している正規表現を使えば、OCR誤植などの入力時の誤りを、効率的に、高い精度で取り除けます。</p>
 <p class="lead">ファイルの精度を高めるためには、「できるだけ早い段階でミスを修正しておく」ことが鉄則です。入力者校正に、ぜひご協力ください。</p>
+<span class="label label-more">more</span><p class="ex-more">マニュアルの冒頭からここまでに紹介された各種ページやツールは、こちらの「<a href="https://www.aozora.gr.jp/guide/techo.html" target="_blank">耕作員手帳</a>」にまとまっています。</p>
+<p class="lead">注記の詳細は、「<a href="https://www.aozora.gr.jp/annotation/" target="_blank">注記一覧</a>」のページにまとまっています。また、悩ましいことがあったときには、まず「<a href="https://www.aozora.gr.jp/guide/aozora_bunko_faq.html" target="_blank">青空文庫ＦＡＱ</a>」の「<a href="https://www.aozora.gr.jp/guide/aozora_bunko_faq.html#midashi580" target="_blank">入力・校正について</a>」に該当するものがないか確認してみましょう。</p>
 
 </section>
 
@@ -959,15 +984,17 @@ raffine'
 <div class="page-header">
 <h1>9. 文書の送信</h1>
 </div>
-<p class="lead">入力者校正が済んだファイルは、reception@aozora.gr.jp宛に電子メールで送信してください。その際、ファイルには「圧縮」をかけ、「添付ファイル」として処理してください。</p>
-<p class="lead">圧縮方式は、zipを推奨します。自分のパソコンでzip圧縮する方法は、マニュアルやインターネットの記述を参考にしてください。</p>
-<p class="lead">送信していただいたファイルは、校正に名乗りを上げてくれた人のところへとまわされ、校正作業に移ります。このとき、当然ながら入力に使用された底本が必要になります。</p>
-<p class="lead">底本は、原則的には校正者、もしくは点検グループで確保していますが、ときには最寄りの図書館で手配できず、絶版・品切れのため、古書店でも入手できない場合があります。そのため、底本もしくはそのコピーを送付していただく必要が出るかもしれません。ご協力をお願いします。</p>
+<p class="lead">入力者校正が済んだファイルは、reception@aozora.gr.jp 宛に電子メールで送信してください。メールの表題及び本文には、著者と表題の明記をお願いします。（無題や本文なしでの送信は、スパム判定の原因となったり、探しづらく作業の支障となったりします。）</p>
+<p class="lead">送付の際、ファイルには「圧縮」をかけ、「添付ファイル」として処理してください。</p>
+<p class="lead">圧縮方式は、zip を推奨します。自分のパソコンで zip 圧縮する方法は、各種マニュアルやインターネットの記述を参考にしてください。</p>
+<p class="lead">送信していただいたファイルは、点検ののち、校正に名乗りを上げてくれた人のところへとまわされ、校正作業に移ります。このとき、当然ながら入力に使用された底本が必要になります。</p>
+<p class="lead">底本は、原則的には校正者、もしくは点検グループで確保していますが、ときには最寄りの図書館で手配できず、絶版・品切れのため、古書店でも入手できない場合があります。</p>
+<p class="lead">校正される可能性を上げたい場合、底本をスキャンしてＰＤＦなどのファイルにして一緒に送付することも一案です。デジタルアーカイヴに底本が存在するときは、そのＵＲＬを示してもいいでしょう。また、ファイル点検時に手を尽くしても実見できなかったとき、青空文庫の点検グループからコピーやＰＤＦのご提供をお願いすることがあるかもしれません。その際にはどうかご協力をお願いします。</p>
 
 </section>
 
 <div style="margin-top:100px;">
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">クリエイティブ・コモンズ 表示 - 非営利 2.1 日本 ライセンスの下に提供されています。</a>
+<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" /></a><br />このマニュアルは「<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 4.0 国際 ライセンス</a>」の下に提供されています。
 </div>
 
 
