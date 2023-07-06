@@ -5,19 +5,22 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS" />
 	<meta http-equiv="content-style-type" content="text/css" />
-	<link rel="stylesheet" type="text/css" href="../../default.css" />
+	<link rel="stylesheet" type="text/css" href="../../aozora.css" />
 	<title>宮沢賢治 ポランの広場</title>
-	<link rel="DC.Schema" href="http://purl.org/dc/elements/1.1/" />
+	<script type="text/javascript" src="../../jquery-1.4.2.min.js"></script>
+  <link rel="Schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<meta name="DC.Title" content="ポランの広場" />
 	<meta name="DC.Creator" content="宮沢賢治" />
 	<meta name="DC.Publisher" content="青空文庫" />
 </head>
 <body>
+<div class="metadata">
 <h1 class="title">ポランの広場</h1>
 <h2 class="author">宮沢賢治</h2>
-<div class="main_text">
 <br />
 <br />
-<br />
+</div>
+<div id="contents" style="display:none"></div><div class="main_text"><br />
 <div class="jisage_1" style="margin-left: 1em">
 時、一千九百二十年代、六月三十日夜、<br />
 処、イーハトヴ地方、<br />
@@ -175,16 +178,20 @@
 <div class="bibliographical_information">
 <hr />
 <br />
-底本：「【新】校本宮澤賢治全集」筑摩書房
-<br />
+底本：「【新】校本宮澤賢治全集　第十二巻　童話<img src="../../../gaiji/1-13/1-13-25.png" alt="※(ローマ数字5、1-13-25)" class="gaiji" />・劇・その他　本文篇」筑摩書房<br />
 　　　1995（平成7）年11月25日初版第1刷発行<br />
-※宮沢賢治作品の草稿には、繰り返し書き加えられた手直しの跡が残されている。底本の本文は、「原則として作品の最終形態」によっているが、「草稿・原文を校訂して本文を決定した場合には、本文の該当部分を〔　〕で括って」示してある。編者による注記も、〔　〕によって示されている。本ファイルの作成に当たっては、底本が用いた〔　〕をそのまま使用した。<br />
+※底本のテキストは、著者草稿の最終形態によります。<br />
+※〔〕内の並活字による記載は、編者による校訂箇所です。<br />
+※〔〕内の小活字による記載は、編者による説明の加筆です。<br />
+※〔〕とのみあるのはそこにあった不要の語句が編者により本文から削除された箇所です。<br />
+※底本は新字旧仮名づかいです。なお拗音、促音の小書きは、底本通りです。<br />
 入力：岡本正貴<br />
 校正：石川友子<br />
 2000年1月8日公開<br />
-2005年10月18日修正<br />
+2023年7月6日修正<br />
 青空文庫作成ファイル：<br />
 このファイルは、インターネットの図書館、<a href="http://www.aozora.gr.jp/">青空文庫（http://www.aozora.gr.jp/）</a>で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<br />
+<br />
 <br />
 </div>
 <div class="notation_notes">
@@ -193,11 +200,11 @@
 ●表記について<br />
 <ul>
 	<li>このファイルは W3C 勧告 XHTML1.1 にそった形式で作成されています。</li>
-	<li>［＃…］は、入力者による注を表す記号です。</li>
+	<li>「くの字点」をのぞくJIS X 0213にある文字は、画像化して埋め込みました。</li>
 	<li>この作品には、JIS X 0213にない、以下の文字が用いられています。（数字は、底本中の出現「ページ-行」数。）これらの文字は本文内では「※［＃…］」の形で示しました。</li>
+</ul>
 <br />
-<br />
-		<table>
+		<table class="gaiji_list">
 			<tr>
 				<td>
 				「金＋支」
@@ -212,7 +219,11 @@
 				-->
 			</tr>
 		</table>
-</ul>
 </div>
-</body>
+<div id="card">
+<hr />
+<br />
+<a href="JavaScript:goLibCard();" id="goAZLibCard">●図書カード</a><script type="text/javascript" src="../../contents.js"></script>
+<script type="text/javascript" src="../../golibcard.js"></script>
+</div></body>
 </html>
