@@ -5,19 +5,22 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS" />
 	<meta http-equiv="content-style-type" content="text/css" />
-	<link rel="stylesheet" type="text/css" href="../../default.css" />
+	<link rel="stylesheet" type="text/css" href="../../aozora.css" />
 	<title>宮沢賢治 泉ある家</title>
-	<link rel="DC.Schema" href="http://purl.org/dc/elements/1.1/" />
+	<script type="text/javascript" src="../../jquery-1.4.2.min.js"></script>
+  <link rel="Schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<meta name="DC.Title" content="泉ある家" />
 	<meta name="DC.Creator" content="宮沢賢治" />
 	<meta name="DC.Publisher" content="青空文庫" />
 </head>
 <body>
+<div class="metadata">
 <h1 class="title">泉ある家</h1>
 <h2 class="author">宮沢賢治</h2>
-<div class="main_text">
 <br />
 <br />
-<br />
+</div>
+<div id="contents" style="display:none"></div><div class="main_text"><br />
 　これが<ruby><rb>今日</rb><rp>（</rp><rt>きょう</rt><rp>）</rp></ruby>のおしまいだろう、と<ruby><rb>云</rb><rp>（</rp><rt>い</rt><rp>）</rp></ruby>いながら<ruby><rb>斉田</rb><rp>（</rp><rt>さいた</rt><rp>）</rp></ruby>は青じろい<ruby><rb>薄明</rb><rp>（</rp><rt>はくめい</rt><rp>）</rp></ruby>の<ruby><rb>流</rb><rp>（</rp><rt>なが</rt><rp>）</rp></ruby>れはじめた県道に立って<ruby><rb>崖</rb><rp>（</rp><rt>がけ</rt><rp>）</rp></ruby>に<ruby><rb>露出</rb><rp>（</rp><rt>ろしゅつ</rt><rp>）</rp></ruby>した<ruby><rb>石英斑岩</rb><rp>（</rp><rt>せきえいはんがん</rt><rp>）</rp></ruby>から一かけの<ruby><rb>標本</rb><rp>（</rp><rt>ひょうほん</rt><rp>）</rp></ruby>をとって新聞紙に包んだ。<br />
 　<ruby><rb>富沢</rb><rp>（</rp><rt>とみざわ</rt><rp>）</rp></ruby>は地図のその点に<ruby><rb>橙</rb><rp>（</rp><rt>だいだい</rt><rp>）</rp></ruby>を<ruby><rb>塗</rb><rp>（</rp><rt>ぬ</rt><rp>）</rp></ruby>って<ruby><rb>番号</rb><rp>（</rp><rt>ばんごう</rt><rp>）</rp></ruby>を書きながら読んだ。斉田はそれを包みの上に書きつけて<ruby><rb>背嚢</rb><rp>（</rp><rt>はいのう</rt><rp>）</rp></ruby>に入れた。<br />
 　二人は早く<ruby><rb>重</rb><rp>（</rp><rt>おも</rt><rp>）</rp></ruby>い岩石の<ruby><rb>袋</rb><rp>（</rp><rt>ふくろ</rt><rp>）</rp></ruby>をおろしたさにあとはだまって県道を北へ下った。<br />
@@ -67,16 +70,16 @@
 <div class="bibliographical_information">
 <hr />
 <br />
-底本：「ポラーノの広場」角川文庫、角川書店
-<br />
+底本：「ポラーノの広場」角川文庫、角川書店<br />
 　　　1996（平成8）年6月25日初版発行<br />
-底本の親本：「新校本　宮澤賢治全集」筑摩書房<br />
-　　　1995（平成7）年5月<br />
+底本の親本：「【新】校本宮澤賢治全集　第十二巻　童話<img src="../../../gaiji/1-13/1-13-25.png" alt="※(ローマ数字5、1-13-25)" class="gaiji" />・劇・その他　本文篇」筑摩書房<br />
+　　　1995（平成7）年11月25日初版第1刷発行<br />
 入力：ゆうき<br />
 校正：noriko saito<br />
 2009年8月15日作成<br />
+2023年7月7日修正<br />
 青空文庫作成ファイル：<br />
-このファイルは、インターネットの図書館、<a href="http://www.aozora.gr.jp/">青空文庫（http://www.aozora.gr.jp/）</a>で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<br />
+このファイルは、インターネットの図書館、青空文庫（https://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<br />
 <br />
 <br />
 </div>
@@ -86,11 +89,11 @@
 ●表記について<br />
 <ul>
 	<li>このファイルは W3C 勧告 XHTML1.1 にそった形式で作成されています。</li>
-	<li>［＃…］は、入力者による注を表す記号です。</li>
+	<li>「くの字点」をのぞくJIS X 0213にある文字は、画像化して埋め込みました。</li>
 	<li>この作品には、JIS X 0213にない、以下の文字が用いられています。（数字は、底本中の出現「ページ-行」数。）これらの文字は本文内では「※［＃…］」の形で示しました。</li>
+</ul>
 <br />
-<br />
-		<table>
+		<table class="gaiji_list">
 			<tr>
 				<td>
 				小書き平仮名こ
@@ -105,7 +108,11 @@
 				-->
 			</tr>
 		</table>
-</ul>
 </div>
-</body>
+<div id="card">
+<hr />
+<br />
+<a href="JavaScript:goLibCard();" id="goAZLibCard">●図書カード</a><script type="text/javascript" src="../../contents.js"></script>
+<script type="text/javascript" src="../../golibcard.js"></script>
+</div></body>
 </html>
